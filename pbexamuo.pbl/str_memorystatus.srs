@@ -1,0 +1,12 @@
+﻿//objectcomments Structure
+global type str_memorystatus from structure
+    ulong sul_dwlength
+    ulong sul_dwmemoryload
+    ulong sul_dwtotalphys
+    ulong sul_dwavailphys
+    ulong sul_dwtotalpagefile
+    ulong sul_dwavailpagefile
+    ulong sul_dwtotalvirtual
+    ulong sul_dwavailvirtual
+end type
+

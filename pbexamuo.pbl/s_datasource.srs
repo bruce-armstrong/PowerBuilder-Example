@@ -1,0 +1,8 @@
+﻿//objectcomments Distributed PB example Structure used to hold report data
+global type s_datasource from structure
+	string		s_datasource
+	string		s_syntax
+	string		s_report
+	string		s_data
+end type
+

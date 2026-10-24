@@ -1,0 +1,7 @@
+﻿//objectcomments Structure used in passing paramters about where the pointer is currently located
+global type str_graphobjectatpoint from structure
+    graphicobject graphicobject
+    int series
+    int datapoint
+end type
+

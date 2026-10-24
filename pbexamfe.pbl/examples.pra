@@ -1,0 +1,65 @@
+﻿{
+    "appicon": "Pbex.ico",
+    "appfonts": [
+        {
+            "height": -10,
+            "weight": 700,
+            "italic": 0,
+            "underline": 0,
+            "characterSet": 0,
+            "pitchfamily": 34,
+            "facename": "Segoe UI"
+        },
+        {
+            "height": -10,
+            "weight": 400,
+            "italic": 0,
+            "underline": 0,
+            "characterSet": 0,
+            "pitchfamily": 34,
+            "facename": "Segoe UI"
+        },
+        {
+            "height": -8,
+            "weight": 700,
+            "italic": 0,
+            "underline": 0,
+            "characterSet": 0,
+            "pitchfamily": 34,
+            "facename": "MS Sans Serif"
+        },
+        {
+            "height": -8,
+            "weight": 700,
+            "italic": 0,
+            "underline": 0,
+            "characterSet": 0,
+            "pitchfamily": 34,
+            "facename": "MS Sans Serif"
+        }
+    ],
+    "textcolor": 0,
+    "backgroundcolor": 12632256,
+    "tx-control": {
+        "type": 5,
+        "version": 3,
+        "keys": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    }
+}

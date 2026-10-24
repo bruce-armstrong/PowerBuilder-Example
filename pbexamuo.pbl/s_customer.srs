@@ -1,0 +1,13 @@
+﻿//objectcomments Distributed PB example Structure used to hold customer data
+global type s_customer from structure
+	long		id
+	string		fname
+	string		lname
+	string		address
+	string		city
+	string		state
+	string		zip
+	string		phone
+	string		company_name
+end type
+

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project>
+  <Type Name="pb"/>
+  <Application Name="examples"/>
+  <Libraries AppEntry="pbexamfe.pbl">
+    <Library Path="pbexamfe.pbl"/>
+    <Library Path="pbexamd1.pbl"/>
+    <Library Path="pbexamd2.pbl"/>
+    <Library Path="pbexamfn.pbl"/>
+    <Library Path="pbexammn.pbl"/>
+    <Library Path="pbexamsy.pbl"/>
+    <Library Path="pbexamuo.pbl"/>
+    <Library Path="pbexamw1.pbl"/>
+    <Library Path="pbexamw2.pbl"/>
+    <Library Path="pbexamw3.pbl"/>
+    <Library Path="pbexamnf.pbl"/>
+  </Libraries>
+  <Deployings>
+    <Deploying Deploy="1" Library="pbexamfe.pbl" Name="p_examples_exe"/>
+  </Deployings>
+</Project>

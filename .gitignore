@@ -1,0 +1,3 @@
+# PowerBuilder IDE / compiler caches and build output
+.pb/
+build/

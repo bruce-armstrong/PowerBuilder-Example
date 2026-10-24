@@ -20,3 +20,22 @@ With the PowerServer projects:
 •	Database Configuration in the Web APIs tab
 	If you use SQL Anywhere as the demo database, no change is needed to the database configuration. 
 	If you use PostgreSQL as the demo database, the default login account is postgres (user)/postgres (password). Please double check the connection. 
+
+Modern PowerBuilder examples (pbexamnf.pbl):
+
+The pbexamnf.pbl library adds examples of native PowerBuilder features from PowerBuilder 2017 through 2025 (no PFC). They appear in the example tree under "Modern PowerBuilder", and the "Modern (2017+)" entry in the filter list shows only these examples. None of them need the demo database.
+
+•	JSON & REST
+	JSONParser & JSONGenerator (w_json_parser_generator)
+	DataWindow ExportJson & ImportJson (w_dw_json)
+	RESTClient & HTTPClient (w_rest_client) - calls jsonplaceholder.typicode.com, so it needs internet access
+•	Security & Files
+	Encoding, Hashing & AES Encryption - CoderObject / CrypterObject (w_crypter_coder)
+	Zip & Unzip Files - CompressorObject / ExtractorObject (w_compressor)
+•	User Interface
+	WebBrowser (Chromium) control with JavaScript <-> PowerScript calls (w_webbrowser) - needs the Microsoft Edge WebView2 runtime
+	RibbonBar control built from PowerScript and JSON (w_ribbonbar)
+	Placeholders & OpenURL (w_modern_inputs)
+•	PDF & Email
+	PDF Builder and native DataWindow PDF export (w_pdf_builder)
+	Sending Email with SMTPClient (w_smtp_client) - point it at any SMTP server, or a local test server such as smtp4dev or Papercut

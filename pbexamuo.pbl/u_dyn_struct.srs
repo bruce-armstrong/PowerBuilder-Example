@@ -1,0 +1,9 @@
+﻿//objectcomments Dynamic Structure
+global type u_dyn_struct from structure
+    window win
+    string clicked
+    string label
+    int size
+    int code
+end type
+
