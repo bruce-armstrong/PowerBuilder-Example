@@ -136,6 +136,10 @@ event open;call super::open;// Open script for w_quick_select
 dw_tables.SetTransObject (sqlca)
 dw_columns.SetTransObject (sqlca)
 
+// An empty DataWindow control paints plain white; show a blank DataWindow in the themed window colour until
+// the user picks columns
+dw_criteria.Create("release 25; datawindow(units=0 processing=0 color=1073741824) header(height=0) detail(height=0) table(column=(type=char(1) name=blank dbname=~"blank~"))")
+
 //populate the tables datawindow
 // f_set_table_select is a user function to modify the select used by
 // the table selection data window, based on which DBMS we're connected
@@ -669,6 +673,7 @@ String 		ls_emptyarray []
  ******************************************************************************************************/
 
 dw_criteria.DataObject = ''
+dw_criteria.Create("release 25; datawindow(units=0 processing=0 color=1073741824) header(height=0) detail(height=0) table(column=(type=char(1) name=blank dbname=~"blank~"))")
 is_visiblecolumns[] = ls_emptyarray[]
 /******************************************************************************************************
 	Note that the Repository definitions for fonts prevail over the parameters specified

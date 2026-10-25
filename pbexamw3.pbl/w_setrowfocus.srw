@@ -112,9 +112,8 @@ end subroutine
 
 public subroutine wf_disable_picture_dw ();//disable bitmap
 
-//This will disable the actual datawindow containing the bitmaps
-//The text will be grayed so as to visually simulate the dis-enabled datawindow
-dw_bitmap.enabled = false
+//The bitmap list stays enabled so the user can see the choices; picking a bitmap switches to the
+//Picture indicator. Gray text shows that the bitmap is not the current indicator.
 dw_bitmap.Object.bitmapname.color = ' 8421504'  // Gray
 end subroutine
 
@@ -200,7 +199,6 @@ integer y = 180
 integer width = 837
 integer height = 180
 integer taborder = 40
-boolean enabled = false
 string dataobject = "d_bitmap_dddw"
 boolean border = false
 boolean livescroll = true
@@ -215,8 +213,13 @@ ls_filename = dw_bitmap.GetText( )
 //Set a hidden picture to use the bitmap that has been selected
 p_1.picturename = ls_filename
 
-//Local window function to change to appropriate indicator
-wf_set_row_focus_indicator ()
+//Picking a bitmap selects the Picture indicator; otherwise just refresh the indicator
+If rb_pic.Checked Then
+	wf_set_row_focus_indicator ()
+Else
+	rb_pic.Checked = True
+	rb_pic.Event Clicked()
+End If
 end on
 
 type rb_right from radiobutton within w_setrowfocus
@@ -419,7 +422,7 @@ wf_set_row_focus_indicator ( )
 dw_bitmap.Enabled = True
 
 //The Text must visiually appear enabled because these are elements in a datawindow
-dw_bitmap.Object.bitmapname.color = '0'  // Black
+dw_bitmap.Object.bitmapname.color = '33554432'  // Window text (follows the theme)
 
 //enable left and right radio buttons for this type of selection
 rb_left.Enabled = True

@@ -18,6 +18,8 @@ type cb_add from commandbutton within w_add_sales_order
 end type
 type dw_order from datawindow within w_add_sales_order
 end type
+type p_rowfocus from picture within w_add_sales_order
+end type
 end forward
 
 global type w_add_sales_order from w_center
@@ -36,6 +38,7 @@ cb_update cb_update
 cb_prod cb_prod
 cb_add cb_add
 dw_order dw_order
+p_rowfocus p_rowfocus
 end type
 global w_add_sales_order w_add_sales_order
 
@@ -108,6 +111,7 @@ this.cb_update=create cb_update
 this.cb_prod=create cb_prod
 this.cb_add=create cb_add
 this.dw_order=create dw_order
+this.p_rowfocus=create p_rowfocus
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.cb_help
 this.Control[iCurrent+2]=this.cb_del
@@ -117,10 +121,12 @@ this.Control[iCurrent+5]=this.cb_update
 this.Control[iCurrent+6]=this.cb_prod
 this.Control[iCurrent+7]=this.cb_add
 this.Control[iCurrent+8]=this.dw_order
+this.Control[iCurrent+9]=this.p_rowfocus
 end on
 
 on w_add_sales_order.destroy
 call super::destroy
+destroy(this.p_rowfocus)
 destroy(this.cb_help)
 destroy(this.cb_del)
 destroy(this.dw_items)
@@ -401,3 +407,10 @@ event itemchanged;ib_Changed = True
 
 end event
 
+type p_rowfocus from picture within w_add_sales_order
+boolean visible = false
+integer width = 101
+integer height = 80
+string picturename = "images\arrow_right.svg"
+boolean focusrectangle = false
+end type

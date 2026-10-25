@@ -91,6 +91,7 @@ string       is_str_syntax
 string	is_file_ext=".srs"
 string       is_comment
 string       is_prefix="str"
+boolean      ib_folder_lib   // True when is_lib is a solution library folder (one .srd file per DataWindow)
 
 end variables
 
@@ -99,6 +100,8 @@ public function integer of_save_syntax ()
 public function integer of_create_structure_export ()
 public function integer of_create_auto_nvo_export ()
 public function integer of_set_new (integer ai_index)
+public function integer of_load_folder_library (string as_folder)
+public function string of_folder_export (string as_dw)
 end prototypes
 
 public function integer of_save_syntax ();int		li_file_handle
@@ -282,7 +285,11 @@ is_struct_name = mid(ls_dw, (pos(ls_dw,"_") +1))
 is_prefix = sle_prefix.text
 
 // create the DataWindow
-ls_syntax = LibraryExport(is_lib, ls_dw, ExportDataWindow!)
+If ib_folder_lib Then
+	ls_syntax = of_folder_export(ls_dw)
+Else
+	ls_syntax = LibraryExport(is_lib, ls_dw, ExportDataWindow!)
+End If
 if ids_create.create(ls_syntax) < 0 then
 	messagebox("Syntax Error", "Error creating DataWindow.")
 	return -1
@@ -311,6 +318,48 @@ next
 
 return 1
 
+end function
+
+public function integer of_load_folder_library (string as_folder);// Lists the DataWindows of a solution library folder: one d_*.srd source file per DataWindow.
+// The comment is the "//objectcomments" first line of the source file.
+Integer	li_i, li_count, li_file
+Long		ll_row
+String	ls_name, ls_line
+
+ddlb_1.Reset()
+If ddlb_1.DirList(as_folder + "\*.srd", 0) <> True Then Return -1
+li_count = ddlb_1.TotalItems()
+For li_i = 1 To li_count
+	ls_name = ddlb_1.Text(li_i)
+	ll_row = ids_lib_string.InsertRow(0)
+	ids_lib_string.Object.name[ll_row] = Left(ls_name, Len(ls_name) - 4)
+	li_file = FileOpen(as_folder + "\" + ls_name, LineMode!, Read!, Shared!)
+	If li_file > 0 Then
+		If FileRead(li_file, ls_line) > 0 Then
+			If Left(ls_line, 17) = "//objectcomments " Then ids_lib_string.Object.comments[ll_row] = Mid(ls_line, 18)
+		End If
+		FileClose(li_file)
+	End If
+Next
+ddlb_1.Reset()
+Return ids_lib_string.RowCount()
+end function
+
+public function string of_folder_export (string as_dw);// Returns the syntax of DataWindow as_dw from its source file in the library folder is_lib,
+// without the leading comment lines, like LibraryExport does for a PBL.
+Integer	li_file
+String	ls_line, ls_syntax
+Boolean	lb_header = True
+
+li_file = FileOpen(is_lib + "\" + as_dw + ".srd", LineMode!, Read!, Shared!)
+If li_file < 0 Then Return ""
+Do While FileReadEx(li_file, ls_line) >= 0
+	If lb_header And Left(ls_line, 2) = "//" Then Continue
+	lb_header = False
+	ls_syntax += ls_line + "~r~n"
+Loop
+FileClose(li_file)
+Return ls_syntax
 end function
 
 on w_dwtostr.create
@@ -828,13 +877,20 @@ if Trim(This.Text) <> "" THEN
 	ddlb_1.reset( )
 	mle_comment.text = ""
 	
-	ls_objects = LibraryDirectory ( This.Text, dirdatawindow!)
 	If IsNull(This.Text) Or Trim(This.Text) = "" THEN return
-	
 	is_lib = This.Text
+	ib_folder_lib = DirectoryExists(is_lib)
+	If ib_folder_lib Then
+		// Solution library: a folder with one source file per DataWindow
+		of_load_folder_library(is_lib)
+		ls_objects = ""
+	Else
+		ls_objects = LibraryDirectory ( This.Text, dirdatawindow!)
+	End If
 	
-	if ls_objects <> "" THEN
-		ids_lib_string.importstring(ls_objects)
+	
+	if ls_objects <> "" THEN ids_lib_string.importstring(ls_objects)
+	if ids_lib_string.RowCount() > 0 THEN
 		ids_lib_string.sort()
 		li_count = ids_lib_string.rowcount()
 		// add datawindow to list box
@@ -888,8 +944,12 @@ end type
 
 event clicked;string ls_file, ls_path
 
-GetFileOpenName ( "Select Library to Open", ls_path, ls_file, "PBL",&
-"Library Files (*.pbl),*.pbl")  
+// A workspace library is a .pbl file. A solution library is a folder ending in .pbl that holds one source file
+// per object and a .pblmeta file; selecting the .pblmeta file opens that folder.
+If GetFileOpenName ( "Select Library to Open", ls_path, ls_file, "PBL",&
+	"Libraries (*.pbl;*.pblmeta),*.pbl;*.pblmeta,Workspace libraries (*.pbl),*.pbl,Solution libraries (*.pblmeta),*.pblmeta") <> 1 Then Return
+
+If Lower(Right(ls_path, 9)) = ".pblmeta" Then ls_path = Left(ls_path, Len(ls_path) - Len(ls_file) - 1)
 
 sle_lib.text = ls_path
 sle_lib.post event modified()

@@ -10,6 +10,8 @@ type st_col_status from statictext within w_item_status
 end type
 type st_bar from statictext within w_item_status
 end type
+type p_rowfocus from picture within w_item_status
+end type
 end forward
 
 global type w_item_status from w_center
@@ -31,6 +33,7 @@ st_label st_label
 dw_1 dw_1
 st_col_status st_col_status
 st_bar st_bar
+p_rowfocus p_rowfocus
 end type
 global w_item_status w_item_status
 
@@ -379,15 +382,18 @@ this.st_label=create st_label
 this.dw_1=create dw_1
 this.st_col_status=create st_col_status
 this.st_bar=create st_bar
+this.p_rowfocus=create p_rowfocus
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.st_label
 this.Control[iCurrent+2]=this.dw_1
 this.Control[iCurrent+3]=this.st_col_status
 this.Control[iCurrent+4]=this.st_bar
+this.Control[iCurrent+5]=this.p_rowfocus
 end on
 
 on w_item_status.destroy
 call super::destroy
+destroy(this.p_rowfocus)
 if IsValid(MenuID) then destroy(MenuID)
 destroy(this.st_label)
 destroy(this.dw_1)
@@ -605,3 +611,10 @@ borderstyle borderstyle = stylelowered!
 boolean focusrectangle = false
 end type
 
+type p_rowfocus from picture within w_item_status
+boolean visible = false
+integer width = 101
+integer height = 80
+string picturename = "images\arrow_right.svg"
+boolean focusrectangle = false
+end type

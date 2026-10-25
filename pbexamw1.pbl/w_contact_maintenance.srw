@@ -22,7 +22,8 @@ dw_contact dw_contact
 end type
 global w_contact_maintenance w_contact_maintenance
 
-event open;call super::open;dw_contact.SetTransObject(sqlca)
+event open;call super::open;f_dw_theme_buttons(dw_contact)
+dw_contact.SetTransObject(sqlca)
 dw_contact.Retrieve()
 
 end event

@@ -1,0 +1,41 @@
+﻿//objectcomments Gives a DataWindow's buttons a dark face when a dark theme is active
+global type f_dw_theme_buttons from function_object
+end type
+
+forward prototypes
+global function integer f_dw_theme_buttons (datawindow adw_target)
+end prototypes
+
+global function integer f_dw_theme_buttons (datawindow adw_target);//////////////////////////////////////////////////////////////////////
+//
+// Function: f_dw_theme_buttons
+//
+// Purpose: the application theme draws window controls, but the buttons
+//				inside a DataWindow keep a light button face.  With a dark
+//				theme, give them a dark face and light text to match.
+//
+//	Arguments: adw_target	the DataWindow whose buttons to restyle
+//
+//	Returns:  the number of buttons changed (0 with a light theme)
+//
+//////////////////////////////////////////////////////////////////////
+String	ls_Objects, ls_Object, ls_Modify
+Integer	li_Pos, li_Count
+
+If Pos(Lower(GetTheme()), "dark") = 0 Then Return 0
+
+ls_Objects = adw_target.Describe("DataWindow.Objects") + "~t"
+Do While ls_Objects <> ""
+	li_Pos = Pos(ls_Objects, "~t")
+	ls_Object = Left(ls_Objects, li_Pos - 1)
+	ls_Objects = Mid(ls_Objects, li_Pos + 1)
+	If ls_Object <> "" And adw_target.Describe(ls_Object + ".Type") = "button" Then
+		ls_Modify += ls_Object + ".Background.Mode='0' " + ls_Object + ".Background.Color='" + String(RGB(64, 64, 64)) + "' " + &
+			ls_Object + ".Color='" + String(RGB(230, 230, 230)) + "' "
+		li_Count++
+	End If
+Loop
+If ls_Modify <> "" Then adw_target.Modify(ls_Modify)
+Return li_Count
+end function
+

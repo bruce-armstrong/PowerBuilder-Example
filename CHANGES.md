@@ -42,6 +42,7 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
 - Help now works when the examples are run from the IDE.
   - `f_open_help` builds the full path from `gs_ExampleDir` instead of passing the bare file name.
   - Before, the bare name was looked up in the IDE's directory.
+- The 16-colour help images were replaced: every topic's Code Examples picture (`exhelp.png`) is the application tile icon, and the new/enhanced/settings markers use the app's Fluent icons. The unused Sybase logo was removed and the stylesheet renamed from `sybase.css` to `examples.css`.
 
 ## User interface
 
@@ -70,8 +71,9 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
     - The database isn't changed; a product without a redrawn picture still shows its bitmap. The PowerClient and PowerServer projects deploy the new images.
   - The example menus' toolbars (DataWindow Buffers, Item Status, Presentation Styles, Nested Reports, Dynamic User Objects, the Dynamic SQL, graph, notepad, OLE and toolbar examples, and others) used PowerBuilder's built-in toolbar pictures. All 171 now use Fluent SVG icons.
   - DataWindow buttons that showed the default action pictures (Contact Maintenance's scroll buttons, Report With DataWindow Buttons) now have Fluent SVGs. The report's button bar no longer paints a silver strip.
-  - Row pointers (`indicatr.bmp`, `indicat2.bmp`) in Conditional Bitmaps, Nested Reports, Row Focus Indicators and the customer picker are now Fluent arrows. The directory tree's connector bitmaps are SVGs (`images\tree_*.svg`), and its tab pages and the About box use SVGs instead of built-in pictures and `exampl.bmp`.
-  - The examples that point at the current row with PowerBuilder's built-in Hand! (Item Status, Add and Update Sales Order, Menu Functions, Undelete Row) use a Fluent arrow instead. It is a hidden picture control, `p_rowfocus`, in their ancestor `w_center`. Row Focus Indicators still offers Hand!, since it demonstrates the built-in choices.
+  - Row pointers (`indicatr.bmp`, `indicat2.bmp`) in Conditional Bitmaps, Nested Reports, Row Focus Indicators and the customer picker are now Fluent arrows. The directory tree's connector bitmaps are SVGs (`images\tree_*.svg`) and its tab pages use SVGs instead of built-in pictures. Both About boxes show the application icon (`pbex.ico`) instead of `exampl.bmp`.
+  - The examples that point at the current row with PowerBuilder's built-in Hand! (Item Status, Add and Update Sales Order, Menu Functions, Undelete Row) use a Fluent arrow instead: a hidden picture control, `p_rowfocus`, in each of those windows. Row Focus Indicators still offers Hand!, since it demonstrates the built-in choices.
+    - The picture was first added to their common ancestor `w_center`. That is also the ancestor of the MDI frame examples, and an MDI frame with controls of its own no longer sizes its MDI client, so Data Manager, DataWindow Buffers, Presentation Styles, Nested Reports and Dynamic User Objects showed an empty frame. Fixed by moving the picture into the five windows.
   - `pbex.ico`, `tutorial.ico`, `emp.ico`, `row.ico` and `rows.ico` are now multi-image icons with images from 16 to 256 px.
   - Fixed the search tree's picture list, which was one icon off from "DataWindows - Updating" onwards.
 - Files the examples no longer use were moved to `_archive\`. The PowerClient and PowerServer project file lists were updated to match.
@@ -90,6 +92,12 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
 - **Graphs:**
   - Every graph uses Segoe UI instead of the bitmap font MS Sans Serif, has a white background, and uses a flat type instead of a 3D one.
   - Graphs using Shared DataWindows shows its three graphs without the classic caption bars; the captions are the graph titles.
+- **Example fixes:**
+  - DataWindow buttons aren't drawn by the theme. The new `f_dw_theme_buttons` gives a DataWindow's buttons a dark face and light text when a dark theme is active; Report With DataWindow Buttons and Contact Maintenance call it. Picture buttons still get a light frame from PowerBuilder.
+  - DataWindow Query Painter: the Selected Columns grid shows a blank DataWindow in the themed window colour until columns are chosen, instead of a white square.
+  - Row Focus Indicators: the bitmap list is always enabled; picking a bitmap switches to the Picture indicator.
+  - Query Mode: Retrieve accepts the criteria still being typed (`AcceptText`) before it retrieves.
+  - DataWindow to Structure: Select PBL also accepts a solution library (the `.pblmeta` file in a library folder); the DataWindows are listed from the folder's `.srd` files and read from their source.
 - **Sliding-picture puzzle:** the 25 tiles were slices of the Powersoft logo. The puzzle, its solution thumbnail and the Zip example now use a new landscape picture drawn for it, `images\puzzle\puzzle.png`, cut into `tile11.png` to `tile55.png` at 2x resolution. The old bitmaps are in `_archive\`.
 - **RTE DataWindow Mail Merge:** the letterhead has Appeon's logo and mailing address (Appeon Inc., 425 1st Street, Unit 1507, San Francisco, CA 94105) instead of Powersoft's.
 
@@ -134,4 +142,5 @@ The examples were written for the SQL Anywhere demo database. They now also work
 | 2026-10-25 | `49bcadc` | Mark the MAPI mail examples as deprecated |
 | 2026-10-25 | `041e5a3` | Add CHANGES.md describing all changes since the fork |
 | 2026-10-25 | `c32b2d9` | Redraw product pictures and toolbar icons, fix DataWindow colours in the dark theme, flatten the graphs, and rebrand the mail-merge letter |
-| 2026-10-25 | (pending) | Replace the Powersoft logo puzzle with new artwork |
+| 2026-10-25 | `e46d622` | Replace the Powersoft logo puzzle with new artwork |
+| 2026-10-25 | (pending) | Fix the blank MDI frames, darker DataWindow buttons, and example fixes |

@@ -2,8 +2,6 @@
 forward
 global type w_center from window
 end type
-type p_rowfocus from picture within w_center
-end type
 end forward
 
 global type w_center from window
@@ -17,7 +15,6 @@ boolean maxbox = true
 boolean resizable = true
 long backcolor = 67108864
 event ue_setflag ( )
-p_rowfocus p_rowfocus
 end type
 global w_center w_center
 
@@ -85,12 +82,9 @@ Return 1
 end function
 
 on w_center.create
-this.p_rowfocus=create p_rowfocus
-this.Control[]={this.p_rowfocus}
 end on
 
 on w_center.destroy
-destroy(this.p_rowfocus)
 end on
 
 event open;//Commment this code for the add DynamicTab Control in the main window on 2022/10/13.
@@ -121,10 +115,3 @@ end if
 
 end event
 
-type p_rowfocus from picture within w_center
-boolean visible = false
-integer width = 101
-integer height = 80
-string picturename = "images\arrow_right.svg"
-boolean focusrectangle = false
-end type

@@ -22,6 +22,8 @@ type gb_2 from groupbox within w_menu_functions
 end type
 type gb_1 from groupbox within w_menu_functions
 end type
+type p_rowfocus from picture within w_menu_functions
+end type
 end forward
 
 global type w_menu_functions from w_center
@@ -50,6 +52,7 @@ rb_alt_menu rb_alt_menu
 gb_toolbar gb_toolbar
 gb_2 gb_2
 gb_1 gb_1
+p_rowfocus p_rowfocus
 end type
 global w_menu_functions w_menu_functions
 
@@ -631,6 +634,7 @@ this.rb_alt_menu=create rb_alt_menu
 this.gb_toolbar=create gb_toolbar
 this.gb_2=create gb_2
 this.gb_1=create gb_1
+this.p_rowfocus=create p_rowfocus
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.dw_3
 this.Control[iCurrent+2]=this.dw_2
@@ -642,10 +646,12 @@ this.Control[iCurrent+7]=this.rb_alt_menu
 this.Control[iCurrent+8]=this.gb_toolbar
 this.Control[iCurrent+9]=this.gb_2
 this.Control[iCurrent+10]=this.gb_1
+this.Control[iCurrent+11]=this.p_rowfocus
 end on
 
 on w_menu_functions.destroy
 call super::destroy
+destroy(this.p_rowfocus)
 if IsValid(MenuID) then destroy(MenuID)
 destroy(this.dw_3)
 destroy(this.dw_2)
@@ -1140,3 +1146,10 @@ long backcolor = 74481808
 string text = "Current Menu"
 end type
 
+type p_rowfocus from picture within w_menu_functions
+boolean visible = false
+integer width = 101
+integer height = 80
+string picturename = "images\arrow_right.svg"
+boolean focusrectangle = false
+end type

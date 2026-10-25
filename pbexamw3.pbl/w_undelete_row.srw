@@ -16,6 +16,8 @@ type cb_apply from commandbutton within w_undelete_row
 end type
 type dw_1 from datawindow within w_undelete_row
 end type
+type p_rowfocus from picture within w_undelete_row
+end type
 end forward
 
 global type w_undelete_row from w_center
@@ -33,6 +35,7 @@ cb_delete cb_delete
 cb_retrieve cb_retrieve
 cb_apply cb_apply
 dw_1 dw_1
+p_rowfocus p_rowfocus
 end type
 global w_undelete_row w_undelete_row
 
@@ -60,6 +63,7 @@ this.cb_delete=create cb_delete
 this.cb_retrieve=create cb_retrieve
 this.cb_apply=create cb_apply
 this.dw_1=create dw_1
+this.p_rowfocus=create p_rowfocus
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.cb_help
 this.Control[iCurrent+2]=this.cb_undelete
@@ -68,10 +72,12 @@ this.Control[iCurrent+4]=this.cb_delete
 this.Control[iCurrent+5]=this.cb_retrieve
 this.Control[iCurrent+6]=this.cb_apply
 this.Control[iCurrent+7]=this.dw_1
+this.Control[iCurrent+8]=this.p_rowfocus
 end on
 
 on w_undelete_row.destroy
 call super::destroy
+destroy(this.p_rowfocus)
 destroy(this.cb_help)
 destroy(this.cb_undelete)
 destroy(this.cb_close)
@@ -295,3 +301,10 @@ cb_undelete.enabled = false
 
 end on
 
+type p_rowfocus from picture within w_undelete_row
+boolean visible = false
+integer width = 101
+integer height = 80
+string picturename = "images\arrow_right.svg"
+boolean focusrectangle = false
+end type

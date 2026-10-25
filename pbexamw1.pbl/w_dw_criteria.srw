@@ -82,6 +82,9 @@ end subroutine
 
 public subroutine wf_dw_retrieve_mode ();// Retrieve from Criteria
 
+// Accept the criteria still being typed in the edit control (the user may not have tabbed out of it)
+dw_1.AcceptText ()
+
 // Don't redraw until retrieval is finished
 dw_1.SetRedraw (FALSE)
 

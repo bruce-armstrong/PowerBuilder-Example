@@ -22,7 +22,8 @@ dw_1 dw_1
 end type
 global w_button_report w_button_report
 
-event open;call super::open;dw_1.SetTransObject(sqlca)
+event open;call super::open;f_dw_theme_buttons(dw_1)
+dw_1.SetTransObject(sqlca)
 dw_1.Retrieve()
 
 end event

@@ -16,6 +16,8 @@ type dw_items from datawindow within w_update_sales_order
 end type
 type dw_order from datawindow within w_update_sales_order
 end type
+type p_rowfocus from picture within w_update_sales_order
+end type
 end forward
 
 global type w_update_sales_order from w_center
@@ -32,6 +34,7 @@ cb_delete cb_delete
 cb_add cb_add
 dw_items dw_items
 dw_order dw_order
+p_rowfocus p_rowfocus
 end type
 global w_update_sales_order w_update_sales_order
 
@@ -125,6 +128,7 @@ this.cb_delete=create cb_delete
 this.cb_add=create cb_add
 this.dw_items=create dw_items
 this.dw_order=create dw_order
+this.p_rowfocus=create p_rowfocus
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.cb_help
 this.Control[iCurrent+2]=this.cb_close
@@ -133,10 +137,12 @@ this.Control[iCurrent+4]=this.cb_delete
 this.Control[iCurrent+5]=this.cb_add
 this.Control[iCurrent+6]=this.dw_items
 this.Control[iCurrent+7]=this.dw_order
+this.Control[iCurrent+8]=this.p_rowfocus
 end on
 
 on w_update_sales_order.destroy
 call super::destroy
+destroy(this.p_rowfocus)
 destroy(this.cb_help)
 destroy(this.cb_close)
 destroy(this.cb_save)
@@ -354,3 +360,10 @@ End If
 
 end event
 
+type p_rowfocus from picture within w_update_sales_order
+boolean visible = false
+integer width = 101
+integer height = 80
+string picturename = "images\arrow_right.svg"
+boolean focusrectangle = false
+end type
