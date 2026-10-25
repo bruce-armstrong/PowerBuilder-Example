@@ -32,7 +32,17 @@ m_exit m_exit
 end type
 type m_run from menu within m_main
 end type
+type m_runexample from menu within m_run
+end type
+type m_run from menu within m_main
+m_runexample m_runexample
+end type
 type m_0 from menu within m_main
+end type
+type m_appsettings from menu within m_0
+end type
+type m_0 from menu within m_main
+m_appsettings m_appsettings
 end type
 type m_help from menu within m_main
 end type
@@ -187,6 +197,8 @@ end event
 
 on m_printreport.create
 call super::create
+this.buttonimage = "images\example_report.svg"
+this.menuimage = "images\example_report.svg"
 this.text = "Example &Report"
 this.toolbaritemvisible = false
 this.menutextcolor = 134217735
@@ -254,6 +266,8 @@ end event
 
 on m_expandall.create
 call super::create
+this.buttonimage = "images\expand_all.svg"
+this.menuimage = "images\expand_all.svg"
 this.text = "&Expand All"
 this.toolbaritemvisible = false
 this.menutextcolor = 134217735
@@ -294,6 +308,8 @@ end event
 
 on m_collapseall.create
 call super::create
+this.buttonimage = "images\collapse_all.svg"
+this.menuimage = "images\collapse_all.svg"
 this.text = "&Collapse All"
 this.menutextcolor = 134217735
 this.menubackcolor = 134217732
@@ -352,6 +368,8 @@ end event
 
 on m_changedatabaseconnection.create
 call super::create
+this.buttonimage = "images\database_connection.svg"
+this.menuimage = "images\database_connection.svg"
 this.text = "Change &Database Connection..."
 this.menutextcolor = 134217735
 this.menubackcolor = 134217732
@@ -406,6 +424,8 @@ end type
 
 on m_exit.create
 call super::create
+this.buttonimage = "images\exit.svg"
+this.menuimage = "images\exit.svg"
 this.text = "E&xit"
 this.toolbaritemvisible = false
 this.menuitemtype = menuitemtypeexit!
@@ -436,11 +456,12 @@ call super::destroy
 end on
 
 type m_run from menu within m_main
+m_runexample m_runexample
 end type
 
 on m_run.create
 call super::create
-this.text = "Run!"
+this.text = "&Run"
 this.toolbaritemvisible = false
 this.toolbaritemorder = 3
 this.menutextcolor = 134217735
@@ -458,21 +479,55 @@ this.toolbarbackcolor = 67108864
 this.toolbarhighlightcolor = 134217741
 this.toolbargradient = true
 this.bitmapgradient = true
+this.m_runexample=create m_runexample
+this.Item[UpperBound(this.Item)+1]=this.m_runexample
 end on
 
 on m_run.destroy
 call super::destroy
+destroy(this.m_runexample)
+end on
+
+type m_runexample from menu within m_run
+end type
+
+on m_runexample.create
+call super::create
+this.buttonimage = "images\run_example.svg"
+this.menuimage = "images\run_example.svg"
+this.text = "&Run Selected Example"
+this.microhelp = "Runs the example selected in the list"
+this.toolbaritemvisible = false
+this.buttonimagesize = 1
+this.paneltext = "Examples"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = -10
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
 end on
 
 event clicked;ParentWindow.Dynamic Post of_run_window("")
 
 end event
 
-type m_0 from menu within m_main
-end type
+on m_runexample.destroy
+call super::destroy
+end on
 
-event clicked;Open(w_settings)
-end event
+type m_0 from menu within m_main
+m_appsettings m_appsettings
+end type
 
 on m_0.create
 call super::create
@@ -492,9 +547,48 @@ this.toolbarbackcolor = 67108864
 this.toolbarhighlightcolor = 134217741
 this.toolbargradient = true
 this.bitmapgradient = true
+this.m_appsettings=create m_appsettings
+this.Item[UpperBound(this.Item)+1]=this.m_appsettings
 end on
 
 on m_0.destroy
+call super::destroy
+destroy(this.m_appsettings)
+end on
+
+type m_appsettings from menu within m_0
+end type
+
+on m_appsettings.create
+call super::create
+this.buttonimage = "images\settings.svg"
+this.menuimage = "images\settings.svg"
+this.text = "&Settings..."
+this.microhelp = "Changes the theme and other Code Examples settings"
+this.toolbaritemvisible = false
+this.buttonimagesize = 1
+this.paneltext = "Application"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = -10
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+event clicked;Open(w_settings)
+end event
+
+on m_appsettings.destroy
 call super::destroy
 end on
 
@@ -570,6 +664,8 @@ end event
 
 on m_contents.create
 call super::create
+this.buttonimage = "images\help_contents.svg"
+this.menuimage = "images\help_contents.svg"
 this.text = "&Contents~tF1"
 this.shortcut = 112
 this.menutextcolor = 134217735
@@ -625,6 +721,8 @@ end type
 
 on m_frontendhelp.create
 call super::create
+this.buttonimage = "images\help_front_end.svg"
+this.menuimage = "images\help_front_end.svg"
 this.text = "&Using the Code Examples"
 this.menutextcolor = 134217735
 this.menubackcolor = 134217732
@@ -656,6 +754,8 @@ end type
 
 on m_currentexample.create
 call super::create
+this.buttonimage = "images\help_example.svg"
+this.menuimage = "images\help_example.svg"
 this.text = "Current &Example Help~tShift+F1"
 this.shortcut = 1136
 this.toolbaritemvisible = false
@@ -722,6 +822,8 @@ end type
 
 on m_about.create
 call super::create
+this.buttonimage = "images\about.svg"
+this.menuimage = "images\about.svg"
 this.text = "&About"
 this.menuitemtype = menuitemtypeabout!
 this.menutextcolor = 134217735

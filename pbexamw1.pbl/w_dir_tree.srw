@@ -112,10 +112,10 @@ Choose Case ge_Environment.OSType
 		
 	Case Else
 		// Add the Picture List Box pictures
-		ddplb_drive.AddPicture("diskdriv.bmp")
-		ddplb_drive.AddPicture("harddriv.bmp")
-		ddplb_drive.AddPicture("netdriv.bmp")
-		ddplb_drive.AddPicture("cdrom.bmp")
+		ddplb_drive.AddPicture("images\drive_removable.svg")
+		ddplb_drive.AddPicture("images\drive_hard.svg")
+		ddplb_drive.AddPicture("images\drive_network.svg")
+		ddplb_drive.AddPicture("images\drive_cd.svg")
 		
 		// Copy the drive choices to the ddlb
 		li_Drives = lb_file.TotalItems()
@@ -252,8 +252,8 @@ If tab_dir.SelectedTab = 1 Then
 	ll_NewItem = tab_dir.tabpage_dw.dw_1.Insertrow(0)
 	tab_dir.tabpage_dw.dw_1.Object.fullname[ll_NewItem] = as_Path
 	tab_dir.tabpage_dw.dw_1.Object.name[ll_NewItem] = as_FileName
-	tab_dir.tabpage_dw.dw_1.Object.bmpname[ll_NewItem] = "folder.bmp"
-	tab_dir.tabpage_dw.dw_1.Object.selectedbmpname[ll_NewItem] = "foldopen.bmp"
+	tab_dir.tabpage_dw.dw_1.Object.bmpname[ll_NewItem] = "images\folder.svg"
+	tab_dir.tabpage_dw.dw_1.Object.selectedbmpname[ll_NewItem] = "images\folder_open.svg"
 	tab_dir.tabpage_dw.dw_1.Object.selected[ll_NewItem] = 0
 	tab_dir.tabpage_dw.dw_1.Object.open[ll_NewItem] = 0
 	tab_dir.tabpage_dw.dw_1.Object.children[ll_NewItem] = 0
@@ -369,7 +369,7 @@ If al_Handle <= 0 Then Return ""
 
 tab_dir.tabpage_tv.tv_1.GetItem(al_Handle, ltvi_Item)
 
-ls_Return = " ~t" + ltvi_Item.Label + "~t" + "folder.bmp" + "~t" + "foldopen.bmp"
+ls_Return = " ~t" + ltvi_Item.Label + "~t" + "images\folder.svg" + "~t" + "images\folder_open.svg"
 If ltvi_Item.Selected Then
 	ls_Return = ls_Return + "~t1"
 Else

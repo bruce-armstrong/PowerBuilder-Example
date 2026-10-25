@@ -1,4 +1,4 @@
-﻿//objectcomments PB 8 - New File Functions
+﻿//objectcomments File Functions
 forward
 global type w_runtime_filefunctions from w_center
 end type

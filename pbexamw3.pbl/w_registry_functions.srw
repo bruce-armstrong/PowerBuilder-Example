@@ -392,8 +392,8 @@ ListViewView View=ListViewReport!
 int LargePictureWidth=32
 int LargePictureHeight=32
 long LargePictureMaskColor=12632256
-string SmallPictureName[]={"icostr.bmp",&
-"iconum.bmp"}
+string SmallPictureName[]={"images\reg_string.svg",&
+"images\reg_number.svg"}
 int SmallPictureWidth=16
 int SmallPictureHeight=16
 long SmallPictureMaskColor=12632256

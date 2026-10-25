@@ -65,6 +65,12 @@ choose case Upper(Left(sqlca.dbms,3) )
 				+ "' and PBC_OWNR = '" + sqlca.logid &
 				+ "' order by 1 ASC"
 
+	case "MSO", "SNC", "OLE", "ADO"	// Microsoft SQL Server (MSOLEDBSQL, Native Client, OLE DB, ADO.NET)
+		ls_sql = "SELECT COLUMN_NAME, CAST('' AS varchar(254)) " &
+				+ "FROM INFORMATION_SCHEMA.COLUMNS " &
+				+ "WHERE TABLE_NAME = '" + as_tablename &
+				+ "' order by ORDINAL_POSITION ASC"
+
 end choose
 
 if Len(ls_sql) > 0 then

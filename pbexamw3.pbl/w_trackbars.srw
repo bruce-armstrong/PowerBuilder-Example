@@ -1,4 +1,4 @@
-﻿//objectcomments PB 7 Track Bar Controls
+﻿//objectcomments Track Bar Controls
 forward
 global type w_trackbars from w_center
 end type

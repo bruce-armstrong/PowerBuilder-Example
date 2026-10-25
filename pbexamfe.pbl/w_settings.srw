@@ -13,6 +13,8 @@ type st_theme from statictext within w_settings
 end type
 type cbx_enable_autoresize from checkbox within w_settings
 end type
+type cbx_ribbonbar from checkbox within w_settings
+end type
 type cb_close from commandbutton within w_settings
 end type
 type cb_save from commandbutton within w_settings
@@ -23,7 +25,7 @@ end forward
 
 global type w_settings from w_center
 integer width = 2034
-integer height = 1652
+integer height = 1780
 string title = "Settings"
 boolean minbox = false
 boolean maxbox = false
@@ -35,6 +37,7 @@ ddlb_1 ddlb_1
 ddlb_theme ddlb_theme
 st_theme st_theme
 cbx_enable_autoresize cbx_enable_autoresize
+cbx_ribbonbar cbx_ribbonbar
 cb_close cb_close
 cb_save cb_save
 gb_settings gb_settings
@@ -46,6 +49,7 @@ String 		is_inifile = "exampleapp.ini"
 String 		is_theme
 String 		is_theme_path
 Boolean	ib_enableautoresize
+Boolean	ib_ribbonbar
 
 end variables
 
@@ -88,6 +92,7 @@ this.cbx_enable_autoresize=create cbx_enable_autoresize
 this.cb_close=create cb_close
 this.cb_save=create cb_save
 this.gb_settings=create gb_settings
+this.cbx_ribbonbar=create cbx_ribbonbar
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.st_autosize1
 this.Control[iCurrent+2]=this.st_autosize
@@ -98,6 +103,7 @@ this.Control[iCurrent+6]=this.cbx_enable_autoresize
 this.Control[iCurrent+7]=this.cb_close
 this.Control[iCurrent+8]=this.cb_save
 this.Control[iCurrent+9]=this.gb_settings
+this.Control[iCurrent+10]=this.cbx_ribbonbar
 end on
 
 on w_settings.destroy
@@ -111,6 +117,7 @@ destroy(this.cbx_enable_autoresize)
 destroy(this.cb_close)
 destroy(this.cb_save)
 destroy(this.gb_settings)
+destroy(this.cbx_ribbonbar)
 end on
 
 event open;call super::open;String ls_theme, ls_enableautoresize
@@ -131,6 +138,9 @@ is_theme = ls_theme
 cbx_enable_autoresize.checked = gb_resize
 ib_enableautoresize = gb_resize
 
+ib_ribbonbar = (ProfileString(gs_CurrentDirectory + "\" + is_inifile, "Application", "RibbonBar", "1") = "1")
+cbx_ribbonbar.checked = ib_ribbonbar
+
 This.SetRedraw(True)
 
 
@@ -138,7 +148,7 @@ end event
 
 type st_autosize1 from statictext within w_settings
 integer x = 293
-integer y = 1024
+integer y = 1152
 integer width = 1618
 integer height = 212
 integer textsize = -12
@@ -155,7 +165,7 @@ end type
 
 type st_autosize from statictext within w_settings
 integer x = 293
-integer y = 576
+integer y = 704
 integer width = 1618
 integer height = 448
 integer textsize = -12
@@ -225,7 +235,7 @@ end type
 type cbx_enable_autoresize from checkbox within w_settings
 string tag = "Enable automatic resizing for all windows"
 integer x = 293
-integer y = 448
+integer y = 576
 integer width = 1426
 integer height = 96
 integer textsize = -12
@@ -240,9 +250,27 @@ string text = "Enable automatic resizing for all windows"
 boolean lefttext = true
 end type
 
+type cbx_ribbonbar from checkbox within w_settings
+string tag = "Display the menu as a ribbon bar"
+integer x = 562
+integer y = 296
+integer width = 1426
+integer height = 96
+integer taborder = 30
+integer textsize = -12
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Segoe UI"
+long textcolor = 33554432
+long backcolor = 67108864
+string text = "Display the menu as a ribbon bar"
+end type
+
 type cb_close from commandbutton within w_settings
 integer x = 1102
-integer y = 1368
+integer y = 1496
 integer width = 421
 integer height = 120
 integer taborder = 20
@@ -260,7 +288,7 @@ end event
 
 type cb_save from commandbutton within w_settings
 integer x = 480
-integer y = 1368
+integer y = 1496
 integer width = 421
 integer height = 120
 integer taborder = 20
@@ -277,6 +305,16 @@ event clicked;String 			ls_msg, ls_theme, ls_enableautoresize
 Int 				li_ret, li_flag = 0 
 Boolean		lb_enable
 
+// The ribbon bar can be switched without restarting
+If cbx_ribbonbar.checked <> ib_ribbonbar Then
+	If cbx_ribbonbar.checked Then
+		SetProfileString(gs_CurrentDirectory + "\" + is_inifile, "Application", "RibbonBar", "1")
+	Else
+		SetProfileString(gs_CurrentDirectory + "\" + is_inifile, "Application", "RibbonBar", "0")
+	End If
+	ib_ribbonbar = cbx_ribbonbar.checked
+	If IsValid(w_main) Then w_main.Dynamic of_set_ribbonbar(ib_ribbonbar)
+End If
 
 If cbx_enable_autoresize.checked <> ib_enableautoresize Then
 	li_flag += 1
@@ -328,7 +366,7 @@ end event
 
 type gb_settings from groupbox within w_settings
 integer x = 256
-integer y = 320
+integer y = 448
 integer width = 1719
 integer height = 960
 integer taborder = 10

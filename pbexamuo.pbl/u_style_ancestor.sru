@@ -55,18 +55,18 @@ int Y=20
 int Width=82
 int Height=81
 int TabOrder=40
-string PictureName="pb_u_up.bmp"
+string PictureName="images\style_underline.svg"
 end type
 
 on clicked;//////////////////////////////////////////////////////////////////////
 // Make the single line edit text underlined
 //////////////////////////////////////////////////////////////////////
 
-if this.picturename = "pb_u_up.bmp" then
-	this.picturename = "pb_u_dn.bmp"
+if this.picturename = "images\style_underline.svg" then
+	this.picturename = "images\style_underline_on.svg"
 	sle_text.underline = true
 else
-	this.picturename = "pb_u_up.bmp"
+	this.picturename = "images\style_underline.svg"
 	sle_text.underline = false
 end if
 end on
@@ -77,18 +77,18 @@ int Y=20
 int Width=82
 int Height=81
 int TabOrder=30
-string PictureName="pb_i_up.bmp"
+string PictureName="images\style_italic.svg"
 end type
 
 on clicked;//////////////////////////////////////////////////////////////////////
 // Make the single line edit text italic
 //////////////////////////////////////////////////////////////////////
 
-if this.picturename = "pb_i_up.bmp" then
-	this.picturename = "pb_i_dn.bmp"
+if this.picturename = "images\style_italic.svg" then
+	this.picturename = "images\style_italic_on.svg"
 	sle_text.italic = true
 else
-	this.picturename = "pb_i_up.bmp"
+	this.picturename = "images\style_italic.svg"
 	sle_text.italic = false
 end if
 end on
@@ -99,18 +99,18 @@ int Y=20
 int Width=82
 int Height=81
 int TabOrder=20
-string PictureName="pb_b_up.bmp"
+string PictureName="images\style_bold.svg"
 end type
 
 on clicked;//////////////////////////////////////////////////////////////////////
 // Make the single line edit text bold
 //////////////////////////////////////////////////////////////////////
 
-if this.picturename = "pb_b_up.bmp" then
-	this.picturename = "pb_b_dn.bmp"
+if this.picturename = "images\style_bold.svg" then
+	this.picturename = "images\style_bold_on.svg"
 	sle_text.weight = 700
 else
-	this.picturename = "pb_b_up.bmp"
+	this.picturename = "images\style_bold.svg"
 	sle_text.weight = 400
 end if
 

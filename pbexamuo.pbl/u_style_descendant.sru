@@ -54,12 +54,12 @@ on p_bold::clicked;/////////////////////////////////////////////////////////////
 // (This script will be executed instead of the ancestor script)
 //////////////////////////////////////////////////////////////////////
 
-if this.picturename = "pb_b_up.bmp" then
+if this.picturename = "images\style_bold.svg" then
 	is_prev_text = sle_text.text
-	this.picturename = "pb_b_dn.bmp"
+	this.picturename = "images\style_bold_on.svg"
 	sle_text.text = 'Bold not allowed'
 else
-	this.picturename = "pb_b_up.bmp"
+	this.picturename = "images\style_bold.svg"
 	sle_text.text = is_prev_text
 end if
 

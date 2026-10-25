@@ -1,4 +1,4 @@
-﻿//objectcomments PB 7 Progress Bar Controls
+﻿//objectcomments Progress Bar Controls
 forward
 global type w_progressbars from w_center
 end type

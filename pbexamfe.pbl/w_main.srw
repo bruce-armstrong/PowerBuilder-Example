@@ -116,6 +116,7 @@ long backcolor = 81838264
 string icon = "Application!"
 toolbaralignment toolbaralignment = alignatleft!
 boolean tabbedview = true
+boolean displaymenuasribbonbar = true
 event ue_post_open ( )
 event ue_resize ( )
 mdi_1 mdi_1
@@ -171,6 +172,7 @@ public function string of_get_object_name (long al_current)
 public subroutine of_get_scripts (string as_object, ref ostr_script astr_events[], ref ostr_script astr_functions[])
 public function boolean of_exampleselected ()
 public subroutine of_closeallsheetwindow ()
+public subroutine of_set_ribbonbar (boolean ab_ribbonbar)
 end prototypes
 
 event ue_post_open();String	ls_PBType, ls_OSType, ls_Category, ls_LowerCat
@@ -226,9 +228,18 @@ Close(w_splash)
 end event
 
 event ue_resize();
- 
+Integer	li_Top
+
+// When the menu is displayed as a ribbon bar (DisplayMenuAsRibbonBar), the ribbon covers the
+// top of the workspace, so lay the controls out below it. Without the ribbon, mdirbb_1 still
+// exists but has no width.
+If IsValid(mdirbb_1) Then
+	If mdirbb_1.Visible And mdirbb_1.Width > 0 Then li_Top = mdirbb_1.Y + mdirbb_1.Height
+End If
+
+tab_examples.y = li_Top + 8
 tab_examples.width = this.workspacewidth( ) / 4
-tab_examples.height = this.workspaceheight( ) / 2 - 40
+tab_examples.height = (this.workspaceheight( ) - li_Top) / 2 - 40
 
 gb_current.x = tab_examples.x + 10
 gb_current.y = tab_examples.y + tab_examples.height + 10
@@ -272,8 +283,11 @@ if Isvalid(ieon_resize) then
 End If
 
 mdi_1.x = tab_examples.x + tab_examples.width + 30
-mdi_1.move(  mdi_1.x , this.workspacey( )	)
+mdi_1.move(  mdi_1.x , this.workspacey( ) + li_Top	)
 mdi_1.resize( this.workspacewidth( ) - mdi_1.x , this.workspaceheight( ) - mdi_1.y )
+
+// Keep the TabbedView bar below the ribbon too; the MDI client is placed under the tabbed bar
+mditbb_1.y = tab_examples.y
 
 
 end event
@@ -665,6 +679,15 @@ Return ( Left(ls_window, 2) = "w_" )
 
 end function
 
+public subroutine of_set_ribbonbar (boolean ab_ribbonbar);// Shows the menu as a ribbon bar (RibbonView) or as a classic menu.
+// All sheets must be closed before DisplayMenuAsRibbonBar is changed at runtime.
+If This.DisplayMenuAsRibbonBar = ab_ribbonbar Then Return
+
+of_closeallsheetwindow()
+This.DisplayMenuAsRibbonBar = ab_ribbonbar
+This.Event ue_resize()
+end subroutine
+
 public subroutine of_closeallsheetwindow ();Window		lw_base
 String 			ls_title 
 
@@ -679,7 +702,10 @@ If IsValid(lw_base) Then
 End If
 end subroutine
 
-event open;//init the tabbedbar size, in order to auto resize tabbedbar font settings.
+event open;// Show the menu as a ribbon bar unless it was turned off in Settings
+This.DisplayMenuAsRibbonBar = (ProfileString(gs_CurrentDirectory + "\exampleapp.ini", "Application", "RibbonBar", "1") = "1")
+
+//init the tabbedbar size, in order to auto resize tabbedbar font settings.
 mditbb_1.x = 5 + (this.workspacewidth( ) / 4) + 30
 mditbb_1.y = tab_examples.y
 mditbb_1.width = this.workspacewidth( ) - tab_examples.x + (this.workspacewidth( ) / 4) + 30
@@ -739,15 +765,15 @@ end event
 on w_main.create
 if this.MenuName = "m_main" then this.MenuID = create m_main
 this.mdi_1=create mdi_1
-this.mdirbb_1=create mdirbb_1
 this.mditbb_1=create mditbb_1
+this.mdirbb_1=create mdirbb_1
 this.tab_info=create tab_info
 this.lb_cwd=create lb_cwd
 this.tab_examples=create tab_examples
 this.gb_current=create gb_current
 this.Control[]={this.mdi_1,&
-this.mdirbb_1,&
 this.mditbb_1,&
+this.mdirbb_1,&
 this.tab_info,&
 this.lb_cwd,&
 this.tab_examples,&
@@ -1344,7 +1370,7 @@ long textcolor = 33554432
 borderstyle borderstyle = stylelowered!
 boolean linesatroot = true
 boolean hideselection = false
-string picturename[] = {"DataPipeline!","Query5!","DataWindow5!","DataWindow5!","DataWindow5!","DataWindow5!","PasteStatement!","MoveMode!","Function!","Function!","Function!","Graph!","Inherit!","Custom002!","Cascade!","Menu5!","Custom045!","Custom020!","Ole5!","Continue!","PasteSQL5!","PasteSQL5!","UserObject5!","Window!","DataWindow5!","Run!","Custom079!","CreateLibrary!","exam.bmp","Structure!","Library!","Window!","Print!"}
+string picturename[] = {"images\cat_data_pipeline.svg","images\cat_datastores.svg","images\cat_dw_dynamic.svg","images\cat_dw_events.svg","images\cat_dw_retrieval.svg","images\cat_dw_runtime.svg","images\cat_dw_updating.svg","images\cat_drag_drop.svg","images\cat_func_external.svg","images\cat_func_powerscript.svg","images\cat_func_user.svg","images\cat_graphs.svg","images\cat_inheritance.svg","images\cat_mail.svg","images\cat_mdi.svg","images\cat_menu.svg","images\cat_misc.svg","images\cat_object_comm.svg","images\cat_ole.svg","images\cat_recursion.svg","images\cat_sql_embedded.svg","images\cat_sql_procs.svg","images\cat_user_objects.svg","images\cat_window_controls.svg","images\cat_root.svg","images\example.svg","images\example_new.svg","images\example_enhanced.svg","images\example_80.svg","images\cat_modern_json_rest.svg","images\cat_modern_security.svg","images\cat_modern_ui.svg","images\cat_modern_pdf_email.svg"}
 integer picturewidth = 16
 integer pictureheight = 16
 long picturemaskcolor = 12632256
@@ -1365,7 +1391,7 @@ This.DeleteItem(0)
 
 ltvi_Item.Label = "PowerBuilder Examples"
 ltvi_Item.Data = ""
-ltvi_Item.PictureIndex = 1
+ltvi_Item.PictureIndex = 25
 ltvi_Item.SelectedPictureIndex = ltvi_Item.PictureIndex
 ltvi_Item.Children = True
 il_root = This.InsertItemLast (0, ltvi_Item)
@@ -1522,7 +1548,7 @@ boolean vscrollbar = true
 string item[] = {"All","New since 5.0","Enhanced since 5.0","New since 8.0","Modern (2017+)"}
 borderstyle borderstyle = stylelowered!
 integer itempictureindex[] = {1,2,3,4,2}
-string picturename[] = {"all.bmp","newex.bmp","enhanced.bmp","exam.bmp"}
+string picturename[] = {"images\filter_all.svg","images\example_new.svg","images\example_enhanced.svg","images\example_80.svg"}
 long picturemaskcolor = 16777215
 end type
 
@@ -1628,7 +1654,7 @@ long textcolor = 33554432
 borderstyle borderstyle = stylelowered!
 boolean linesatroot = true
 boolean hideselection = false
-string picturename[] = {"DataPipeline!","Query5!","DataWindow5!","DataWindow5!","DataWindow5!","DataWindow5!","DataWindow5!","PasteStatement!","MoveMode!","Function!","Function!","Function!","Graph!","Inherit!","Custom002!","Cascade!","Menu5!","Custom045!","Custom020!","Ole5!","Continue!","PasteSQL5!","PasteSQL5!","UserObject5!","Window!","Run!","Custom079!","CreateLibrary!","exam.bmp","Structure!","Library!","Window!","Print!"}
+string picturename[] = {"images\cat_data_pipeline.svg","images\cat_datastores.svg","images\cat_dw_dynamic.svg","images\cat_dw_events.svg","images\cat_dw_retrieval.svg","images\cat_dw_runtime.svg","images\cat_dw_updating.svg","images\cat_drag_drop.svg","images\cat_func_external.svg","images\cat_func_powerscript.svg","images\cat_func_user.svg","images\cat_graphs.svg","images\cat_inheritance.svg","images\cat_mail.svg","images\cat_mdi.svg","images\cat_menu.svg","images\cat_misc.svg","images\cat_object_comm.svg","images\cat_ole.svg","images\cat_recursion.svg","images\cat_sql_embedded.svg","images\cat_sql_procs.svg","images\cat_user_objects.svg","images\cat_window_controls.svg","images\cat_root.svg","images\example.svg","images\example_new.svg","images\example_enhanced.svg","images\example_80.svg","images\cat_modern_json_rest.svg","images\cat_modern_security.svg","images\cat_modern_ui.svg","images\cat_modern_pdf_email.svg"}
 long picturemaskcolor = 12632256
 string statepicturename[] = {"Custom079!"}
 long statepicturemaskcolor = 12632256
@@ -1645,7 +1671,7 @@ This.DeleteItem(0)
 
 ltvi_Item.Label = "Search Results"
 ltvi_Item.Data = ""
-ltvi_Item.PictureIndex = 1
+ltvi_Item.PictureIndex = 25
 ltvi_Item.SelectedPictureIndex = ltvi_Item.PictureIndex
 ltvi_Item.Children = True
 il_searchroot = This.InsertItemLast (0, ltvi_Item)

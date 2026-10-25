@@ -105,21 +105,21 @@ astr_style.font_face = ddlb_font.text
 astr_style.font_height = ddlb_size.text
 
 // return bold value
-if p_bold.picturename = "pb_b_dn.bmp" then
+if p_bold.picturename = "images\style_bold_on.svg" then
 	astr_style.font_weight = "700"
 else
 	astr_style.font_weight = "400"
 end if
 
 // return italic
-if p_italic.picturename = "pb_i_dn.bmp" then
+if p_italic.picturename = "images\style_italic_on.svg" then
 	astr_style.italic = "1"
 else
 	astr_style.italic = "0"
 end if
 
 // return underline
-if p_underline.picturename = "pb_u_dn.bmp" then
+if p_underline.picturename = "images\style_underline_on.svg" then
 	astr_style.underline = "1"
 else
 	astr_style.underline = "0"
@@ -176,47 +176,47 @@ end if
 
 // Set Font Weight
 if astr_style.font_weight = "400" then
-	ls_text = "pb_b_up.bmp"
+	ls_text = "images\style_bold.svg"
 else
-	ls_text = "pb_b_dn.bmp"
+	ls_text = "images\style_bold_on.svg"
 end if
 if p_bold.picturename <> ls_text then p_bold.picturename = ls_text
 
 // Set Italic
 if astr_style.italic = "1" then
-	ls_text = "pb_i_dn.bmp"
+	ls_text = "images\style_italic_on.svg"
 else
-	ls_text = "pb_i_up.bmp"
+	ls_text = "images\style_italic.svg"
 end if
 if p_italic.picturename <> ls_text then p_italic.picturename = ls_text
 
 // Set Underline
 if astr_style.underline = "1" then
-	ls_text = "pb_u_dn.bmp"
+	ls_text = "images\style_underline_on.svg"
 else
-	ls_text = "pb_u_up.bmp"
+	ls_text = "images\style_underline.svg"
 end if
 if p_underline.picturename <> ls_text then p_underline.picturename = ls_text
 
 // Set Alignment
 choose case astr_style.alignment
 	case "0"
-		if p_left.picturename = "pb_l_up.bmp" then
-			p_left.picturename  = "pb_l_dn.bmp"
-			p_center.picturename = "pb_c_up.bmp"
-			p_right.picturename = "pb_r_up.bmp"
+		if p_left.picturename = "images\style_left.svg" then
+			p_left.picturename  = "images\style_left_on.svg"
+			p_center.picturename = "images\style_center.svg"
+			p_right.picturename = "images\style_right.svg"
 		end if
 	case "1"
-		if p_right.picturename = "pb_r_up.bmp" then
-			p_left.picturename = "pb_l_up.bmp"
-			p_center.picturename = "pb_c_up.bmp"
-			p_right.picturename = "pb_r_dn.bmp"
+		if p_right.picturename = "images\style_right.svg" then
+			p_left.picturename = "images\style_left.svg"
+			p_center.picturename = "images\style_center.svg"
+			p_right.picturename = "images\style_right_on.svg"
 		end if
 	case "2"
-		if p_center.picturename = "pb_c_up.bmp" then
-			p_left.picturename = "pb_l_up.bmp"
-			p_center.picturename = "pb_c_dn.bmp"
-			p_right.picturename = "pb_r_up.bmp"
+		if p_center.picturename = "images\style_center.svg" then
+			p_left.picturename = "images\style_left.svg"
+			p_center.picturename = "images\style_center_on.svg"
+			p_right.picturename = "images\style_right.svg"
 		end if
 end choose
 
@@ -339,15 +339,15 @@ int Y=20
 int Width=87
 int Height=80
 int TabOrder=70
-string PictureName="pb_u_up.bmp"
+string PictureName="images\style_underline.svg"
 end type
 
 on clicked;//Clicked script for p_underline
 
-if this.picturename = "pb_u_up.bmp" then
-	this.picturename = "pb_u_dn.bmp"
+if this.picturename = "images\style_underline.svg" then
+	this.picturename = "images\style_underline_on.svg"
 else
-	this.picturename = "pb_u_up.bmp"
+	this.picturename = "images\style_underline.svg"
 end if
 
 is_type_change = "underline"
@@ -360,15 +360,15 @@ int Y=20
 int Width=87
 int Height=80
 int TabOrder=60
-string PictureName="pb_i_up.bmp"
+string PictureName="images\style_italic.svg"
 end type
 
 on clicked;//Clicked script for p_italic
 
-if this.picturename = "pb_i_up.bmp" then
-	this.picturename = "pb_i_dn.bmp"
+if this.picturename = "images\style_italic.svg" then
+	this.picturename = "images\style_italic_on.svg"
 else
-	this.picturename = "pb_i_up.bmp"
+	this.picturename = "images\style_italic.svg"
 end if
 
 is_type_change = "italic"
@@ -381,15 +381,15 @@ int Y=20
 int Width=87
 int Height=80
 int TabOrder=50
-string PictureName="pb_b_up.bmp"
+string PictureName="images\style_bold.svg"
 end type
 
 on clicked;//Clicked script for p_bold
 
-if this.picturename = "pb_b_up.bmp" then
-	this.picturename = "pb_b_dn.bmp"
+if this.picturename = "images\style_bold.svg" then
+	this.picturename = "images\style_bold_on.svg"
 else
-	this.picturename = "pb_b_up.bmp"
+	this.picturename = "images\style_bold.svg"
 end if
 
 is_type_change = "Bold"
@@ -402,15 +402,15 @@ int Y=20
 int Width=87
 int Height=80
 int TabOrder=100
-string PictureName="pb_r_up.bmp"
+string PictureName="images\style_right.svg"
 end type
 
 on clicked;//Clicked script for p_right
 
 is_alignment = "1"
-this.picturename = "pb_r_dn.bmp"
-p_center.picturename = "pb_c_up.bmp"
-p_left.picturename = "pb_l_up.bmp"
+this.picturename = "images\style_right_on.svg"
+p_center.picturename = "images\style_center.svg"
+p_left.picturename = "images\style_left.svg"
 
 is_type_change = "right"
 parent.triggerevent("ue_style_changed")
@@ -423,15 +423,15 @@ int Y=20
 int Width=87
 int Height=80
 int TabOrder=90
-string PictureName="pb_c_up.bmp"
+string PictureName="images\style_center.svg"
 end type
 
 on clicked;//Clicked script for p_center
 
 is_alignment = "2"
-this.picturename = "pb_c_dn.bmp"
-p_left.picturename = "pb_l_up.bmp"
-p_right.picturename = "pb_r_up.bmp"
+this.picturename = "images\style_center_on.svg"
+p_left.picturename = "images\style_left.svg"
+p_right.picturename = "images\style_right.svg"
 
 is_type_change = "center"
 parent.triggerevent("ue_style_changed")
@@ -444,15 +444,15 @@ int Y=20
 int Width=87
 int Height=80
 int TabOrder=80
-string PictureName="pb_l_up.bmp"
+string PictureName="images\style_left.svg"
 end type
 
 on clicked;//Clicked script for p_left
 
 is_alignment = "0"
-this.picturename = "pb_l_dn.bmp"
-p_center.picturename = "pb_c_up.bmp"
-p_right.picturename = "pb_r_up.bmp"
+this.picturename = "images\style_left_on.svg"
+p_center.picturename = "images\style_center.svg"
+p_right.picturename = "images\style_right.svg"
 
 
 is_type_change = "left"

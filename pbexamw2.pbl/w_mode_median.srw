@@ -25,6 +25,22 @@ end type
 global w_mode_median w_mode_median
 
 event open;call super::open;dw_1.settransobject(sqlca)
+
+// The DataWindow's SQL builds each order's month with SQL Anywhere's date() function and the || operator.
+// SQL Server has neither, so use DATEFROMPARTS there.
+Choose Case Upper(Left(sqlca.DBMS, 3))
+	Case "MSO", "SNC", "OLE", "ADO"
+		dw_1.SetSQLSelect("SELECT product.name, product.picture_name, " + &
+			"sum(product.unit_price * sales_order_items.quantity) as total_sales, " + &
+			"sum(sales_order_items.quantity) as total_units, product.prod_size, product.color, product.id, " + &
+			"max(DATEFROMPARTS(year(sales_order.order_date), month(sales_order.order_date), 1)) as order_month " + &
+			"FROM product, sales_order, sales_order_items " + &
+			"WHERE (sales_order.id = sales_order_items.id) and (product.id = sales_order_items.prod_id) " + &
+			"GROUP BY product.name, product.picture_name, product.prod_size, product.color, product.id, " + &
+			"DATEFROMPARTS(year(sales_order.order_date), month(sales_order.order_date), 1) " + &
+			"ORDER BY product.id ASC")
+End Choose
+
 dw_1.retrieve()
 end event
 

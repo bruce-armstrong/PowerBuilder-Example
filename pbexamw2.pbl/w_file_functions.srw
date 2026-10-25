@@ -615,7 +615,7 @@ string facename = "MS Sans Serif"
 long textcolor = 33554432
 boolean vscrollbar = true
 borderstyle borderstyle = stylelowered!
-string picturename[] = {"calc.bmp","notepad.bmp","taskmgr.bmp","wordpad.bmp","paint.bmp","dvd.bmp"}
+string picturename[] = {"images\app_calculator.svg","images\app_notepad.svg","images\app_taskmgr.svg","images\app_wordpad.svg","images\app_paint.svg","images\app_media.svg"}
 long picturemaskcolor = 16777215
 end type
 

@@ -272,7 +272,7 @@ long textcolor = 41943040
 long backcolor = 74481808
 boolean vscrollbar = true
 borderstyle borderstyle = stylelowered!
-string picturename[] = {"diskdriv.bmp","harddriv.bmp","netdriv.bmp","cdrom.bmp"}
+string picturename[] = {"images\drive_removable.svg","images\drive_hard.svg","images\drive_network.svg","images\drive_cd.svg"}
 long picturemaskcolor = 553648127
 end type
 

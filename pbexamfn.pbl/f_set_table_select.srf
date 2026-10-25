@@ -73,6 +73,11 @@ choose case Upper(Left(sqlca.dbms,3) )
 				+ "where PBT_OWNR = '" + sqlca.logid &
 				+ "' order by 1 ASC"
 
+	case "MSO", "SNC", "OLE", "ADO"	// Microsoft SQL Server (MSOLEDBSQL, Native Client, OLE DB, ADO.NET)
+		ls_sql = "SELECT TABLE_NAME, CAST('' AS varchar(254)) " &
+				+ " FROM INFORMATION_SCHEMA.TABLES " &
+				+ " WHERE TABLE_TYPE = 'BASE TABLE' order by 1 ASC"
+
 	case ELSE
 		MessageBox ("Error!", "Unknown Database Name!")
 

@@ -1,4 +1,4 @@
-﻿//objectcomments PB 8 - New System Functions
+﻿//objectcomments System Functions
 forward
 global type w_runtime_systemfunctions from w_center
 end type

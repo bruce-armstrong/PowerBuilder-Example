@@ -26,7 +26,7 @@ global type w_benchmark_ex from w_center
 integer y = 4
 integer width = 2112
 integer height = 344
-string title = "PowerBuilder 5.0 Benchmark Comparison"
+string title = "PowerBuilder Benchmark Comparison"
 long backcolor = 74481808
 toolbaralignment toolbaralignment = alignatleft!
 cb_saveas cb_saveas

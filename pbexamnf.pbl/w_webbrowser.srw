@@ -1,4 +1,4 @@
-﻿//objectcomments PB 2019 R2+ WebBrowser (Chromium/WebView2) control
+﻿//objectcomments PB 2019 R2+ WebBrowser (WebView2) control
 forward
 global type w_webbrowser from w_center
 end type
@@ -120,7 +120,7 @@ fontfamily fontfamily = swiss!
 string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 67108864
-string text = "The WebBrowser control embeds a modern Chromium engine (Microsoft Edge WebView2).  PowerScript can run JavaScript in the page with EvaluateJavascriptSync, and JavaScript can call back into PowerBuilder through user events registered with RegisterEvent (window.webBrowser.<eventname>)."
+string text = "The WebBrowser control embeds Microsoft Edge WebView2, a modern Chromium-based browser engine.  PowerScript can run JavaScript in the page with EvaluateJavascriptSync, and JavaScript can call back into PowerBuilder through user events registered with RegisterEvent (window.webBrowser.<eventname>)."
 boolean focusrectangle = false
 long bordercolor = 134217728
 end type

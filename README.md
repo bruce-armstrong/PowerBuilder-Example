@@ -33,9 +33,20 @@ The pbexamnf.pbl library adds examples of native PowerBuilder features from Powe
 	Encoding, Hashing & AES Encryption - CoderObject / CrypterObject (w_crypter_coder)
 	Zip & Unzip Files - CompressorObject / ExtractorObject (w_compressor)
 •	User Interface
-	WebBrowser (Chromium) control with JavaScript <-> PowerScript calls (w_webbrowser) - needs the Microsoft Edge WebView2 runtime
+	WebBrowser (WebView2) control with JavaScript <-> PowerScript calls (w_webbrowser) - needs the Microsoft Edge WebView2 runtime
 	RibbonBar control built from PowerScript and JSON (w_ribbonbar)
 	Placeholders & OpenURL (w_modern_inputs)
 •	PDF & Email
 	PDF Builder and native DataWindow PDF export (w_pdf_builder)
 	Sending Email with SMTPClient (w_smtp_client) - point it at any SMTP server, or a local test server such as smtp4dev or Papercut
+
+Icons and display settings:
+
+•	The menu, ribbon and example tree use SVG icons from Microsoft Fluent UI System Icons (MIT licence), stored in the images folder together with their licence (images\LICENSE-fluentui-system-icons.txt). They are recoloured to #2B88D8 so they read well on both light and dark themes. SVG images require PowerBuilder 2025 R2 or later.
+•	Settings has a "Display the menu as a ribbon bar" option. It is saved as RibbonBar=1/0 in the [Application] section of exampleapp.ini and takes effect immediately (open examples are closed first).
+•	The theme list includes the HighDPI themes, which use SVG graphics so they stay sharp at high display scaling.
+
+Using SQL Server instead of SQL Anywhere:
+
+•	The examples run against a SQL Server copy of the EASDEMO database (for example, in a Docker container) using the MSOLEDBSQL interface: DBMS "MSOLEDBSQL SQL Server", DBParm "Database='EASDEMO',Provider='MSOLEDBSQL19'". Enter these in File > Change Database Connection.
+•	A SQL Server copy of EASDEMO may not include the stored procedures some examples use. Run sql\sqlserver\easdemo_example_procedures.sql against EASDEMO once to add any that are missing; it never changes existing procedures.

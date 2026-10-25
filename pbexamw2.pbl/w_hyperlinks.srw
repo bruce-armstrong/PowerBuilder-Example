@@ -1,4 +1,4 @@
-﻿//objectcomments PB7 HyperLink Controls
+﻿//objectcomments HyperLink Controls
 forward
 global type w_hyperlinks from w_center
 end type

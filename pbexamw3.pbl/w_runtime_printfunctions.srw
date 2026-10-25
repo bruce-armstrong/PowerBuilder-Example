@@ -1,4 +1,4 @@
-﻿//objectcomments PB 8 - New Print Functions
+﻿//objectcomments Print Functions
 forward
 global type w_runtime_printfunctions from w_center
 end type
