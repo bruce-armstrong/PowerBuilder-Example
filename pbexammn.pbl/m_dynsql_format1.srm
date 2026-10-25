@@ -39,7 +39,7 @@ end on
 
 on m_close.create
 call m_dynsql_frame`m_close::create
-this.ToolBarItemName="Custom039!"
+this.ToolBarItemName="images\tb_close.svg"
 this.ToolBarItemText="Close"
 this.Visible=true
 this.Enabled=true
@@ -66,7 +66,7 @@ end on
 
 on m_exit.create
 call m_dynsql_frame`m_exit::create
-this.ToolBarItemName="Exit!"
+this.ToolBarItemName="images\exit.svg"
 this.ToolBarItemText="Exit"
 this.ToolBarItemOrder=45
 end on
@@ -92,7 +92,7 @@ end on
 
 on m_createtablelocations.create
 call m_dynsql_frame`m_createtablelocations::create
-this.ToolBarItemName="CreateTable!"
+this.ToolBarItemName="images\tb_table_add.svg"
 this.ToolBarItemText="Create Table"
 this.ToolBarItemOrder=6
 this.ToolBarItemSpace=2
@@ -113,7 +113,7 @@ end on
 
 on m_altertablelocations.create
 call m_dynsql_frame`m_altertablelocations::create
-this.ToolBarItemName="DeclareProcedure!"
+this.ToolBarItemName="images\tb_table_edit.svg"
 this.ToolBarItemText="Alter Table"
 this.ToolBarItemOrder=7
 end on
@@ -133,7 +133,7 @@ end on
 
 on m_droptable.create
 call m_dynsql_frame`m_droptable::create
-this.ToolBarItemName="Custom009!"
+this.ToolBarItemName="images\tb_table_delete.svg"
 this.ToolBarItemText="Drop Table"
 this.ToolBarItemOrder=8
 end on
@@ -146,25 +146,25 @@ end on
 
 on m_tilevertical.create
 call m_dynsql_frame`m_tilevertical::create
-this.ToolBarItemName="Tile!"
+this.ToolBarItemName="images\tb_tile.svg"
 this.ToolBarItemText="Tile Vertical"
 end on
 
 on m_tilehorizontal.create
 call m_dynsql_frame`m_tilehorizontal::create
-this.ToolBarItemName="Horizontal!"
+this.ToolBarItemName="images\tb_tile_horizontal.svg"
 this.ToolBarItemText="Tile Horizontal"
 end on
 
 on m_cascade.create
 call m_dynsql_frame`m_cascade::create
-this.ToolBarItemName="Cascade!"
+this.ToolBarItemName="images\tb_cascade.svg"
 this.ToolBarItemText="Cascade"
 end on
 
 on m_layer.create
 call m_dynsql_frame`m_layer::create
-this.ToolBarItemName="Layer!"
+this.ToolBarItemName="images\tb_layer.svg"
 this.ToolBarItemText="Layer"
 this.ToolBarItemOrder=30
 end on
@@ -175,7 +175,7 @@ end on
 
 on m_arrangeicons.create
 call m_dynsql_frame`m_arrangeicons::create
-this.ToolBarItemName="ArrangeIcons!"
+this.ToolBarItemName="images\tb_arrange_icons.svg"
 this.ToolBarItemText="Arrange Icons"
 this.ToolBarItemOrder=35
 end on
@@ -194,7 +194,7 @@ end on
 
 on m_contents.create
 call m_dynsql_frame`m_contents::create
-this.ToolBarItemName="Help!"
+this.ToolBarItemName="images\btn_help.svg"
 this.ToolBarItemText="Help"
 end on
 

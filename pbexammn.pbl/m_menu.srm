@@ -138,7 +138,7 @@ end on
 on m_close.create
 this.Text="&Close~tCtrl+F4"
 this.Microhelp="Close window"
-this.ToolBarItemName="Custom039!"
+this.ToolBarItemName="images\tb_close.svg"
 this.ToolBarItemText="Close"
 this.ToolBarItemOrder=1
 this.Shortcut=371
@@ -157,7 +157,7 @@ end type
 on m_exit.create
 this.Text="E&xit"
 this.Microhelp="Exit this example"
-this.ToolBarItemName="Exit!"
+this.ToolBarItemName="images\exit.svg"
 this.ToolBarItemText="Exit"
 this.ToolBarItemOrder=8
 this.ToolBarItemSpace=1
@@ -241,7 +241,7 @@ end on
 on m_undo.create
 this.Text="&Undo~tCtrl+Z"
 this.Microhelp="Undo last edit change"
-this.ToolBarItemName="Undo!"
+this.ToolBarItemName="images\tb_undo.svg"
 this.ToolBarItemText="Undo"
 this.ToolBarItemOrder=2
 this.ToolBarItemSpace=1
@@ -291,7 +291,7 @@ end on
 on m_cut.create
 this.Text="Cu&t~tCtrl+X"
 this.Microhelp="Cut selected text to clipboard"
-this.ToolBarItemName="Cut!"
+this.ToolBarItemName="images\tb_cut.svg"
 this.ToolBarItemText="Cut"
 this.ToolBarItemOrder=3
 this.Shortcut=344
@@ -338,7 +338,7 @@ end on
 on m_copy.create
 this.Text="&Copy~tCtrl+C"
 this.Microhelp="Copy selected text to clipboard"
-this.ToolBarItemName="Copy!"
+this.ToolBarItemName="images\tb_copy.svg"
 this.ToolBarItemText="Copy"
 this.ToolBarItemOrder=4
 this.Shortcut=323
@@ -385,7 +385,7 @@ end on
 on m_paste.create
 this.Text="&Paste~tCtrl+V"
 this.Microhelp="Paste from clipboard"
-this.ToolBarItemName="Paste!"
+this.ToolBarItemName="images\tb_paste.svg"
 this.ToolBarItemText="Paste"
 this.ToolBarItemOrder=5
 this.Shortcut=342
@@ -432,7 +432,7 @@ end on
 on m_clear.create
 this.Text="C&lear~tDel"
 this.Microhelp="Clear selected text"
-this.ToolBarItemName="Clear!"
+this.ToolBarItemName="images\tb_clear.svg"
 this.ToolBarItemText="Clear"
 this.ToolBarItemOrder=6
 this.Shortcut=46
@@ -573,7 +573,7 @@ end type
 on m_contents.create
 this.Text="&Contents...~tF1"
 this.Microhelp="Display help"
-this.ToolBarItemName="Help!"
+this.ToolBarItemName="images\btn_help.svg"
 this.ToolBarItemText="Help"
 this.ToolBarItemOrder=7
 this.ToolBarItemSpace=1

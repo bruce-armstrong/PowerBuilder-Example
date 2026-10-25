@@ -64,6 +64,14 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
     - the bitmap catalogue
   - Eleven tree and list examples used PowerBuilder's built-in pictures; these were replaced with Fluent SVG icons (people, customers, orders, folders, departments, tables and functions).
     - Selected tree items keep their own icon.
+  - The ten product pictures (the 64 x 64 bitmaps named in `product.picture_name`, such as `tshirtw.bmp`) were redrawn as SVG in `images\products`, with a 64 px PNG of each.
+    - The ListView and TreeView examples (Sales Order ListView, Data Explorer, Data Manager, TreeView / DataWindow Linking) load the SVG through the new `f_product_picture` function.
+    - The DataWindows that show the picture (`d_add_sales_order_items`, `d_salesorder_items`, `d_product_info`, `d_mode_median`, `d_products`) hide the bitmap-name column and show the PNG in a `bitmap()` computed field.
+    - The database isn't changed; a product without a redrawn picture still shows its bitmap. The PowerClient and PowerServer projects deploy the new images.
+  - The example menus' toolbars (DataWindow Buffers, Item Status, Presentation Styles, Nested Reports, Dynamic User Objects, the Dynamic SQL, graph, notepad, OLE and toolbar examples, and others) used PowerBuilder's built-in toolbar pictures. All 171 now use Fluent SVG icons.
+  - DataWindow buttons that showed the default action pictures (Contact Maintenance's scroll buttons, Report With DataWindow Buttons) now have Fluent SVGs. The report's button bar no longer paints a silver strip.
+  - Row pointers (`indicatr.bmp`, `indicat2.bmp`) in Conditional Bitmaps, Nested Reports, Row Focus Indicators and the customer picker are now Fluent arrows. The directory tree's connector bitmaps are SVGs (`images\tree_*.svg`), and its tab pages and the About box use SVGs instead of built-in pictures and `exampl.bmp`.
+  - The examples that point at the current row with PowerBuilder's built-in Hand! (Item Status, Add and Update Sales Order, Menu Functions, Undelete Row) use a Fluent arrow instead. It is a hidden picture control, `p_rowfocus`, in their ancestor `w_center`. Row Focus Indicators still offers Hand!, since it demonstrates the built-in choices.
   - `pbex.ico`, `tutorial.ico`, `emp.ico`, `row.ico` and `rows.ico` are now multi-image icons with images from 16 to 256 px.
   - Fixed the search tree's picture list, which was one icon off from "DataWindows - Updating" onwards.
 - Files the examples no longer use were moved to `_archive\`. The PowerClient and PowerServer project file lists were updated to match.
@@ -72,7 +80,17 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
   - Removed dated "PB7"/"PB8" title prefixes and old PowerBuilder and Windows version references.
   - The WebBrowser control is described as WebView2 instead of Chromium.
 - **Resize Example:** the panels show departments, employees and products instead of empty white DataWindows.
+- **ShareData With DataStores:** the first DataStore is selected when the example opens, instead of an empty white DataWindow. The DataWindow-to-HTML window (`w_dw_html`, not listed as an example) starts with its tabular DataWindow the same way.
 - **Resizing Controls on a Window:** the picture is now an SVG beach and the graph is a flat pie.
+- **Dark theme colours:**
+  - With a theme, PowerBuilder themes a DataWindow's static system colours. A colour returned by an expression is used as is, so a system colour there resolves to its light-mode value, while the text is themed light.
+  - Colour expressions now return colours that read in both themes: transparent (the themed background shows through), a tint drawn with background transparency, or mid-tone text colours.
+  - Enhanced Crosstab's detail band and a decorative row rectangle in DataWindow Expressions painted light colours that the theme doesn't change; both are now transparent.
+  - The examples affected are CurrentRow() (blue tint on the current row), Contact Maintenance, Sales Order items and Dates in DataWindows (grey tint on read-only rows), Mode & Median (mid-green bar on alternate rows, the others transparent), Item Status, Computed attributes and Attribute Expressions.
+- **Graphs:**
+  - Every graph uses Segoe UI instead of the bitmap font MS Sans Serif, has a white background, and uses a flat type instead of a 3D one.
+  - Graphs using Shared DataWindows shows its three graphs without the classic caption bars; the captions are the graph titles.
+- **RTE DataWindow Mail Merge:** the letterhead has Appeon's logo and mailing address (Appeon Inc., 425 1st Street, Unit 1507, San Francisco, CA 94105) instead of Powersoft's.
 
 ## Database: SQL Server support
 
@@ -113,4 +131,5 @@ The examples were written for the SQL Anywhere demo database. They now also work
 | 2026-10-25 | `19e1245` | Use the Flat Design Dark theme by default |
 | 2026-10-25 | `cfbd017` | Fix the pipeline examples and more examples on SQL Server; replace remaining bitmaps |
 | 2026-10-25 | `49bcadc` | Mark the MAPI mail examples as deprecated |
-| 2026-10-25 | (pending) | Add CHANGES.md describing all changes since the fork |
+| 2026-10-25 | `041e5a3` | Add CHANGES.md describing all changes since the fork |
+| 2026-10-25 | (pending) | Redraw product pictures and toolbar icons, fix DataWindow colours in the dark theme, flatten the graphs, and rebrand the mail-merge letter |

@@ -245,7 +245,7 @@ end event
 
 on m_retrieve.create
 this.Text="&Retrieve"
-this.ToolBarItemName="Retrieve!"
+this.ToolBarItemName="images\tb_retrieve.svg"
 this.ToolBarItemText="Retrieve"
 this.ToolBarItemOrder=1
 end on
@@ -266,7 +266,7 @@ end event
 on m_exit.create
 this.Text="E&xit"
 this.Microhelp="Exit the application"
-this.ToolBarItemName="Exit!"
+this.ToolBarItemName="images\exit.svg"
 this.ToolBarItemText="Exit"
 this.ToolBarItemOrder=99
 this.ToolBarItemSpace=1
@@ -316,7 +316,7 @@ end event
 on m_insert.create
 this.Text="&Insert"
 this.Microhelp="Insert a row a the bottom of teachers DataWindow"
-this.ToolBarItemName="Insert!"
+this.ToolBarItemName="images\tb_insert.svg"
 this.ToolBarItemText="Insert"
 this.ToolBarItemOrder=2
 this.ToolBarItemSpace=1
@@ -333,7 +333,7 @@ end event
 on m_delete.create
 this.Text="&Delete"
 this.Microhelp="Delete the current row from Teachers"
-this.ToolBarItemName="Clear!"
+this.ToolBarItemName="images\tb_delete.svg"
 this.ToolBarItemText="Delete"
 this.ToolBarItemOrder=3
 end on
@@ -348,7 +348,7 @@ end event
 on m_filter.create
 this.Text="&Filter"
 this.Microhelp="Filter rows"
-this.ToolBarItemName="DefaultFonts!"
+this.ToolBarItemName="images\tb_filter.svg"
 this.ToolBarItemText="Filter"
 this.ToolBarItemOrder=4
 end on
@@ -362,7 +362,7 @@ end event
 
 on m_update.create
 this.Text="&Update"
-this.ToolBarItemName="Update!"
+this.ToolBarItemName="images\btn_update.svg"
 this.ToolBarItemText="Update"
 this.ToolBarItemOrder=5
 this.ToolBarItemSpace=1

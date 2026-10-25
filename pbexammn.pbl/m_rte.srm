@@ -390,7 +390,7 @@ end type
 
 on m_undo.create
 this.Text="&Undo"
-this.ToolBarItemName="Undo!"
+this.ToolBarItemName="images\tb_undo.svg"
 end on
 
 event clicked;ParentWindow.Post Dynamic of_undo()

@@ -158,7 +158,7 @@ end on
 on m_close.create
 this.Text="&Close~tCtrl+F4"
 this.Microhelp="Close window"
-this.ToolBarItemName="Custom039!"
+this.ToolBarItemName="images\tb_close.svg"
 this.ToolBarItemText="Close"
 this.ToolBarItemOrder=1
 this.Shortcut=371
@@ -177,7 +177,7 @@ end type
 on m_exit.create
 this.Text="E&xit"
 this.Microhelp="Exit example"
-this.ToolBarItemName="Exit!"
+this.ToolBarItemName="images\exit.svg"
 this.ToolBarItemText="Exit"
 this.ToolBarItemOrder=3
 this.ToolBarItemSpace=1
@@ -611,7 +611,7 @@ end type
 on m_contents.create
 this.Text="&Contents...~tF1"
 this.Microhelp="Display help"
-this.ToolBarItemName="Help!"
+this.ToolBarItemName="images\btn_help.svg"
 this.ToolBarItemText="Help"
 this.ToolBarItemOrder=2
 this.ToolBarItemSpace=1

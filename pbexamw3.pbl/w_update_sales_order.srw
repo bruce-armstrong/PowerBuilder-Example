@@ -150,7 +150,7 @@ event open;call super::open;dw_order.SetTransObject(sqlca)
 dw_order.InsertRow(0)
 
 dw_items.SetTransObject(sqlca)
-dw_items.SetRowFocusIndicator(Hand!)
+dw_items.SetRowFocusIndicator(p_rowfocus)
 
 end event
 

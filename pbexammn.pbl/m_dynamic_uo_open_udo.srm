@@ -449,7 +449,7 @@ this.text = "&DataWindow~tCtrl+D"
 this.checked = true
 this.shortcut = 324
 this.microhelp = "Open a DataWindow"
-this.toolbaritemname = "DataWindow!"
+this.toolbaritemname = "images\dw_table.svg"
 this.toolbaritemtext = "DataWindow"
 this.toolbaritemorder = 1
 this.menutextcolor = 134217735
@@ -517,7 +517,7 @@ call super::create
 this.text = "&Retrieve~tCtrl+R"
 this.shortcut = 338
 this.microhelp = "Retrieve data into DataWindow"
-this.toolbaritemname = "Retrieve!"
+this.toolbaritemname = "images\tb_retrieve.svg"
 this.toolbaritemtext = "Retrieve"
 this.toolbaritemorder = 2
 this.toolbaritemspace = 1
@@ -560,7 +560,7 @@ call super::create
 this.text = "&Insert~tCtrl+I"
 this.shortcut = 329
 this.microhelp = "Insert a new row"
-this.toolbaritemname = "Insert!"
+this.toolbaritemname = "images\tb_insert.svg"
 this.toolbaritemtext = "Insert"
 this.toolbaritemorder = 3
 this.menutextcolor = 134217735
@@ -602,7 +602,7 @@ call super::create
 this.text = "De&lete~tCtrl+L"
 this.shortcut = 332
 this.microhelp = "Delete current row from DataWindow"
-this.toolbaritemname = "Clear!"
+this.toolbaritemname = "images\tb_clear.svg"
 this.toolbaritemtext = "Delete"
 this.toolbaritemorder = 4
 this.menutextcolor = 134217735
@@ -644,7 +644,7 @@ call super::create
 this.text = "&Update~tCtrl+U"
 this.shortcut = 341
 this.microhelp = "Save DataWindow changes to the database"
-this.toolbaritemname = "Update!"
+this.toolbaritemname = "images\btn_update.svg"
 this.toolbaritemtext = "Update"
 this.toolbaritemorder = 5
 this.menutextcolor = 134217735
@@ -712,7 +712,7 @@ on m_first.create
 call super::create
 this.text = "&First"
 this.microhelp = "Scroll to the first row"
-this.toolbaritemname = "VCRFirst!"
+this.toolbaritemname = "images\tb_first.svg"
 this.toolbaritemtext = "First"
 this.toolbaritemorder = 6
 this.toolbaritemspace = 1
@@ -754,7 +754,7 @@ on m_last.create
 call super::create
 this.text = "Las&t"
 this.microhelp = "Scroll to the last row"
-this.toolbaritemname = "VCRLast!"
+this.toolbaritemname = "images\tb_last.svg"
 this.toolbaritemtext = "Last"
 this.toolbaritemorder = 9
 this.menutextcolor = 134217735
@@ -795,7 +795,7 @@ on m_next.create
 call super::create
 this.text = "&Next"
 this.microhelp = "Scroll to the next row"
-this.toolbaritemname = "VCRNext!"
+this.toolbaritemname = "images\chevron_right.svg"
 this.toolbaritemtext = "Next"
 this.toolbaritemorder = 8
 this.menutextcolor = 134217735
@@ -836,7 +836,7 @@ on m_prior.create
 call super::create
 this.text = "Pri&or"
 this.microhelp = "Scroll to the prior row"
-this.toolbaritemname = "VCRPrior!"
+this.toolbaritemname = "images\chevron_left.svg"
 this.toolbaritemtext = "Prior"
 this.toolbaritemorder = 7
 this.menutextcolor = 134217735
@@ -905,7 +905,7 @@ call super::create
 this.text = "Re&set~tCtrl+S"
 this.shortcut = 339
 this.microhelp = "Reset DataWindow"
-this.toolbaritemname = "Custom045!"
+this.toolbaritemname = "images\tb_reset.svg"
 this.toolbaritemtext = "Reset"
 this.toolbaritemorder = 10
 this.toolbaritemspace = 1
@@ -947,7 +947,7 @@ on m_print.create
 call super::create
 this.text = "&Print"
 this.microhelp = "Print DataWindow"
-this.toolbaritemname = "Print!"
+this.toolbaritemname = "images\tb_print.svg"
 this.toolbaritemtext = "Print"
 this.toolbaritemorder = 11
 this.toolbaritemspace = 1
@@ -989,7 +989,7 @@ call super::create
 this.text = "E&xit~tCtrl+X"
 this.shortcut = 344
 this.microhelp = "Exit this example"
-this.toolbaritemname = "Exit!"
+this.toolbaritemname = "images\exit.svg"
 this.toolbaritemtext = "Exit"
 this.toolbaritemorder = 12
 this.toolbaritemspace = 1

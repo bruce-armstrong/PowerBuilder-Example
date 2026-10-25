@@ -123,7 +123,7 @@ end on
 
 on m_print.create
 this.Text="Prin&t..."
-this.ToolBarItemName="Print!"
+this.ToolBarItemName="images\tb_print.svg"
 this.ToolBarItemText="Print"
 end on
 
@@ -162,7 +162,7 @@ end on
 on m_exit.create
 this.Text="E&xit"
 this.Microhelp="Exit this Example"
-this.ToolBarItemName="Exit!"
+this.ToolBarItemName="images\exit.svg"
 this.ToolBarItemText="Exit"
 this.ToolBarItemOrder=90
 this.ToolBarItemSpace=2
@@ -221,7 +221,7 @@ end on
 on m_tile.create
 this.Text="&Tile Vertical"
 this.Microhelp="Arrange all as vertically tiled"
-this.ToolBarItemName="Tile!"
+this.ToolBarItemName="images\tb_tile.svg"
 this.ToolBarItemText="Tile Vertical"
 this.ToolBarItemOrder=80
 this.ToolBarItemSpace=2
@@ -236,7 +236,7 @@ end on
 on m_horizontal.create
 this.Text="Tile &Horizontal"
 this.Microhelp="Arrange all as horizontally tiled"
-this.ToolBarItemName="Horizontal!"
+this.ToolBarItemName="images\tb_tile_horizontal.svg"
 this.ToolBarItemText="Tile Horizontal"
 this.ToolBarItemOrder=81
 end on
@@ -251,7 +251,7 @@ end on
 on m_layer.create
 this.Text="&Layer"
 this.Microhelp="Arrange all as layered"
-this.ToolBarItemName="Layer!"
+this.ToolBarItemName="images\tb_layer.svg"
 this.ToolBarItemText="Layer"
 this.ToolBarItemOrder=82
 end on
@@ -266,7 +266,7 @@ end on
 on m_cascade.create
 this.Text="&Cascade"
 this.Microhelp="Arrange all as cascaded"
-this.ToolBarItemName="Cascade!"
+this.ToolBarItemName="images\tb_cascade.svg"
 this.ToolBarItemText="Cascade"
 this.ToolBarItemOrder=83
 end on
@@ -343,7 +343,7 @@ end on
 on m_contents.create
 this.Text="&Contents...~tF1"
 this.Microhelp="Display help for this example"
-this.ToolBarItemName="Help!"
+this.ToolBarItemName="images\btn_help.svg"
 this.ToolBarItemText="Help"
 this.ToolBarItemOrder=99
 this.ToolBarItemSpace=2

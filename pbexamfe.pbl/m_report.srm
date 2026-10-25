@@ -109,7 +109,7 @@ end type
 
 on m_print.create
 this.Text="&Print..."
-this.ToolBarItemName="Print!"
+this.ToolBarItemName="images\tb_print.svg"
 this.ToolBarItemText="Print"
 this.ToolBarItemOrder=1
 end on
@@ -130,7 +130,7 @@ end type
 
 on m_exit.create
 this.Text="E&xit"
-this.ToolBarItemName="Exit!"
+this.ToolBarItemName="images\exit.svg"
 this.ToolBarItemText="Exit"
 this.ToolBarItemOrder=10
 this.ToolBarItemSpace=2
@@ -187,7 +187,7 @@ end type
 
 on m_firstpage.create
 this.Text="&First Page"
-this.ToolBarItemName="VCRFirst!"
+this.ToolBarItemName="images\tb_first.svg"
 this.ToolBarItemText="First Page"
 this.ToolBarItemOrder=2
 this.ToolBarItemSpace=2
@@ -202,7 +202,7 @@ end type
 
 on m_previouspage.create
 this.Text="&Previous Page"
-this.ToolBarItemName="VCRPrior!"
+this.ToolBarItemName="images\chevron_left.svg"
 this.ToolBarItemText="Prev. Page"
 this.ToolBarItemOrder=3
 end on
@@ -216,7 +216,7 @@ end type
 
 on m_nextpage.create
 this.Text="&Next Page"
-this.ToolBarItemName="VCRNext!"
+this.ToolBarItemName="images\chevron_right.svg"
 this.ToolBarItemText="Next Page"
 this.ToolBarItemOrder=4
 end on
@@ -230,7 +230,7 @@ end type
 
 on m_lastpage.create
 this.Text="&Last Page"
-this.ToolBarItemName="VCRLast!"
+this.ToolBarItemName="images\tb_last.svg"
 this.ToolBarItemText="Last Page"
 this.ToolBarItemOrder=5
 end on
@@ -251,7 +251,7 @@ end type
 
 on m_customzoom.create
 this.Text="Custom &Zoom..."
-this.ToolBarItemName="Browse!"
+this.ToolBarItemName="images\tb_zoom_fit.svg"
 this.ToolBarItemText="Zoom"
 this.ToolBarItemOrder=6
 this.ToolBarItemSpace=2
@@ -266,7 +266,7 @@ end type
 
 on m_zoomout.create
 this.Text="Zoom &Out"
-this.ToolBarItemName="Custom034!"
+this.ToolBarItemName="images\tb_zoom_out.svg"
 this.ToolBarItemText="Zoom Out"
 this.ToolBarItemOrder=7
 end on
@@ -280,7 +280,7 @@ end type
 
 on m_zoomin.create
 this.Text="Zoom &In"
-this.ToolBarItemName="Custom033!"
+this.ToolBarItemName="images\tb_zoom_in.svg"
 this.ToolBarItemText="Zoom In"
 this.ToolBarItemOrder=8
 end on

@@ -277,8 +277,8 @@ If ai_Level < 4 Then
 	alvi_New.PictureIndex = ai_Level
 Else
 	// Set the picture to be the product picture
-	li_Picture = lv_1.AddLargePicture(ids_Data.Object.product_picture_name[ai_Row])
-	lv_1.AddSmallPicture(ids_Data.Object.product_picture_name[ai_Row])
+	li_Picture = lv_1.AddLargePicture(f_product_picture(ids_Data.Object.product_picture_name[ai_Row]))
+	lv_1.AddSmallPicture(f_product_picture(ids_Data.Object.product_picture_name[ai_Row]))
 	alvi_New.PictureIndex = li_Picture
 End If
 

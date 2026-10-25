@@ -142,7 +142,7 @@ end on
 on m_quickselect.create
 this.Text="&Data Source~tCtrl+Q"
 this.Microhelp="Open the Quick Select window"
-this.ToolBarItemName="SelectReturn!"
+this.ToolBarItemName="images\tb_quick_select.svg"
 this.ToolBarItemText="Quick Select"
 this.Shortcut=337
 end on
@@ -231,7 +231,7 @@ end on
 on m_exit.create
 this.Text="&Exit"
 this.Microhelp="Exit example"
-this.ToolBarItemName="Exit!"
+this.ToolBarItemName="images\exit.svg"
 this.ToolBarItemText="Exit"
 this.ToolBarItemOrder=99
 this.ToolBarItemSpace=3
@@ -288,7 +288,7 @@ end on
 on m_tile.create
 this.Text="&Tile Vertical"
 this.Microhelp="Arrange all as vertically tiled"
-this.ToolBarItemName="Tile!"
+this.ToolBarItemName="images\tb_tile.svg"
 this.ToolBarItemText="Tile Vertical"
 this.ToolBarItemSpace=2
 end on
@@ -302,7 +302,7 @@ end on
 on m_horizontal.create
 this.Text="Tile &Horizontal"
 this.Microhelp="Arrange all as horizontally tiled"
-this.ToolBarItemName="Horizontal!"
+this.ToolBarItemName="images\tb_tile_horizontal.svg"
 this.ToolBarItemText="Tile Horizontal"
 end on
 
@@ -315,7 +315,7 @@ end on
 on m_layer.create
 this.Text="&Layer"
 this.Microhelp="Arrange all as layered"
-this.ToolBarItemName="Layer!"
+this.ToolBarItemName="images\tb_layer.svg"
 this.ToolBarItemText="Layer"
 end on
 
@@ -328,7 +328,7 @@ end on
 on m_cascade.create
 this.Text="&Cascade"
 this.Microhelp="Arrange all as cascaded"
-this.ToolBarItemName="Cascade!"
+this.ToolBarItemName="images\tb_cascade.svg"
 this.ToolBarItemText="Cascade"
 end on
 

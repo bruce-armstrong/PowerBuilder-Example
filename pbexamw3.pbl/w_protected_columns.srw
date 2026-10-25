@@ -64,8 +64,9 @@ event open;call super::open;////////////////////////////////////////////////////
 // open script for w_protected_columns
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-dw_1.Object.backcolor.Expression = String(sle_color.BackColor)
-dw_1.Object.windowcolor.Expression = String(sle_color.TextColor)
+// Colours that read in light and dark themes: protected rows get a grey tint, the others stay transparent
+dw_1.Object.backcolor.Expression = "8421504"
+dw_1.Object.windowcolor.Expression = "536870912"
 
 // Post a user-defined event for DataWindow retrieval.  This allows the window to be
 // displayed faster when it is opened.

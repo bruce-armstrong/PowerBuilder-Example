@@ -591,7 +591,7 @@ long backcolor = 74481808
 string text = "Using DataWindow"
 long tabtextcolor = 41943040
 long tabbackcolor = 74481808
-string picturename = "DataWindow!"
+string picturename = "images\dw_table.svg"
 long picturemaskcolor = 12632256
 dw_1 dw_1
 end type
@@ -672,7 +672,7 @@ long backcolor = 74481808
 string text = "Using TreeView"
 long tabtextcolor = 41943040
 long tabbackcolor = 74481808
-string picturename = "TreeView!"
+string picturename = "images\tab_treeview.svg"
 long picturemaskcolor = 12632256
 tv_1 tv_1
 end type

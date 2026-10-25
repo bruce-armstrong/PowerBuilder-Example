@@ -172,7 +172,7 @@ end type
 
 on m_opensheet.create
 this.Text="&Open Sheet"
-this.ToolBarItemName="Custom050!"
+this.ToolBarItemName="images\folder_open.svg"
 this.ToolBarItemText="Open"
 this.ToolBarItemOrder=1
 end on
@@ -189,7 +189,7 @@ end type
 
 on m_close.create
 this.Text="&Close"
-this.ToolBarItemName="Custom039!"
+this.ToolBarItemName="images\tb_close.svg"
 this.ToolBarItemText="Close"
 this.ToolBarItemOrder=5
 this.ToolBarItemBarIndex=5
@@ -212,7 +212,7 @@ end type
 
 on m_save.create
 this.Text="&Save Toolbar Settings"
-this.ToolBarItemName="Save!"
+this.ToolBarItemName="images\btn_save.svg"
 this.ToolBarItemText="Save"
 this.ToolBarItemOrder=1
 this.ToolBarItemBarIndex=5
@@ -236,7 +236,7 @@ end type
 
 on m_delete.create
 this.Text="&Delete Toolbar Settings"
-this.ToolBarItemName="Clear!"
+this.ToolBarItemName="images\tb_delete.svg"
 this.ToolBarItemText="Delete"
 this.ToolBarItemOrder=2
 this.ToolBarItemBarIndex=5
@@ -265,7 +265,7 @@ end type
 
 on m_print.create
 this.Text="&Print"
-this.ToolBarItemName="Print!"
+this.ToolBarItemName="images\tb_print.svg"
 this.ToolBarItemText="Print"
 this.ToolBarItemOrder=3
 this.ToolBarItemBarIndex=5
@@ -281,7 +281,7 @@ end type
 
 on m_printersetup.create
 this.Text="Printer Set&up..."
-this.ToolBarItemName="Custom074!"
+this.ToolBarItemName="images\tb_printer_setup.svg"
 this.ToolBarItemText="Printer Setup"
 this.ToolBarItemOrder=4
 this.ToolBarItemBarIndex=5
@@ -303,7 +303,7 @@ end type
 
 on m_exit.create
 this.Text="E&xit"
-this.ToolBarItemName="Exit!"
+this.ToolBarItemName="images\exit.svg"
 this.ToolBarItemText="Exit"
 this.ToolBarItemOrder=1
 this.ToolBarItemBarIndex=4
@@ -344,7 +344,7 @@ end type
 
 on m_cut.create
 this.Text="&Cut"
-this.ToolBarItemName="Cut!"
+this.ToolBarItemName="images\tb_cut.svg"
 this.ToolBarItemText="Cut"
 this.ToolBarItemOrder=1
 this.ToolBarItemBarIndex=6
@@ -359,7 +359,7 @@ end type
 
 on m_copy.create
 this.Text="C&opy"
-this.ToolBarItemName="Copy!"
+this.ToolBarItemName="images\tb_copy.svg"
 this.ToolBarItemText="Copy"
 this.ToolBarItemOrder=2
 this.ToolBarItemBarIndex=6
@@ -374,7 +374,7 @@ end type
 
 on m_paste.create
 this.Text="&Paste"
-this.ToolBarItemName="Paste!"
+this.ToolBarItemName="images\tb_paste.svg"
 this.ToolBarItemText="Paste"
 this.ToolBarItemOrder=3
 this.ToolBarItemBarIndex=6
@@ -423,7 +423,7 @@ end type
 
 on m_tilehorizontal.create
 this.Text="Tile &Horizontal"
-this.ToolBarItemName="Horizontal!"
+this.ToolBarItemName="images\tb_tile_horizontal.svg"
 this.ToolBarItemText="Horizontal"
 this.ToolBarItemOrder=1
 this.ToolBarItemBarIndex=7
@@ -438,7 +438,7 @@ end type
 
 on m_tilevertical.create
 this.Text="Tile &Vertical"
-this.ToolBarItemName="Tile!"
+this.ToolBarItemName="images\tb_tile.svg"
 this.ToolBarItemText="Vertical"
 this.ToolBarItemOrder=2
 this.ToolBarItemBarIndex=7
@@ -453,7 +453,7 @@ end type
 
 on m_layer.create
 this.Text="&Layer"
-this.ToolBarItemName="Layer!"
+this.ToolBarItemName="images\tb_layer.svg"
 this.ToolBarItemText="Layer"
 this.ToolBarItemOrder=3
 this.ToolBarItemBarIndex=7
@@ -468,7 +468,7 @@ end type
 
 on m_cascade.create
 this.Text="&Cascade"
-this.ToolBarItemName="Cascade!"
+this.ToolBarItemName="images\tb_cascade.svg"
 this.ToolBarItemText="Cascade"
 this.ToolBarItemOrder=4
 this.ToolBarItemBarIndex=7
@@ -490,7 +490,7 @@ end type
 
 on m_toolbars.create
 this.Text="&Toolbars..."
-this.ToolBarItemName="Menu5!"
+this.ToolBarItemName="images\tb_toolbars.svg"
 this.ToolBarItemText="Toolbars"
 this.ToolBarItemOrder=1
 this.ToolBarItemBarIndex=2
@@ -527,7 +527,7 @@ end type
 
 on m_examplehelp.create
 this.Text="Example &Help"
-this.ToolBarItemName="Help!"
+this.ToolBarItemName="images\btn_help.svg"
 this.ToolBarItemText="Help"
 this.ToolBarItemOrder=1
 this.ToolBarItemBarIndex=3
@@ -549,7 +549,7 @@ end type
 
 on m_aboutthisexample.create
 this.Text="&About this example"
-this.ToolBarItemName="ScriptYes!"
+this.ToolBarItemName="images\about.svg"
 this.ToolBarItemText="About"
 this.ToolBarItemOrder=2
 this.ToolBarItemBarIndex=3

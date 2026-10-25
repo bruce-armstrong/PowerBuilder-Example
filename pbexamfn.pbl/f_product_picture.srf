@@ -1,0 +1,37 @@
+﻿//objectcomments Maps a product picture name from the database to its redrawn image in images\products
+global type f_product_picture from function_object
+end type
+
+forward prototypes
+global function string f_product_picture (string as_picture)
+end prototypes
+
+global function string f_product_picture (string as_picture);//////////////////////////////////////////////////////////////////////
+//
+// Function: f_product_picture
+//
+// Purpose: the product table stores the name of a 64 x 64 bitmap for each
+//				product (for example tshirtw.bmp).  The products were redrawn as
+//				SVG images in images\products, so ListView and TreeView pictures
+//				stay sharp at any size and DPI.
+//
+//	Arguments: as_picture	the picture name stored in product.picture_name
+//
+//	Returns:  images\products\<name>.svg if it exists, otherwise as_picture
+//
+//////////////////////////////////////////////////////////////////////
+String	ls_Name, ls_Svg
+Integer	li_Pos
+
+ls_Name = Trim(as_picture)
+// Drop any folder and the file extension
+li_Pos = LastPos(ls_Name, "\")
+If li_Pos > 0 Then ls_Name = Mid(ls_Name, li_Pos + 1)
+li_Pos = LastPos(ls_Name, ".")
+If li_Pos > 0 Then ls_Name = Left(ls_Name, li_Pos - 1)
+
+ls_Svg = "images\products\" + Lower(ls_Name) + ".svg"
+If FileExists(ls_Svg) Then Return ls_Svg
+Return as_picture
+end function
+

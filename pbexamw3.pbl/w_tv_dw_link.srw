@@ -171,7 +171,7 @@ Else
 	atvi_New.Children = False
 	
 	// Set the picture to be the product picture
-	li_Picture = tv_1.AddPicture(ids_Data[4].Object.product_picture_name[ai_Row])
+	li_Picture = tv_1.AddPicture(f_product_picture(ids_Data[4].Object.product_picture_name[ai_Row]))
 	atvi_New.PictureIndex = li_Picture
 	atvi_New.SelectedPictureIndex = atvi_New.PictureIndex
 End If

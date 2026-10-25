@@ -43,7 +43,7 @@ end variables
 event open;call super::open;// open script for w_dw_functions
 
 dw_1.SetTransObject(sqlca)
-dw_1.SetRowFocusIndicator(hand!, -10, -10)
+dw_1.SetRowFocusIndicator(p_rowfocus, -10, -10)
 
 end event
 

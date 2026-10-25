@@ -144,13 +144,8 @@ integer y = 800
 integer width = 951
 integer height = 920
 integer taborder = 60
-boolean titlebar = true
 string title = "Total Salary By Dept."
 string dataobject = "d_graph_salaries_by_department"
-boolean minbox = true
-boolean maxbox = true
-boolean resizable = true
-string icon = "None!"
 boolean livescroll = true
 end type
 
@@ -181,13 +176,8 @@ integer y = 800
 integer width = 978
 integer height = 920
 integer taborder = 80
-boolean titlebar = true
 string title = "Total Employees By Dept. By Status"
 string dataobject = "d_graph_employee_status_by_dept"
-boolean minbox = true
-boolean maxbox = true
-boolean resizable = true
-string icon = "None!"
 boolean livescroll = true
 end type
 
@@ -201,13 +191,8 @@ integer y = 800
 integer width = 951
 integer height = 920
 integer taborder = 70
-boolean titlebar = true
 string title = "Average Age By Dept."
 string dataobject = "d_graph_average_employee_age_by_dept"
-boolean minbox = true
-boolean maxbox = true
-boolean resizable = true
-string icon = "None!"
 boolean livescroll = true
 end type
 

@@ -125,7 +125,7 @@ end on
 on m_exit.create
 this.Text="&Exit"
 this.Microhelp="Exit this example"
-this.ToolBarItemName="Exit!"
+this.ToolBarItemName="images\exit.svg"
 this.ToolBarItemText="Exit"
 this.ToolBarItemOrder=16
 this.ToolBarItemSpace=2
@@ -178,7 +178,7 @@ end on
 on m_retrieve.create
 this.Text="&Retrieve"
 this.Microhelp="Retrieves the DataWindow"
-this.ToolBarItemName="Retrieve!"
+this.ToolBarItemName="images\tb_retrieve.svg"
 this.ToolBarItemText="Retrieve"
 this.ToolBarItemOrder=2
 end on
@@ -191,7 +191,7 @@ end on
 
 on m_updatesyntax.create
 this.Text="&Update Syntax"
-this.ToolBarItemName="Update!"
+this.ToolBarItemName="images\btn_update.svg"
 this.ToolBarItemText="Update Syntax"
 this.ToolBarItemOrder=4
 end on
@@ -212,7 +212,7 @@ end on
 on m_insertrow.create
 this.Text="&Insert Row~tCtrl+Ins"
 this.Microhelp="Inserts a new row into the DataWindow"
-this.ToolBarItemName="Insert!"
+this.ToolBarItemName="images\tb_insert.svg"
 this.ToolBarItemText="Insert Row"
 this.ToolBarItemOrder=6
 this.ToolBarItemSpace=1
@@ -228,7 +228,7 @@ end on
 on m_deleterow.create
 this.Text="&Delete Row~tCtrl+Del"
 this.Microhelp="Deletes the current row from the DataWindow"
-this.ToolBarItemName="Clear!"
+this.ToolBarItemName="images\tb_delete.svg"
 this.ToolBarItemText="Delete Row"
 this.ToolBarItemOrder=8
 this.Enabled=false
@@ -250,7 +250,7 @@ end type
 on m_setitemstatus.create
 this.Text="Set Item &Status"
 this.Microhelp="Sets the item status of the current row or column of the DataWindow."
-this.ToolBarItemName="SetVariable!"
+this.ToolBarItemName="images\tb_item_status.svg"
 this.ToolBarItemText="Set Item Status"
 this.ToolBarItemOrder=10
 this.ToolBarItemSpace=1
@@ -409,7 +409,7 @@ end on
 on m_contents.create
 this.Text="&Contents...~tF1"
 this.Microhelp="Display help"
-this.ToolBarItemName="Help!"
+this.ToolBarItemName="images\btn_help.svg"
 this.ToolBarItemText="Help"
 this.ToolBarItemOrder=14
 this.ToolBarItemSpace=2

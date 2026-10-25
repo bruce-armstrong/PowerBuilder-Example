@@ -75,7 +75,7 @@ dw_1.Retrieve( )
 
 //initialize the datawindow for selecting bitmaps
 dw_bitmap.InsertRow(0)
-dw_bitmap.Object.bitmapname[1] = "indicatr.bmp"
+dw_bitmap.Object.bitmapname[1] = "images\arrow_right.svg"
 
 end event
 
@@ -301,7 +301,7 @@ integer x = 2569
 integer y = 880
 integer width = 151
 integer height = 88
-string picturename = "indicatr.bmp"
+string picturename = "images\arrow_right.svg"
 end type
 
 type cb_close from commandbutton within w_setrowfocus

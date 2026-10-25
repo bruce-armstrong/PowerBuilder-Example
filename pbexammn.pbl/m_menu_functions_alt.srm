@@ -42,7 +42,7 @@ end on
 
 on m_exit.create
 call m_menu`m_exit::create
-this.ToolBarItemName="exit!"
+this.ToolBarItemName="images\exit.svg"
 this.ToolBarItemDownName=""
 end on
 

@@ -53,8 +53,8 @@ li_Rows = ids_Products.Retrieve()
 
 // Get all rows from the datastore and add as items to the listview
 For li_Cnt = 1 To li_Rows
-	llvi_Item.PictureIndex = lv_prod.AddLargePicture(ids_Products.Object.picture_name[li_Cnt])
-	lv_prod.AddSmallPicture(ids_Products.Object.picture_name[li_Cnt])
+	llvi_Item.PictureIndex = lv_prod.AddLargePicture(f_product_picture(ids_Products.Object.picture_name[li_Cnt]))
+	lv_prod.AddSmallPicture(f_product_picture(ids_Products.Object.picture_name[li_Cnt]))
 
 	// Save the picture name in the data attribute so it can be referenced when the item is dropped.
 	llvi_Item.Data = ids_Products.Object.picture_name[li_Cnt]

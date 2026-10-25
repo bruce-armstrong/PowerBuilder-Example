@@ -428,6 +428,10 @@ If (ge_Environment.OSType = windows!) Or (ge_Environment.OSType = windowsNT!) Th
 	This.GetContextService("Internet", iin_Context)
 End If
 
+// Start with the tabular DataWindow selected, so the DataWindow is not empty
+ddlb_1.SelectItem(3)
+ddlb_1.Post Event SelectionChanged(3)
+
 end event
 
 type tab_1 from tab within w_dw_html

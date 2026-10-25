@@ -211,7 +211,7 @@ if it_trans.SQLCode = -1 then
 	MessageBox("Connect Error for Data Source Name: 'PB Demo DB V2022R3'", it_trans.SQLErrText, exclamation!)
 end if
 dw_1.SetTransObject(it_trans)
-dw_1.SetRowFocusIndicator(hand!)
+dw_1.SetRowFocusIndicator(p_rowfocus)
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -490,7 +490,7 @@ on updateend;///////////////////////////////////////////////////////////////////
 // refreshed for all the rows/columns.
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 dw_1.Retrieve()
-dw_1.SetRowFocusIndicator (hand!)
+dw_1.SetRowFocusIndicator (p_rowfocus)
 
 end on
 
@@ -509,7 +509,7 @@ dwbuffer	le_buffer
 if ib_update then
 	// If the row is in the primary buffer, scroll to the row.
 	if buffer = primary! then
-		this.SetRowFocusIndicator (hand!)
+		this.SetRowFocusIndicator (parent.p_rowfocus)
 		this.ScrollToRow (row)
 	else
 		this.SetRowFocusIndicator (off!)

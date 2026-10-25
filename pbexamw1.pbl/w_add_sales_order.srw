@@ -90,7 +90,7 @@ Return li_NextNum + 1
 
 end function
 
-event open;call super::open;dw_items.SetRowFocusIndicator(Hand!)
+event open;call super::open;dw_items.SetRowFocusIndicator(p_rowfocus)
 
 Post Event ue_add_order()
 cb_prod.Post Event Clicked()

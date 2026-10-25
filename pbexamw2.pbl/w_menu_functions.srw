@@ -134,9 +134,9 @@ this.SetRedraw (false)
 
 dw_menuitem.InsertRow (0)
 dw_toolbaritem.InsertRow (0)
-dw_1.SetRowFocusIndicator (hand!, -10, -10)
-dw_2.SetRowFocusIndicator (hand!, -10, -10)
-dw_3.SetRowFocusIndicator (hand!, -10, -10)
+dw_1.SetRowFocusIndicator (p_rowfocus, -10, -10)
+dw_2.SetRowFocusIndicator (p_rowfocus, -10, -10)
+dw_3.SetRowFocusIndicator (p_rowfocus, -10, -10)
 
 wf_show_menu()
 dw_1.SetFocus()

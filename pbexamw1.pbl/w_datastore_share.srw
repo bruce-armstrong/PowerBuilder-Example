@@ -60,6 +60,10 @@ ids_4.Retrieve()
 
 mle_inst.Visible = False
 
+// Start with the first DataStore shared, so the DataWindow is not empty
+rb_1.Checked = True
+rb_1.Event Clicked()
+
 end event
 
 event open;call super::open;ids_1 = Create DataStore

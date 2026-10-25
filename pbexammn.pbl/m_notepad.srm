@@ -262,7 +262,7 @@ end on
 on m_new.create
 this.Text="&New"
 this.Microhelp="Create a new document"
-this.ToolBarItemName="ScriptNo!"
+this.ToolBarItemName="images\tb_new.svg"
 this.ToolBarItemText="New"
 this.ToolBarItemOrder=1
 end on
@@ -285,7 +285,7 @@ end on
 on m_open.create
 this.Text="&Open..."
 this.Microhelp="Open a new file"
-this.ToolBarItemName="Custom050!"
+this.ToolBarItemName="images\folder_open.svg"
 this.ToolBarItemText="Open"
 this.ToolBarItemOrder=2
 end on
@@ -308,7 +308,7 @@ end on
 on m_close.create
 this.Text="&Close~tCtrl+F4"
 this.Microhelp="Close document"
-this.ToolBarItemName="Custom039!"
+this.ToolBarItemName="images\tb_close.svg"
 this.ToolBarItemText="Close"
 this.ToolBarItemOrder=3
 this.Shortcut=371
@@ -336,7 +336,7 @@ end on
 on m_save.create
 this.Text="&Save..."
 this.Microhelp="Save document"
-this.ToolBarItemName="Custom008!"
+this.ToolBarItemName="images\btn_save.svg"
 this.ToolBarItemText="Save"
 this.ToolBarItemOrder=1
 this.ToolBarItemBarIndex=2
@@ -382,7 +382,7 @@ end on
 on m_print.create
 this.Text="Prin&t"
 this.Microhelp="Print document"
-this.ToolBarItemName="Print!"
+this.ToolBarItemName="images\tb_print.svg"
 this.ToolBarItemText="Print"
 this.ToolBarItemOrder=2
 this.ToolBarItemBarIndex=2
@@ -417,7 +417,7 @@ end on
 on m_exit.create
 this.Text="E&xit"
 this.Microhelp="Exit this example"
-this.ToolBarItemName="Exit!"
+this.ToolBarItemName="images\exit.svg"
 this.ToolBarItemText="Exit"
 this.ToolBarItemOrder=2
 this.ToolBarItemBarIndex=5
@@ -485,7 +485,7 @@ end on
 on m_undo.create
 this.Text="&Undo~tCtrl+Z"
 this.Microhelp="Undo"
-this.ToolBarItemName="Undo!"
+this.ToolBarItemName="images\tb_undo.svg"
 this.ToolBarItemText="Undo"
 this.ToolBarItemOrder=1
 this.ToolBarItemBarIndex=3
@@ -515,7 +515,7 @@ end on
 on m_cut.create
 this.Text="Cu&t~tCtrl+X"
 this.Microhelp="Cut selected text to clipboard"
-this.ToolBarItemName="Cut!"
+this.ToolBarItemName="images\tb_cut.svg"
 this.ToolBarItemText="Cut"
 this.ToolBarItemOrder=2
 this.ToolBarItemBarIndex=3
@@ -542,7 +542,7 @@ end on
 on m_copy.create
 this.Text="&Copy~tCtrl+C"
 this.Microhelp="Copy selected text to clipboard"
-this.ToolBarItemName="Copy!"
+this.ToolBarItemName="images\tb_copy.svg"
 this.ToolBarItemText="Copy"
 this.ToolBarItemOrder=3
 this.ToolBarItemBarIndex=3
@@ -566,7 +566,7 @@ end on
 on m_paste.create
 this.Text="&Paste~tCtrl+V"
 this.Microhelp="Paste from clipboard"
-this.ToolBarItemName="Paste!"
+this.ToolBarItemName="images\tb_paste.svg"
 this.ToolBarItemText="Paste"
 this.ToolBarItemOrder=4
 this.ToolBarItemBarIndex=3
@@ -591,7 +591,7 @@ end on
 on m_delete1.create
 this.Text="C&lear~tDel"
 this.Microhelp="Clear selected text"
-this.ToolBarItemName="Clear!"
+this.ToolBarItemName="images\tb_clear.svg"
 this.ToolBarItemText="Clear"
 this.ToolBarItemOrder=5
 this.ToolBarItemBarIndex=3
@@ -625,7 +625,7 @@ end on
 on m_selectall.create
 this.Text="Select &All~tCtrl+A"
 this.Microhelp="Select entire document"
-this.ToolBarItemName="SelectAll!"
+this.ToolBarItemName="images\tb_select_all.svg"
 this.ToolBarItemText="Select All"
 this.ToolBarItemOrder=6
 this.ToolBarItemBarIndex=3
@@ -1005,7 +1005,7 @@ end on
 on m_tile.create
 this.Text="&Tile Vertical"
 this.Microhelp="Arrange all as vertically tiled"
-this.ToolBarItemName="Tile!"
+this.ToolBarItemName="images\tb_tile.svg"
 this.ToolBarItemText="Tile Vertical"
 this.ToolBarItemOrder=1
 this.ToolBarItemBarIndex=4
@@ -1020,7 +1020,7 @@ end on
 on m_horizontal.create
 this.Text="Tile &Horizontal"
 this.Microhelp="Arrange all as horizontally tiled"
-this.ToolBarItemName="Horizontal!"
+this.ToolBarItemName="images\tb_tile_horizontal.svg"
 this.ToolBarItemText="Tile Horizontal"
 this.ToolBarItemOrder=2
 this.ToolBarItemBarIndex=4
@@ -1035,7 +1035,7 @@ end on
 on m_cascade.create
 this.Text="&Cascade"
 this.Microhelp="Arrange all sheets as cascaded"
-this.ToolBarItemName="Cascade!"
+this.ToolBarItemName="images\tb_cascade.svg"
 this.ToolBarItemText="Cascade"
 this.ToolBarItemOrder=3
 this.ToolBarItemBarIndex=4
@@ -1050,7 +1050,7 @@ end on
 on m_layer.create
 this.Text="&Layer"
 this.Microhelp="Arrange all sheets as layered"
-this.ToolBarItemName="Layer!"
+this.ToolBarItemName="images\tb_layer.svg"
 this.ToolBarItemText="Layer"
 this.ToolBarItemOrder=4
 this.ToolBarItemBarIndex=4
@@ -1072,7 +1072,7 @@ end on
 on m_arrangeicons.create
 this.Text="Arrange &Icons"
 this.Microhelp="Arrange all icons"
-this.ToolBarItemName="ArrangeIcons!"
+this.ToolBarItemName="images\tb_arrange_icons.svg"
 this.ToolBarItemText="Arrange"
 this.ToolBarItemOrder=5
 this.ToolBarItemBarIndex=4
@@ -1128,7 +1128,7 @@ end on
 on m_contents.create
 this.Text="&Contents...~tF1"
 this.Microhelp="Display help"
-this.ToolBarItemName="Help!"
+this.ToolBarItemName="images\btn_help.svg"
 this.ToolBarItemText="Help"
 this.ToolBarItemOrder=1
 this.ToolBarItemBarIndex=5
