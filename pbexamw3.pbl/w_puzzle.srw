@@ -232,31 +232,31 @@ end event
 event open;call super::open;Integer	li_Cnt
 
 // Initialize array containing solution
-is_Solution[1] = "logo11.bmp"
-is_Solution[2] = "logo12.bmp"
-is_Solution[3] = "logo13.bmp"
-is_Solution[4] = "logo14.bmp"
-is_Solution[5] = "logo15.bmp"
-is_Solution[6] = "logo21.bmp"
-is_Solution[7] = "logo22.bmp"
-is_Solution[8] = "logo23.bmp"
-is_Solution[9] = "logo24.bmp"
-is_Solution[10] = "logo25.bmp"
-is_Solution[11] = "logo31.bmp"
-is_Solution[12] = "logo32.bmp"
-is_Solution[13] = "logo33.bmp"
-is_Solution[14] = "logo34.bmp"
-is_Solution[15] = "logo35.bmp"
-is_Solution[16] = "logo41.bmp"
-is_Solution[17] = "logo42.bmp"
-is_Solution[18] = "logo43.bmp"
-is_Solution[19] = "logo44.bmp"
-is_Solution[20] = "logo45.bmp"
-is_Solution[21] = "logo51.bmp"
-is_Solution[22] = "logo52.bmp"
-is_Solution[23] = "logo53.bmp"
-is_Solution[24] = "logo54.bmp"
-is_Solution[25] = "logo55.bmp"
+is_Solution[1] = "images\puzzle\tile11.png"
+is_Solution[2] = "images\puzzle\tile12.png"
+is_Solution[3] = "images\puzzle\tile13.png"
+is_Solution[4] = "images\puzzle\tile14.png"
+is_Solution[5] = "images\puzzle\tile15.png"
+is_Solution[6] = "images\puzzle\tile21.png"
+is_Solution[7] = "images\puzzle\tile22.png"
+is_Solution[8] = "images\puzzle\tile23.png"
+is_Solution[9] = "images\puzzle\tile24.png"
+is_Solution[10] = "images\puzzle\tile25.png"
+is_Solution[11] = "images\puzzle\tile31.png"
+is_Solution[12] = "images\puzzle\tile32.png"
+is_Solution[13] = "images\puzzle\tile33.png"
+is_Solution[14] = "images\puzzle\tile34.png"
+is_Solution[15] = "images\puzzle\tile35.png"
+is_Solution[16] = "images\puzzle\tile41.png"
+is_Solution[17] = "images\puzzle\tile42.png"
+is_Solution[18] = "images\puzzle\tile43.png"
+is_Solution[19] = "images\puzzle\tile44.png"
+is_Solution[20] = "images\puzzle\tile45.png"
+is_Solution[21] = "images\puzzle\tile51.png"
+is_Solution[22] = "images\puzzle\tile52.png"
+is_Solution[23] = "images\puzzle\tile53.png"
+is_Solution[24] = "images\puzzle\tile54.png"
+is_Solution[25] = "images\puzzle\tile55.png"
 
 // Register each StaticText User Object
 // The array will be used to check for solution
@@ -968,7 +968,7 @@ integer y = 24
 integer width = 1440
 integer height = 1260
 boolean bringtotop = true
-string picturename = "logo.bmp"
+string picturename = "images\puzzle\puzzle.png"
 boolean focusrectangle = false
 end type
 
@@ -979,7 +979,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo55.bmp"
+string picturename = "images\puzzle\tile55.png"
 boolean focusrectangle = false
 end type
 
@@ -990,7 +990,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo54.bmp"
+string picturename = "images\puzzle\tile54.png"
 boolean focusrectangle = false
 end type
 
@@ -1001,7 +1001,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo53.bmp"
+string picturename = "images\puzzle\tile53.png"
 boolean focusrectangle = false
 end type
 
@@ -1012,7 +1012,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo52.bmp"
+string picturename = "images\puzzle\tile52.png"
 boolean focusrectangle = false
 end type
 
@@ -1023,7 +1023,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo51.bmp"
+string picturename = "images\puzzle\tile51.png"
 boolean focusrectangle = false
 end type
 
@@ -1034,7 +1034,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo12.bmp"
+string picturename = "images\puzzle\tile12.png"
 boolean focusrectangle = false
 end type
 
@@ -1045,7 +1045,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo13.bmp"
+string picturename = "images\puzzle\tile13.png"
 boolean focusrectangle = false
 end type
 
@@ -1056,7 +1056,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo14.bmp"
+string picturename = "images\puzzle\tile14.png"
 boolean focusrectangle = false
 end type
 
@@ -1067,7 +1067,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo11.bmp"
+string picturename = "images\puzzle\tile11.png"
 boolean focusrectangle = false
 end type
 
@@ -1078,7 +1078,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo15.bmp"
+string picturename = "images\puzzle\tile15.png"
 boolean focusrectangle = false
 end type
 
@@ -1089,7 +1089,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo21.bmp"
+string picturename = "images\puzzle\tile21.png"
 boolean focusrectangle = false
 end type
 
@@ -1100,7 +1100,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo22.bmp"
+string picturename = "images\puzzle\tile22.png"
 boolean focusrectangle = false
 end type
 
@@ -1111,7 +1111,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo23.bmp"
+string picturename = "images\puzzle\tile23.png"
 boolean focusrectangle = false
 end type
 
@@ -1122,7 +1122,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo25.bmp"
+string picturename = "images\puzzle\tile25.png"
 boolean focusrectangle = false
 end type
 
@@ -1133,7 +1133,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo24.bmp"
+string picturename = "images\puzzle\tile24.png"
 boolean focusrectangle = false
 end type
 
@@ -1144,7 +1144,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo31.bmp"
+string picturename = "images\puzzle\tile31.png"
 boolean focusrectangle = false
 end type
 
@@ -1155,7 +1155,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo32.bmp"
+string picturename = "images\puzzle\tile32.png"
 boolean focusrectangle = false
 end type
 
@@ -1166,7 +1166,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo33.bmp"
+string picturename = "images\puzzle\tile33.png"
 boolean focusrectangle = false
 end type
 
@@ -1177,7 +1177,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo34.bmp"
+string picturename = "images\puzzle\tile34.png"
 boolean focusrectangle = false
 end type
 
@@ -1188,7 +1188,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo35.bmp"
+string picturename = "images\puzzle\tile35.png"
 boolean focusrectangle = false
 end type
 
@@ -1199,7 +1199,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo41.bmp"
+string picturename = "images\puzzle\tile41.png"
 boolean focusrectangle = false
 end type
 
@@ -1210,7 +1210,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo42.bmp"
+string picturename = "images\puzzle\tile42.png"
 boolean focusrectangle = false
 end type
 
@@ -1221,7 +1221,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo43.bmp"
+string picturename = "images\puzzle\tile43.png"
 boolean focusrectangle = false
 end type
 
@@ -1232,7 +1232,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo44.bmp"
+string picturename = "images\puzzle\tile44.png"
 boolean focusrectangle = false
 end type
 
@@ -1243,7 +1243,7 @@ integer width = 288
 integer height = 252
 boolean dragauto = true
 boolean bringtotop = true
-string picturename = "logo45.bmp"
+string picturename = "images\puzzle\tile45.png"
 boolean focusrectangle = false
 end type
 

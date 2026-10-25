@@ -157,7 +157,7 @@ event open;call super::open;String	ls_Dir
 // Start with a few of the example application's own files
 ls_Dir = GetCurrentDirectory() + "\"
 of_add_file(ls_Dir + "example.bmp")
-of_add_file(ls_Dir + "logo.bmp")
+of_add_file(ls_Dir + "images\puzzle\puzzle.png")
 of_add_file(ls_Dir + "exampl.chm")
 of_add_file(ls_Dir + "README.md")
 

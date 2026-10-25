@@ -90,6 +90,7 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
 - **Graphs:**
   - Every graph uses Segoe UI instead of the bitmap font MS Sans Serif, has a white background, and uses a flat type instead of a 3D one.
   - Graphs using Shared DataWindows shows its three graphs without the classic caption bars; the captions are the graph titles.
+- **Sliding-picture puzzle:** the 25 tiles were slices of the Powersoft logo. The puzzle, its solution thumbnail and the Zip example now use a new landscape picture drawn for it, `images\puzzle\puzzle.png`, cut into `tile11.png` to `tile55.png` at 2x resolution. The old bitmaps are in `_archive\`.
 - **RTE DataWindow Mail Merge:** the letterhead has Appeon's logo and mailing address (Appeon Inc., 425 1st Street, Unit 1507, San Francisco, CA 94105) instead of Powersoft's.
 
 ## Database: SQL Server support
@@ -132,4 +133,5 @@ The examples were written for the SQL Anywhere demo database. They now also work
 | 2026-10-25 | `cfbd017` | Fix the pipeline examples and more examples on SQL Server; replace remaining bitmaps |
 | 2026-10-25 | `49bcadc` | Mark the MAPI mail examples as deprecated |
 | 2026-10-25 | `041e5a3` | Add CHANGES.md describing all changes since the fork |
-| 2026-10-25 | (pending) | Redraw product pictures and toolbar icons, fix DataWindow colours in the dark theme, flatten the graphs, and rebrand the mail-merge letter |
+| 2026-10-25 | `c32b2d9` | Redraw product pictures and toolbar icons, fix DataWindow colours in the dark theme, flatten the graphs, and rebrand the mail-merge letter |
+| 2026-10-25 | (pending) | Replace the Powersoft logo puzzle with new artwork |
