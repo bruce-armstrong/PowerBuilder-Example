@@ -29,7 +29,7 @@ end forward
 global type w_rest_client from w_center
 integer width = 3255
 integer height = 2060
-string title = "RESTClient & HTTPClient"
+string title = "RESTClient and HTTPClient"
 st_intro st_intro
 st_url st_url
 sle_url sle_url

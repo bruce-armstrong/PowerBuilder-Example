@@ -94,6 +94,12 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
   - Graphs using Shared DataWindows shows its three graphs without the classic caption bars; the captions are the graph titles.
 - **Example fixes:**
   - DataWindow buttons aren't drawn by the theme. The new `f_dw_theme_buttons` gives a DataWindow's buttons a dark face and light text when a dark theme is active; Report With DataWindow Buttons and Contact Maintenance call it. Picture buttons still get a light frame from PowerBuilder.
+  - Placeholders & OpenURL and Zip & Unzip: their group boxes came first in `Control[]`, so PowerBuilder painted them over the controls inside and the examples looked empty. The group boxes now come last.
+  - Resizing Controls on a Window: dragging the window edge now rescales the controls. The resize code hid the window and forced it back to its original proportions on every resize, which ended the drag, so only maximizing worked. It now scales the controls to the workspace under `SetRedraw`, and the hint says to drag a window edge.
+  - Registry Editor: with a dark theme, the value list's column header (a Windows header control the theme does not paint) gets the Windows dark style through `SetWindowTheme(..., "DarkMode_ItemsView")` instead of a white bar, and the second column is titled "Value" instead of a second "Name".
+  - Progress Bar Controls: Start steps both bars on a 0.1-second timer (from the minimum again if they are full) and Stop stops it. The old loop made every step before the bars could repaint.
+  - Window titles that contained " & " (Placeholders & OpenURL, Mode & Median and eight more) say " and ": the tabbed MDI bar treats "&" as a shortcut marker, so the tabs showed an underlined letter instead.
+  - PictureListBox Picture Browser: a new "SVG images (.svg)" picture type, selected by default, lists the app's SVG images from `images\`; Bitmaps and Icons go back to the examples folder.
   - DataWindow Query Painter: the Selected Columns grid shows a blank DataWindow in the themed window colour until columns are chosen, instead of a white square.
   - Row Focus Indicators: the bitmap list is always enabled; picking a bitmap switches to the Picture indicator.
   - Query Mode: Retrieve accepts the criteria still being typed (`AcceptText`) before it retrieves.
@@ -143,4 +149,5 @@ The examples were written for the SQL Anywhere demo database. They now also work
 | 2026-10-25 | `041e5a3` | Add CHANGES.md describing all changes since the fork |
 | 2026-10-25 | `c32b2d9` | Redraw product pictures and toolbar icons, fix DataWindow colours in the dark theme, flatten the graphs, and rebrand the mail-merge letter |
 | 2026-10-25 | `e46d622` | Replace the Powersoft logo puzzle with new artwork |
-| 2026-10-25 | (pending) | Fix the blank MDI frames, darker DataWindow buttons, and example fixes |
+| 2026-10-25 | `11472af` | Fix the blank MDI frames, darker DataWindow buttons, and example fixes |
+| 2026-10-25 | (pending) | Fix Placeholders & OpenURL, Resizing Controls, Progress Bar, Registry Editor header, SVG in the picture browser |

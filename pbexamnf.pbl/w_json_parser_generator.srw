@@ -35,7 +35,7 @@ end forward
 global type w_json_parser_generator from w_center
 integer width = 3255
 integer height = 2060
-string title = "JSONParser & JSONGenerator"
+string title = "JSONParser and JSONGenerator"
 st_intro st_intro
 st_input st_input
 mle_json mle_json

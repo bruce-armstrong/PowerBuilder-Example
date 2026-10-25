@@ -62,9 +62,6 @@ gb_options gb_options
 end type
 global w_progressbars w_progressbars
 
-type variables
-boolean ib_stop
-end variables
 
 on w_progressbars.create
 int iCurrent
@@ -127,7 +124,13 @@ destroy(this.cb_start)
 destroy(this.gb_options)
 end on
 
-event close;call super::close;//Show ( w_main )
+event close;call super::close;Timer ( 0 )
+//Show ( w_main )
+end event
+
+event timer;call super::timer;hpb_1.StepIt ( )
+vpb_1.StepIt ( )
+If hpb_1.Position >= hpb_1.MaxPosition Then Timer ( 0 )
 end event
 
 event open;call super::open;//  ProgressBar Properties
@@ -466,7 +469,7 @@ string facename = "MS Sans Serif"
 string text = "S&top"
 end type
 
-event clicked;ib_stop = True
+event clicked;Timer ( 0, Parent )
 end event
 
 type cb_close from commandbutton within w_progressbars
@@ -502,21 +505,12 @@ string facename = "MS Sans Serif"
 string text = "&Start"
 end type
 
-event clicked;long ll_step, ll_max
-
-SetPointer ( HourGlass! )
-
-ll_max = hpb_1.MaxPosition
-
-For ll_step = 1 to ll_max
-	Yield ( ) 
-	If ib_stop Then
-		ib_stop = False
-		Return
-	End If
-	hpb_1.StepIt ( )
-	vpb_1.StepIt ( )
-Next 
+event clicked;// Step both bars on a timer, so each step can be seen (a loop finishes before the bars repaint)
+If hpb_1.Position >= hpb_1.MaxPosition Then
+	hpb_1.Position = hpb_1.MinPosition
+	vpb_1.Position = vpb_1.MinPosition
+End If
+Timer ( 0.1, Parent )
 end event
 
 type gb_options from groupbox within w_progressbars

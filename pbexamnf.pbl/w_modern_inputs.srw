@@ -35,7 +35,7 @@ end forward
 global type w_modern_inputs from w_center
 integer width = 3255
 integer height = 2060
-string title = "Placeholders & OpenURL"
+string title = "Placeholders and OpenURL"
 st_intro st_intro
 gb_form gb_form
 sle_name sle_name
@@ -57,34 +57,34 @@ on w_modern_inputs.create
 int iCurrent
 call super::create
 this.st_intro=create st_intro
-this.gb_form=create gb_form
 this.sle_name=create sle_name
 this.sle_email=create sle_email
 this.em_phone=create em_phone
 this.mle_notes=create mle_notes
 this.cb_fill=create cb_fill
 this.cb_clear=create cb_clear
-this.gb_links=create gb_links
 this.st_links=create st_links
 this.cb_docs=create cb_docs
 this.cb_community=create cb_community
 this.cb_mail=create cb_mail
 this.cb_close=create cb_close
+this.gb_form=create gb_form
+this.gb_links=create gb_links
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.st_intro
-this.Control[iCurrent+2]=this.gb_form
-this.Control[iCurrent+3]=this.sle_name
-this.Control[iCurrent+4]=this.sle_email
-this.Control[iCurrent+5]=this.em_phone
-this.Control[iCurrent+6]=this.mle_notes
-this.Control[iCurrent+7]=this.cb_fill
-this.Control[iCurrent+8]=this.cb_clear
-this.Control[iCurrent+9]=this.gb_links
-this.Control[iCurrent+10]=this.st_links
-this.Control[iCurrent+11]=this.cb_docs
-this.Control[iCurrent+12]=this.cb_community
-this.Control[iCurrent+13]=this.cb_mail
-this.Control[iCurrent+14]=this.cb_close
+this.Control[iCurrent+2]=this.sle_name
+this.Control[iCurrent+3]=this.sle_email
+this.Control[iCurrent+4]=this.em_phone
+this.Control[iCurrent+5]=this.mle_notes
+this.Control[iCurrent+6]=this.cb_fill
+this.Control[iCurrent+7]=this.cb_clear
+this.Control[iCurrent+8]=this.st_links
+this.Control[iCurrent+9]=this.cb_docs
+this.Control[iCurrent+10]=this.cb_community
+this.Control[iCurrent+11]=this.cb_mail
+this.Control[iCurrent+12]=this.cb_close
+this.Control[iCurrent+13]=this.gb_form
+this.Control[iCurrent+14]=this.gb_links
 end on
 
 on w_modern_inputs.destroy

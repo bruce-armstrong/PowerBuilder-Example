@@ -24,6 +24,12 @@ tv_reg tv_reg
 end type
 global w_regedit w_regedit
 
+type prototypes
+// Used to give the ListView column header the Windows dark style (the PowerBuilder theme does not paint it)
+FUNCTION longptr SendMessageW ( longptr hWnd, uint Msg, longptr wParam, longptr lParam ) LIBRARY "user32.dll"
+FUNCTION long SetWindowTheme ( longptr hWnd, string pszSubAppName, string pszSubIdList ) LIBRARY "uxtheme.dll"
+end prototypes
+
 type variables
 Long il_Bad, il_Good, il_Root[6]
 end variables
@@ -38,12 +44,21 @@ event ue_addroots;// Add Root keys to the TreeView control
 String				ls_Keys[]
 Long					ll_Handle
 TreeViewItem		ltvi_Item
+Longptr				ll_Header
+String				ls_Null
 
 SetPointer(HourGlass!)
 
 // Add columns to the ListView control
 lv_vals.AddColumn("Name", Left!, 600)
-lv_vals.AddColumn("Name", Left!, 1500)
+lv_vals.AddColumn("Value", Left!, 1500)
+
+// With a dark theme, give the column header (a Windows header control, LVM_GETHEADER) the Windows dark style
+If Pos(Lower(GetTheme()), "dark") > 0 Then
+	SetNull(ls_Null)
+	ll_Header = SendMessageW(Handle(lv_vals), 4127, 0, 0)
+	If ll_Header <> 0 Then SetWindowTheme(ll_Header, "DarkMode_ItemsView", ls_Null)
+End If
 
 // There is always at least one entry in the Registry
 // Windows 3.1 will have only this root
@@ -249,7 +264,7 @@ fontfamily fontfamily = swiss!
 string facename = "MS Sans Serif"
 long textcolor = 33554432
 borderstyle borderstyle = stylelowered!
-boolean buttonheader = false
+boolean buttonheader = true
 boolean editlabels = true
 listviewview view = listviewreport!
 integer largepicturewidth = 32

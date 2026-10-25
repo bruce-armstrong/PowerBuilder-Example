@@ -43,7 +43,7 @@ end forward
 global type w_compressor from w_center
 integer width = 3255
 integer height = 2060
-string title = "Zip & Unzip (Compressor / Extractor)"
+string title = "Zip and Unzip (Compressor / Extractor)"
 st_intro st_intro
 st_files st_files
 lb_files lb_files
@@ -105,10 +105,10 @@ this.st_contents=create st_contents
 this.lb_contents=create lb_contents
 this.cb_list=create cb_list
 this.cb_extract=create cb_extract
-this.gb_blob=create gb_blob
 this.cb_blob=create cb_blob
 this.st_status=create st_status
 this.cb_close=create cb_close
+this.gb_blob=create gb_blob
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.st_intro
 this.Control[iCurrent+2]=this.st_files
@@ -124,10 +124,10 @@ this.Control[iCurrent+11]=this.st_contents
 this.Control[iCurrent+12]=this.lb_contents
 this.Control[iCurrent+13]=this.cb_list
 this.Control[iCurrent+14]=this.cb_extract
-this.Control[iCurrent+15]=this.gb_blob
-this.Control[iCurrent+16]=this.cb_blob
-this.Control[iCurrent+17]=this.st_status
-this.Control[iCurrent+18]=this.cb_close
+this.Control[iCurrent+15]=this.cb_blob
+this.Control[iCurrent+16]=this.st_status
+this.Control[iCurrent+17]=this.cb_close
+this.Control[iCurrent+18]=this.gb_blob
 end on
 
 on w_compressor.destroy

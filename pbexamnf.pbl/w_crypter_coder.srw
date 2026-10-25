@@ -27,7 +27,7 @@ end forward
 global type w_crypter_coder from w_center
 integer width = 3255
 integer height = 2060
-string title = "Encoding, Hashing & Encryption"
+string title = "Encoding, Hashing and Encryption"
 st_intro st_intro
 st_text st_text
 sle_text sle_text

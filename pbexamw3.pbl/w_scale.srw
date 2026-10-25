@@ -215,12 +215,10 @@ dragobject temp
 int cnt,i
 
 ib_exec = false // keep the function from being called recursively
-this.hide()
 
-// resize the window
-this.width = ((  ii_win_width - ii_win_frame_w) * size_factor) + ii_win_frame_w
-
-this.height = ((  ii_win_height - ii_win_frame_h) * size_factor) + ii_win_frame_h
+// Scale the controls while the user drags the window border. The window keeps the size the user gives it
+// (hiding it or setting its size here would end the drag), and SetRedraw avoids flicker while the controls move.
+this.SetRedraw(False)
 
 // for each control in the list, resize it and it's textsize (as applicable)
 cnt = upperbound(this.control)
@@ -297,7 +295,7 @@ for i = cnt to 1 step -1
 next
 
 	
-this.Show()
+this.SetRedraw(True)
 ib_exec = true
 return 1
 end function
@@ -349,8 +347,8 @@ int rc
 
 // recalculate the new ratios and then use the minimum
 if ib_exec then  // Check to see if wf_resize_it is already running.
-	ratioh = this.height /ii_win_height
-	ratiow = this.width / ii_win_width
+	ratioh = this.WorkSpaceHeight() / (ii_win_height - ii_win_frame_h)
+	ratiow = this.WorkSpaceWidth() / (ii_win_width - ii_win_frame_w)
 	ratio = min (ratioh, ratiow)
 	rc = wf_resize_it(ratio)
 end if
@@ -516,7 +514,7 @@ fontfamily fontfamily = swiss!
 string facename = "MS Sans Serif"
 long backcolor = 74481808
 boolean enabled = false
-string text = "Resize the Window"
+string text = "Drag a window edge to resize"
 alignment alignment = center!
 boolean border = true
 long bordercolor = 16711680

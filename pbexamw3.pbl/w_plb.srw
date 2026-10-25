@@ -2,6 +2,8 @@
 forward
 global type w_plb from w_center
 end type
+type rb_svg from radiobutton within w_plb
+end type
 type rb_ico from radiobutton within w_plb
 end type
 type rb_bmp from radiobutton within w_plb
@@ -36,6 +38,7 @@ integer height = 2032
 string title = "PictureListBox Picture Browser"
 long backcolor = 74481808
 toolbaralignment toolbaralignment = alignatleft!
+rb_svg rb_svg
 rb_ico rb_ico
 rb_bmp rb_bmp
 cb_view cb_view
@@ -58,6 +61,7 @@ end variables
 on w_plb.create
 int iCurrent
 call super::create
+this.rb_svg=create rb_svg
 this.rb_ico=create rb_ico
 this.rb_bmp=create rb_bmp
 this.cb_view=create cb_view
@@ -71,22 +75,24 @@ this.sle_path=create sle_path
 this.plb_1=create plb_1
 this.gb_1=create gb_1
 iCurrent=UpperBound(this.Control)
-this.Control[iCurrent+1]=this.rb_ico
-this.Control[iCurrent+2]=this.rb_bmp
-this.Control[iCurrent+3]=this.cb_view
-this.Control[iCurrent+4]=this.cb_close
-this.Control[iCurrent+5]=this.cb_help
-this.Control[iCurrent+6]=this.cb_browse
-this.Control[iCurrent+7]=this.lb_files
-this.Control[iCurrent+8]=this.cb_fill
-this.Control[iCurrent+9]=this.st_1
-this.Control[iCurrent+10]=this.sle_path
-this.Control[iCurrent+11]=this.plb_1
-this.Control[iCurrent+12]=this.gb_1
+this.Control[iCurrent+1]=this.rb_svg
+this.Control[iCurrent+2]=this.rb_ico
+this.Control[iCurrent+3]=this.rb_bmp
+this.Control[iCurrent+4]=this.cb_view
+this.Control[iCurrent+5]=this.cb_close
+this.Control[iCurrent+6]=this.cb_help
+this.Control[iCurrent+7]=this.cb_browse
+this.Control[iCurrent+8]=this.lb_files
+this.Control[iCurrent+9]=this.cb_fill
+this.Control[iCurrent+10]=this.st_1
+this.Control[iCurrent+11]=this.sle_path
+this.Control[iCurrent+12]=this.plb_1
+this.Control[iCurrent+13]=this.gb_1
 end on
 
 on w_plb.destroy
 call super::destroy
+destroy(this.rb_svg)
 destroy(this.rb_ico)
 destroy(this.rb_bmp)
 destroy(this.cb_view)
@@ -102,7 +108,7 @@ destroy(this.gb_1)
 end on
 
 event open;call super::open;If (ge_Environment.OSType = windows!) Or (ge_Environment.OSType = windowsnt!) Then
-	sle_path.Text = gs_exampledir
+	sle_path.Text = gs_exampledir + "\images\"
 End If
 
  
@@ -114,7 +120,7 @@ end event
 
 type rb_ico from radiobutton within w_plb
 integer x = 46
-integer y = 452
+integer y = 504
 integer width = 686
 integer height = 80
 integer textsize = -10
@@ -130,12 +136,14 @@ end type
 
 event clicked;plb_1.Reset()
 cb_view.Text = "View Icon"
+// The bitmaps and icons are in the examples folder itself
+If Right(sle_path.Text, 7) = "images\" Then sle_path.Text = gs_exampledir + "\"
 
 end event
 
 type rb_bmp from radiobutton within w_plb
 integer x = 46
-integer y = 344
+integer y = 424
 integer width = 686
 integer height = 80
 integer textsize = -10
@@ -147,11 +155,12 @@ string facename = "MS Sans Serif"
 long textcolor = 33554432
 long backcolor = 74481808
 string text = "Bitmaps (.bmp)"
-boolean checked = true
 end type
 
 event clicked;plb_1.Reset()
 cb_view.Text = "View Picture"
+// The bitmaps and icons are in the examples folder itself
+If Right(sle_path.Text, 7) = "images\" Then sle_path.Text = gs_exampledir + "\"
 
 end event
 
@@ -175,7 +184,7 @@ event clicked;String	ls_FileName
 ls_FileName = plb_1.SelectedItem()
 If ls_FileName = "" Then Return
 
-If rb_bmp.Checked Then
+If rb_bmp.Checked Or rb_svg.Checked Then
 	OpenWithParm(w_plb_picture, ls_FileName)
 Else
 	OpenWithParm(w_plb_icon, ls_FileName)
@@ -239,7 +248,10 @@ end type
 event clicked;String	ls_Path, ls_File, ls_Type, ls_Mask
 Integer	li_Pos
 
-If rb_bmp.Checked Then
+If rb_svg.Checked Then
+	ls_Type = "*.svg"
+	ls_Mask = "SVG Images (*.svg), *.svg"
+ElseIf rb_bmp.Checked Then
 	ls_Type = "*.bmp"
 	ls_Mask = "Bitmap Files (*.bmp), *.bmp"
 Else
@@ -299,7 +311,9 @@ If Right(sle_path.Text, 1) <> "\" Then
 	sle_path.Text = sle_path.Text + "\"
 End If
 
-If rb_bmp.Checked Then
+If rb_svg.Checked Then
+	ls_Type = "*.svg"
+ElseIf rb_bmp.Checked Then
 	ls_Type = "*.bmp"
 Else
 	ls_Type = "*.ico"
@@ -358,9 +372,9 @@ end type
 
 type plb_1 from picturelistbox within w_plb
 integer x = 9
-integer y = 620
+integer y = 700
 integer width = 1458
-integer height = 1256
+integer height = 1176
 integer taborder = 50
 integer textsize = -10
 integer weight = 400
@@ -382,7 +396,7 @@ type gb_1 from groupbox within w_plb
 integer x = 9
 integer y = 244
 integer width = 1458
-integer height = 332
+integer height = 420
 integer taborder = 20
 integer textsize = -10
 integer weight = 400
@@ -395,3 +409,27 @@ long backcolor = 74481808
 string text = "Picture Type"
 end type
 
+type rb_svg from radiobutton within w_plb
+integer x = 46
+integer y = 344
+integer width = 686
+integer height = 80
+integer textsize = -10
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "MS Sans Serif"
+long textcolor = 33554432
+long backcolor = 74481808
+string text = "SVG images (.svg)"
+boolean checked = true
+end type
+
+event clicked;plb_1.Reset()
+cb_view.Text = "View Picture"
+
+// The app's own SVG images are in its images folder
+If Right(sle_path.Text, 7) <> "images\" Then sle_path.Text = gs_exampledir + "\images\"
+
+end event

@@ -15,7 +15,7 @@ integer x = 169
 integer y = 132
 integer width = 2574
 integer height = 1660
-string title = "Mode & Median Functions Example"
+string title = "Mode and Median Functions Example"
 long backcolor = 74481808
 toolbaralignment toolbaralignment = alignatleft!
 cb_print cb_print

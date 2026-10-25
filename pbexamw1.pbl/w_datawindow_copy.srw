@@ -25,7 +25,7 @@ integer x = 165
 integer y = 92
 integer width = 2606
 integer height = 1756
-string title = "DataWindows-ImportString() & RowsCopy()"
+string title = "DataWindows-ImportString() and RowsCopy()"
 long backcolor = 74481808
 toolbaralignment toolbaralignment = alignatleft!
 event ue_postopen pbm_custom01
