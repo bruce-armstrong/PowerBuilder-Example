@@ -22,6 +22,7 @@ global function integer f_open_help (string as_key);////////////////////////////
 //
 //////////////////////////////////////////////////////////////////////
 int li_major, li_minor
+string ls_helpfile
 ContextInformation lcx_key
 
 /*  Get PB Version.    */
@@ -29,8 +30,14 @@ ge_environment.GetContextService ( "ContextInformation", lcx_key)
 lcx_key.GetMajorVersion ( li_major )
 lcx_key.GetMinorVersion ( li_minor )
 
+// Use the full path to the help file in the examples directory. A bare file name is
+// resolved against the current directory, which is the PowerBuilder IDE directory
+// when the examples are run from the IDE.
+ls_helpfile = gs_ExampleDir + "\exampl.chm"
+If Len(gs_ExampleDir) = 0 Or Not FileExists(ls_helpfile) Then ls_helpfile = "exampl.chm"
+
 //ShowHelp("exampl" + String ( li_major ) + String ( li_minor ) + ".chm", KeyWord!, as_Key)
-ShowHelp("exampl.chm", KeyWord!, as_Key)		//2017.10.10 modified by wukaichen, reason: change file name to exampl.chm
+ShowHelp(ls_helpfile, KeyWord!, as_Key)		//2017.10.10 modified by wukaichen, reason: change file name to exampl.chm
 Return 1
 end function
 

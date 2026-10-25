@@ -1,3 +1,6 @@
 # PowerBuilder IDE / compiler caches and build output
 .pb/
 build/
+pbexamples.usr.opt
+PB Examples.usr.opt
+PB Examples_mig.log
