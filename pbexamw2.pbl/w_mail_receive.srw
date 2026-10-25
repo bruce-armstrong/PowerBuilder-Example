@@ -254,6 +254,9 @@ destroy ims_mSes
 end on
 
 event open;call super::open;// Open script for w_mail_receive
+// NOTE: MAPI mail is deprecated and this example is planned for removal. MAPI needs a MAPI mail client such as
+// classic Outlook for Windows (supported by Microsoft until at least 2029); the new Outlook for Windows has no MAPI.
+// PowerBuilder has no built-in replacement for reading a mailbox.
 
 PostEvent ( "ue_postopen" )
 

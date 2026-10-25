@@ -180,7 +180,9 @@ Return 1
 
 end function
 
-public function integer of_send ();mailSession mSes
+public function integer of_send ();// NOTE: this mails the document through MAPI, which is deprecated (see w_mail_send). It needs a MAPI mail client
+// such as classic Outlook for Windows; SMTPClient (see w_smtp_client) is the replacement for sending mail.
+mailSession mSes
 mailMessage mMsg
 mailReturnCode mRet
 mailFileDescription mAttach

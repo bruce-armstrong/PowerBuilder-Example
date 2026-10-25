@@ -40,6 +40,10 @@ The pbexamnf.pbl library adds examples of native PowerBuilder features from Powe
 	PDF Builder and native DataWindow PDF export (w_pdf_builder)
 	Sending Email with SMTPClient (w_smtp_client) - point it at any SMTP server, or a local test server such as smtp4dev or Papercut
 
+MAPI mail is deprecated:
+
+The "MAPI Mail - Send Mail" (w_mail_send) and "MAPI Mail - Receive Mail" (w_mail_receive) examples, and the Send command in RichPad (w_rte), use PowerBuilder's MAPI functions (mailSession). MAPI needs a MAPI mail client such as classic Outlook for Windows, which Microsoft supports until at least 2029 (https://techcommunity.microsoft.com/blog/outlook/new-outlook-for-windows-a-guide-to-product-availability/4078895). The new Outlook for Windows does not provide MAPI, so these examples fail to log on without classic Outlook. The MAPI examples are planned for removal; to send mail, use SMTPClient instead (w_smtp_client). PowerBuilder has no built-in replacement for reading a mailbox.
+
 Icons and display settings:
 
 •	The menu, ribbon and example tree use SVG icons from Microsoft Fluent UI System Icons (MIT licence), stored in the images folder together with their licence (images\LICENSE-fluentui-system-icons.txt). They are recoloured to #2B88D8 so they read well on both light and dark themes. SVG images require PowerBuilder 2025 R2 or later.

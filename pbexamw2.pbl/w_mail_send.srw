@@ -105,6 +105,9 @@ FileDelete ( as_attach_name )
 end subroutine
 
 event open;call super::open;// Open script
+// NOTE: MAPI mail is deprecated and this example is planned for removal. MAPI needs a MAPI mail client such as
+// classic Outlook for Windows (supported by Microsoft until at least 2029); the new Outlook for Windows has no MAPI.
+// To send mail, use SMTPClient instead (see w_smtp_client).
 
 dw_1.SetTransObject (sqlca)
 
