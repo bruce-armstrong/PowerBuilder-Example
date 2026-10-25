@@ -21,6 +21,10 @@ With the PowerServer projects:
 	If you use SQL Anywhere as the demo database, no change is needed to the database configuration. 
 	If you use PostgreSQL as the demo database, the default login account is postgres (user)/postgres (password). Please double check the connection. 
 
+Changes in this fork:
+
+CHANGES.md lists everything changed since this repository was forked from Appeon/PowerBuilder-Example.
+
 Modern PowerBuilder examples (pbexamnf.pbl):
 
 The pbexamnf.pbl library adds examples of native PowerBuilder features from PowerBuilder 2017 through 2025 (no PFC). They appear in the example tree under "Modern PowerBuilder", and the "Modern (2017+)" entry in the filter list shows only these examples. None of them need the demo database.
