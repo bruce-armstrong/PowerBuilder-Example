@@ -73,25 +73,12 @@ forward prototypes
 public function integer of_drop_table ()
 end prototypes
 
-public function integer of_drop_table ();Integer	li_NotExist
-
-Choose Case Lower(Left(sqlca.DBMS, 3))
-	Case "odb"
-		li_NotExist = -141
-	Case "syb"
-		li_NotExist = 3701
-	Case "syc"
-		li_NotExist = 3701
-	Case "ora"
-		li_NotExist = 3701
-End Choose
-
-// Drop the new table if it already exists
+public function integer of_drop_table ();// Drop the new table if it already exists
 sqlca.AutoCommit = True
 Execute Immediate "DROP TABLE full_sales_orders";
 If sqlca.SQLCode <> 0 Then
-	If sqlca.SQLDBCode <> li_NotExist Then
-		// -141 means the table did not already exist
+	// "Table not found" just means it was never created
+	If Not f_table_not_found(sqlca) Then
 		sqlca.AutoCommit = False
 		MessageBox("Error","Could not drop the new table.  Error:  " + &
 							String(sqlca.SQLDBCode) + " - " + sqlca.SQLErrText);

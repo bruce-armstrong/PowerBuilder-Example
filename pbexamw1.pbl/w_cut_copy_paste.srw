@@ -230,11 +230,11 @@ int ItemPictureIndex[]={1,&
 1,&
 1,&
 1}
-string LargePictureName[]={"UserObject5!"}
+string LargePictureName[]={"images\cat_user_objects.svg"}
 int LargePictureWidth=32
 int LargePictureHeight=32
 long LargePictureMaskColor=12632256
-string SmallPictureName[]={"UserObject5!"}
+string SmallPictureName[]={"images\cat_user_objects.svg"}
 int SmallPictureWidth=16
 int SmallPictureHeight=16
 long SmallPictureMaskColor=12632256
@@ -255,7 +255,7 @@ int Height=592
 int TabOrder=60
 BorderStyle BorderStyle=StyleLowered!
 boolean LinesAtRoot=true
-string PictureName[]={"Custom039!",&
+string PictureName[]={"images\folder.svg",&
 "Custom050!",&
 "UserObject5!"}
 long PictureMaskColor=12632256

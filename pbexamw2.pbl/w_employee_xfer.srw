@@ -213,7 +213,7 @@ long textcolor = 33554432
 borderstyle borderstyle = stylelowered!
 boolean linesatroot = true
 boolean disabledragdrop = false
-string picturename[] = {"Custom041!","Custom067!","Custom048!","Custom075!","Custom085!","Custom076!","Custom050!"}
+string picturename[] = {"images\dept_rnd.svg","images\dept_sales.svg","images\dept_finance.svg","images\dept_marketing.svg","images\dept_shipping.svg","images\person.svg","images\folder_open.svg"}
 long picturemaskcolor = 12632256
 long statepicturemaskcolor = 553648127
 end type

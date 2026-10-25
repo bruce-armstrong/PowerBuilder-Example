@@ -249,7 +249,7 @@ End Choose
 
 
 atvi_New.PictureIndex = ai_Level
-atvi_New.SelectedPictureIndex = 5
+atvi_New.SelectedPictureIndex = atvi_New.PictureIndex
 
 If ai_Level < 4 Then
 	atvi_New.Children = True
@@ -550,11 +550,11 @@ string facename = "Segoe UI"
 long textcolor = 41943040
 borderstyle borderstyle = stylelowered!
 listviewview view = listviewreport!
-string largepicturename[] = {"Globals!","emp.ico","Library!","DosEdit!"}
+string largepicturename[] = {"images\cat_datastores.svg","images\person.svg","images\customer.svg","images\order.svg"}
 integer largepicturewidth = 32
 integer largepictureheight = 32
 long largepicturemaskcolor = 12632256
-string smallpicturename[] = {"Globals!","emp.ico","Library!","DosEdit!"}
+string smallpicturename[] = {"images\cat_datastores.svg","images\person.svg","images\customer.svg","images\order.svg"}
 integer smallpicturewidth = 16
 integer smallpictureheight = 16
 long smallpicturemaskcolor = 12632256
@@ -649,7 +649,7 @@ string facename = "Segoe UI"
 long textcolor = 41943040
 borderstyle borderstyle = stylelowered!
 boolean linesatroot = true
-string picturename[] = {"Globals!","emp.ico","Library!","DosEdit!","Custom050!"}
+string picturename[] = {"images\cat_datastores.svg","images\person.svg","images\customer.svg","images\order.svg","images\folder_open.svg"}
 long picturemaskcolor = 12632256
 long statepicturemaskcolor = 12632256
 end type

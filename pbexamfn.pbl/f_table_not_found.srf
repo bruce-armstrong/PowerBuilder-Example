@@ -1,0 +1,33 @@
+﻿//objectcomments True when the last SQL statement failed because the table does not exist
+global type f_table_not_found from function_object
+end type
+
+forward prototypes
+global function boolean f_table_not_found (transaction atr_trans)
+end prototypes
+
+global function boolean f_table_not_found (transaction atr_trans);//////////////////////////////////////////////////////////////////////
+//
+// Function: f_table_not_found
+//
+// Purpose: lets examples drop their scratch tables without reporting an
+//				error when the table was never created, on any database
+//
+//	Arguments: atr_trans	the transaction the statement ran on
+//
+//	Returns:  True if the error means "table not found"
+//
+//////////////////////////////////////////////////////////////////////
+Choose Case atr_trans.SQLDBCode
+	Case -141		// SQL Anywhere: table not found
+		Return True
+	Case 208, 3701	// SQL Server: invalid object name / cannot drop the table
+		Return True
+	Case 942			// Oracle: ORA-00942 table or view does not exist
+		Return True
+End Choose
+
+// Otherwise go by the standard SQLSTATE (42S02 ODBC / OLE DB, 42P01 PostgreSQL)
+Return Pos(atr_trans.SQLErrText, "42S02") > 0 Or Pos(atr_trans.SQLErrText, "42P01") > 0
+end function
+

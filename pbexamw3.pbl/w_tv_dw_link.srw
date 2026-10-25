@@ -166,14 +166,14 @@ End Choose
 If ai_Level < 4 Then
 	atvi_New.Children = True
 	atvi_New.PictureIndex = ai_Level
-	atvi_New.SelectedPictureIndex = 4
+	atvi_New.SelectedPictureIndex = atvi_New.PictureIndex
 Else
 	atvi_New.Children = False
 	
 	// Set the picture to be the product picture
 	li_Picture = tv_1.AddPicture(ids_Data[4].Object.product_picture_name[ai_Row])
 	atvi_New.PictureIndex = li_Picture
-	atvi_New.SelectedPictureIndex = 4
+	atvi_New.SelectedPictureIndex = atvi_New.PictureIndex
 End If
 
 end subroutine
@@ -800,11 +800,11 @@ event constructor;// Add the pictures to be used.
 This.PictureHeight = 15
 This.PictureWidth = 16
 
-This.AddPicture("emp.ico")
-This.AddPicture("Library!")
-This.AddPicture("DosEdit!")
-This.AddPicture("Custom050!")
-This.AddStatePicture("Save!")
+This.AddPicture("images\person.svg")
+This.AddPicture("images\customer.svg")
+This.AddPicture("images\order.svg")
+This.AddPicture("images\folder_open.svg")
+This.AddStatePicture("images\btn_save.svg")
 
 end event
 

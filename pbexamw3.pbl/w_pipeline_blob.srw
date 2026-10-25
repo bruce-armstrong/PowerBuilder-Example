@@ -59,10 +59,8 @@ public function integer of_drop_table ();// Drop the new table if it already exi
 
 Execute Immediate "DROP TABLE ole_copy";
 If sqlca.SQLCode <> 0 Then
-	// "Table not found" is expected the first time: -141 in SQL Anywhere,
-	// 3701 in SQL Server, and SQLSTATE 42S02 / 42P01 in general
-	If sqlca.SQLDBCode <> -141 And sqlca.SQLDBCode <> 3701 And &
-		Pos(sqlca.SQLErrText, "42S02") = 0 And Pos(sqlca.SQLErrText, "42P01") = 0 Then
+	// "Table not found" just means it was never created
+	If Not f_table_not_found(sqlca) Then
 		MessageBox("Error","Could not drop the new table.  Error:  " + &
 							String(sqlca.SQLDBCode) + " - " + sqlca.SQLErrText);
 		Return sqlca.SQLCode

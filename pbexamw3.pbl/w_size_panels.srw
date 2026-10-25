@@ -161,6 +161,17 @@ idrg_TopLeft = dw_topleft
 idrg_TopRight = dw_topright
 idrg_Bottom = dw_bottom
 
+// Give each panel some data to show while it is resized
+dw_topleft.DataObject = "d_departments"
+dw_topright.DataObject = "d_employee_name_list"
+dw_bottom.DataObject = "d_products"
+dw_topleft.SetTransObject(sqlca)
+dw_topright.SetTransObject(sqlca)
+dw_bottom.SetTransObject(sqlca)
+dw_topleft.Retrieve()
+dw_topright.Retrieve()
+dw_bottom.Retrieve()
+
 //Change the back color so they cannot be seen.
 If Not ib_debug Then 
 	st_vertical.BackColor = This.BackColor

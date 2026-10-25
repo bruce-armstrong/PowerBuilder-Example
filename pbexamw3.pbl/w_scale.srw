@@ -727,8 +727,8 @@ integer y = 880
 integer width = 1024
 integer height = 768
 boolean enabled = false
-grgraphtype graphtype = pie3d!
-long backcolor = 74481808
+grgraphtype graphtype = piegraph!
+long backcolor = 16777215
 long shadecolor = 6316128
 integer spacing = 100
 string title = "Sales"
@@ -891,7 +891,7 @@ integer x = 1536
 integer y = 240
 integer width = 219
 integer height = 188
-string picturename = "beach.bmp"
+string picturename = "images\beach.svg"
 boolean focusrectangle = false
 end type
 

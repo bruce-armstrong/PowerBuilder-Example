@@ -192,6 +192,7 @@ cb_reset.enabled = False
 
 lp_setup = create p_pipe_wometer
 
+
 //open window showing whats going on
 openwithparm(w_pipe_status,"Creating/Loading Master Employee Table")
 
@@ -199,7 +200,7 @@ openwithparm(w_pipe_status,"Creating/Loading Master Employee Table")
 //this assigns the pipeline object that was created in the pipeline painter to the local
 //instance of the pipe object. The struture and data for this table is the employee table 
 //in the example database.
-lp_setup.dataobject = "p_emp_master_create" 
+lp_setup.dataobject = "p_emp_master_create"
 
 li_rc = lp_setup.Start(i_src, i_dst, dw_1)
 If li_rc <> 1 then 
@@ -289,12 +290,12 @@ commit using sqlca;
 //using the Execute Immediate delete the two tables created
 i_dst.AutoCommit = TRUE
 Execute Immediate "DROP TABLE emp_pipe_master" Using i_dst;
-If i_dst.SQLCode <> 0 then 
+If i_dst.SQLCode <> 0 And Not f_table_not_found(i_dst) then
 	MessageBox("Error","Could not drop the emp_pipe_master table");
 End If
 
 Execute Immediate "DROP TABLE emp_pipe_transaction" Using i_dst;
-If i_dst.SQLCode <> 0 then 
+If i_dst.SQLCode <> 0 And Not f_table_not_found(i_dst) then
 	MessageBox("Error","Could not drop the emp_pipe_transaction table");
 End If
 i_dst.AutoCommit = FALSE

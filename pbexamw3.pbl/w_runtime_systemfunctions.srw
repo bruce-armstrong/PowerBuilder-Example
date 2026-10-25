@@ -166,9 +166,9 @@ string facename = "MS Sans Serif"
 long textcolor = 33554432
 borderstyle borderstyle = stylelowered!
 listviewview view = listviewreport!
-string largepicturename[] = {"Function!"}
+string largepicturename[] = {"images\cat_func_powerscript.svg"}
 long largepicturemaskcolor = 536870912
-string smallpicturename[] = {"Function!"}
+string smallpicturename[] = {"images\cat_func_powerscript.svg"}
 long smallpicturemaskcolor = 536870912
 long statepicturemaskcolor = 536870912
 end type

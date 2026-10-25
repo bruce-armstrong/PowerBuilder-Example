@@ -700,7 +700,7 @@ fontfamily fontfamily = swiss!
 string facename = "MS Sans Serif"
 long backcolor = 16777215
 borderstyle borderstyle = stylelowered!
-string picturename[] = {"Custom039!","Custom050!"}
+string picturename[] = {"images\folder.svg","images\folder_open.svg"}
 long picturemaskcolor = 12632256
 long statepicturemaskcolor = 553648127
 end type

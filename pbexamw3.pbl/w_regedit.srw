@@ -365,7 +365,7 @@ borderstyle borderstyle = stylelowered!
 boolean editlabels = true
 boolean linesatroot = true
 boolean hideselection = false
-string picturename[] = {"Custom039!","Custom050!"}
+string picturename[] = {"images\folder.svg","images\folder_open.svg"}
 long picturemaskcolor = 12632256
 long statepicturemaskcolor = 536870912
 end type

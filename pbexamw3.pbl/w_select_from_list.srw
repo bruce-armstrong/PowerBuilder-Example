@@ -205,7 +205,7 @@ end type
 
 on clicked;// Clicked script for cb_search_emps
 CHOOSE CASE Lower(Left(sqlca.dbms,2))
-	CASE "sy"
+	CASE "sy", "ms", "sn", "ol", "ad"	// Sybase, and SQL Server (MSOLEDBSQL, SNC, OLE DB, ADO.NET)
 		uo_1.create_datawindow(sqlca, &
 			"Select  ~"Customer Name~" = (lname + ', ' +  fname) from customer")
 	CASE "or"
