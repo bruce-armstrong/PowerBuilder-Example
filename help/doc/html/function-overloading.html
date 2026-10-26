@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Function Overloading</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon"
+                 />Function Overloading</h1>
+            <p>PowerBuilder allows function overloading at the object level.
+                This example uses a Global Replace function to show how to
+                overload window functions. </p>
+            <div>
+                <h2>Syntax</h2>
+                <p>The function call used is determined by the values entered.
+                    The syntax is displayed at the bottom of the screen. The
+                    Global Replace function is called as follows: </p>
+                <p><code>of_global_replace</code>( <var>source</var>,
+                        <var>old</var>, <var>new</var> {, <var>usecase</var>} {,
+                        <var>start</var>, <var>end</var>} ) </p>
+            </div>
+            <div>
+                <h2>Arguments</h2>
+                <dl>
+                    <dt>source</dt>
+                    <dd>A string containing the text to be changed. Passed by
+                        reference.</dd>
+                    <dt>old</dt>
+                    <dd>The string to be replaced.</dd>
+                    <dt>new</dt>
+                    <dd>The new string to replace it with. </dd>
+                    <dt>usecase</dt>
+                    <dd>A boolean indicating whether the replace is case
+                        sensitive (optional). </dd>
+                    <dt>start</dt>
+                    <dd>An integer indicating where the search begins (optional) </dd>
+                    <dt>end</dt>
+                    <dd>An integer indicating where the search ends. The default
+                        is <code>Len(<var>source</var>)</code> (optional)</dd>
+                </dl>
+            </div>
+            <div>
+                <h2>Return Value</h2>
+                <p>Integer. Returns the number of occurrences of old that are
+                    replaced by <var>new</var>. </p>
+            </div>
+        </div>
+</body>
+</html>

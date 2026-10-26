@@ -21,6 +21,10 @@ With the PowerServer projects:
 	If you use SQL Anywhere as the demo database, no change is needed to the database configuration. 
 	If you use PostgreSQL as the demo database, the default login account is postgres (user)/postgres (password). Please double check the connection. 
 
+Help:
+
+The examples' help is in exampl.chm (opened by the Help menu and F1) and, because HTML Help is deprecated, also in exampl.pdf, generated from the same topics with a linked contents page and bookmarks. The sources and the build script (helpuild_help.ps1) are in the help folder; see helpREADME.md.
+
 Changes in this fork:
 
 CHANGES.md lists everything changed since this repository was forked from Appeon/PowerBuilder-Example.

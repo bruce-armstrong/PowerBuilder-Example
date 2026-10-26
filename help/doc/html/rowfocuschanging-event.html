@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>RowFocusChanging Event</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon"
+                 />RowFocusChanging Event</h1>
+            <p>The <code>RowFocusChanging</code> event is similar to the
+                    <code>RowFocusChanged</code> event (it fires whenever focus
+                changes from one row to another in a DataWindow) except that it
+                fires before the focus changes and can prevent the focus from
+                changing. The example validates the data entered for the Sales
+                Order items in the <code>RowFocusChanging</code> event and if
+                the data fails focus remains on the invalid row.</p>
+            <div>
+                <h2>Validation Rules</h2>
+                <ul>
+                    <li>A Product ID must be selected. </li>
+                    <li>The Ship Date must be greater than or equal to the Order
+                        Date. </li>
+                    <li>The Quantity must be greater than 0. </li>
+                </ul>
+            </div>
+        </div>
+</body>
+</html>

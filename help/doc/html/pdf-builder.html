@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>PDF Builder</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />PDF Builder</h1>
+            <p>This example creates PDF files from PowerScript with the PDF Builder objects, and also exports a DataWindow with the built-in NativePDF engine. Files are saved in your TEMP folder, and you are asked whether to open them.</p>
+            <dl>
+                <dt>Build PDF with PDF Builder</dt>
+                <dd>The of_build_pdf function creates a PDFDocument with a cover page made of PDFText and PDFMultilineText objects (<code>AddContent</code>, <code>AddPage</code>), then adds the DataWindow with <code>ImportDataWindow</code>. It sets the document Title, Author and Subject through <code>Properties</code> and saves the file with <code>Save</code>.</dd>
+                <dt>Protect / Do not allow printing or copying</dt>
+                <dd>When checked, the PDF is created with a user password (<code>Security.UserPassword</code>) and/or with printing and copying turned off (<code>Security.AllowPrint</code> and <code>Security.AllowCopy</code>, which require a <code>Security.MasterPassword</code>).</dd>
+                <dt>DataWindow SaveAs NativePDF</dt>
+                <dd>Exports the DataWindow in one step: <code>Modify("DataWindow.Export.PDF.Method=2")</code> selects NativePDF, then <code>SaveAs(file, PDF!, True)</code> writes the file. No Ghostscript or printer driver is needed.</dd>
+            </dl>
+            <p>The PDF Builder objects were introduced in PowerBuilder 2022 and extended in later releases (images, tables of contents, watermarks, attachments and more).</p>
+            <p>This example is in PBEXAMNF.PBL, with the other Modern PowerBuilder examples.</p>
+        </div>
+</body>
+</html>

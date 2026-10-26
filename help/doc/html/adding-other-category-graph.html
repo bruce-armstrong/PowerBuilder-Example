@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Adding an Other Category to a Graph</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />Adding
+                an Other Category to a Graph</h1>
+            <p>This example shows a graph of the Percentage of Inventory of each
+                product with a quantity greater than 30. All other products
+                (those with quantity less than 30) are lumped together in the
+                Other category. </p>
+            <p>The number in the upper left corner of the graph is a computed
+                column called other_quantity with the following expression: </p>
+            <p><code>If( quantity &lt;= 30 , quantity , 0 ) </code></p>
+            <p>The category labels are set as follows: </p>
+            <p><code>If(quantity &lt;= 30, "Other", description)</code>
+            </p>
+            <p>With the following value: </p>
+            <p><code>If(quantity &lt;= 30, sum(other_quantity), quantity)</code>
+            </p>
+            <p>This results in the Other category as shown. </p>
+        </div>
+</body>
+</html>

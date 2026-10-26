@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Data Pipeline</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />Data
+                Pipeline</h1>
+            <p>This example uses the Data Pipeline to: </p>
+            <ul>
+                <li>Copy a table structure and data </li>
+                <li>Copy a table structure, no data </li>
+                <li>Execute a transaction - master update </li>
+            </ul>
+            <p>When you open this window or click the Reset Example button, a
+                transaction and master employee tables are created and populated
+                using Data Pipelines. The transaction table is used to update
+                the master table of employees and benefits</p>
+            <dl>
+                <dt>Transaction/Master Process </dt>
+                <dd>The employee rows in the transaction table are updates that
+                    are applied to the master table. Any new employees in the
+                    transaction table are added to the master table. </dd>
+                <dt>Starting the Pipeline</dt>
+                <dd>To follow the process of the Data Pipeline update, select an
+                    employee in the transaction DataWindow (on the left side).
+                    If the selection is not a new employee, its  corresponding
+                    row in the master DataWindow (on the right side) is
+                    highlighted. To execute the Data Pipeline, selecting the
+                    employee's Department and click <strong>Execute</strong>.
+                    Notice that the two highlighted rows now match. </dd>
+                <dt>Error Handling </dt>
+                <dd>If you try to move department 401, the pipeline returns an
+                    error, because no department with that id exists in the
+                    master table. The Data Pipeline allows you to fix the data
+                    in the Pipe Error DataWindow, then click
+                        <strong>Repair</strong> to continue the pipeline. </dd>
+                <dt>Cancel</dt>
+                <dd>Stops execution at any time during the pipeline
+                    process.</dd>
+            </dl>
+        </div>
+</body>
+</html>

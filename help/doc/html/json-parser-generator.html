@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>JSONParser and JSONGenerator</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />JSONParser and JSONGenerator</h1>
+            <p>This example shows how to read and write JSON with the native JSONParser and JSONGenerator objects, without parsing strings by hand. A sample JSON document is loaded and parsed when the window opens.</p>
+            <dl>
+                <dt>Parse into Tree</dt>
+                <dd>Loads the JSON text with <code>LoadString</code> and walks it recursively from <code>GetRootItem</code>, using <code>GetItemType</code>, <code>GetChildCount</code>, <code>GetChildKey</code> and <code>GetChildItem</code>. Each object, array and value is added to the TreeView with its type and value. Edit the JSON and parse it again to see the result; invalid JSON displays the error returned by <code>LoadString</code>.</dd>
+                <dt>GetItemByPath</dt>
+                <dd>Finds a single item directly by its path, such as <code>/vendor/name</code> or <code>/targets/2/type</code>. Array positions in a path are 1-based.</dd>
+                <dt>Generate JSON</dt>
+                <dd>Builds a new JSON document in code with JSONGenerator: <code>CreateJsonObject</code>, then <code>AddItemString</code>, <code>AddItemNumber</code>, <code>AddItemBoolean</code>, <code>AddItemDateTime</code>, <code>AddItemNull</code>, <code>AddItemArray</code> and <code>AddItemObject</code>, and finally <code>GetJsonString</code>.</dd>
+                <dt>Use as Input</dt>
+                <dd>Copies the generated JSON into the input box and parses it, so you can see the round trip.</dd>
+            </dl>
+            <p>JSONParser was introduced in PowerBuilder 2017 R2 and JSONGenerator in PowerBuilder 2017 R3.</p>
+            <p>This example is in PBEXAMNF.PBL, with the other Modern PowerBuilder examples.</p>
+        </div>
+</body>
+</html>

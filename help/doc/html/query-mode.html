@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Query Mode</title>
+</head>
+<body>
+<div><h1><img src="../image/exhelp.png" alt="code examples icon" />Query
+                Mode</h1><p>When the upper DataWindow is in Query Mode, you can
+                type criteria for the retrieval in the column fields.
+                </p><p>Items placed in the same row use <code>And</code> by
+                default. Each additional row of criteria uses <code>Or</code> by
+                default. </p><p>You can change the defaults by explicitly
+                stating <code>and/or</code> in front of the criteria. </p><p>As
+                you type the criteria, notice that tabbing out a field adds the criteria to the SQL statement on the bottom. Clicking <strong>Retrieve</strong> also accepts the criteria in the field you are typing in. </p><table
+                frame="void">
+                <caption>QueryMode Examples</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>State</th>
+                        <th>WHERE Clause</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td>Id=1</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;1</td>
+                        <td>TX</td>
+                        <td>Id &lt; 1 and State = 'TX'</td>
+                    </tr>
+                    <tr>
+                        <td>2 &lt; 9</td>
+                        <td>TX</td>
+                        <td>(id = 2 and State = 'TX') or Id &lt; 9</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;10 and > 2</td>
+                        <td></td>
+                        <td>(id &lt; 10 and id > 2)</td>
+                    </tr>
+                </tbody>
+            </table></div>
+</body>
+</html>

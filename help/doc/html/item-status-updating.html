@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Item Status &amp; Updating</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />Item
+                Status &amp; Updating</h1>
+            <p>Notice that the row status of each row in the DataWindow is shown
+                to the right. The status of the current column is shown at the
+                bottom of the window. </p>
+            <p>In the DataWindow, you can change the item status for rows and
+                columns in two ways: by clicking <strong>Rows/Insert
+                    Row</strong> in the menu to modify data and insert rows, or
+                by explicitly using the <code>SetItemStatus()</code> function. </p>
+            <p>Experiment with item status by changing the data on both original
+                and new rows in the DataWindow. Notice that as you change the
+                item status of a column, the row status changes as well. </p>
+            <p>You can apply the <code>SetItemStatus()</code> function to an
+                individual column or an entire row. To apply
+                    <code>SetItemStatus()</code> to a column, right-click in the
+                column of the row whose status you want to set, and choose the
+                item status. To set the item status for an entire row,
+                right-click on the row status text (on the right side of the
+                DataWindow) and choose the item status. Options are disabled if
+                they are invalid for the current row status. </p>
+            <p>To see how item status in a DataWindow affects the Update
+                statement, click <strong>Rows > Update Syntax</strong>, and step
+                throught the generated SQL syntax. The row focus indicator of
+                the DataWindow moves to the row that corresponds to the
+                generated SQL statement. An Update statement  is generated for
+                any modifed rows, and an Insert statement is  generated for any
+                new rows that were modified. Delete statements are generated for
+                any of the original rows that were deleted. </p>
+        </div>
+</body>
+</html>

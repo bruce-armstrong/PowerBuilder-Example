@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Copy DataWindow</title>
+</head>
+<body>
+<div><h1><img src="../image/exhelp.png" alt="code examples icon" />Copy
+                DataWindow</h1>This example shows five different ways to get
+            data into and out of DataWindows. Each test is timed, so that you
+            can see the performance differeces of each method when you run it. <dl>
+                <dt>Copy Using GetItem/SetItem </dt>
+                <dd>This method uses the appropriate GetItem function (such as
+                        <code>GetItemString()</code>,
+                        <code>GetItemNumber()</code>, and
+                        <code>GetItemDate()</code>) to get the data for each
+                    row. It then calls <code>InsertRow()</code> to insert a new
+                    row into the second DataWindow, and <code>SetItem()</code>
+                    to set the data. </dd>
+                <dt>Copy Using ClipBoard </dt>
+                <dd>This method saves the data to the Clipboard using
+                        <code>SaveAs()</code>, and then imports it into the
+                    second DataWindow using <code>ImportString()</code>. </dd>
+                <dt>Copy Using Structure Array </dt>
+                <dd>This method uses the DataWindow object reference syntax to
+                    copy all the data into an array of structures that matches
+                    the data types of the columns. Then copies the data from
+                    there into the second DataWindow. <p>This is the fastest
+                        method to use if you manipulate the data in any way:
+                        dump the data into the structure array and loop through
+                        it making the necessary changes, then copy it back. This
+                        is much faster than stepping through each row of the
+                        DataWindow. </p></dd>
+                <dt>DataWindow to Structure Utility example </dt>
+                <dd>This example hows how to automatically create a global
+                    structure or an autoinstantiated Custom Class NVO that
+                    matches the DataWindow. </dd>
+                <dt>Copy Using Direct Reference </dt>
+                <dd>This method is similar to the previous one, except that it
+                    saves one step: the syntax allows you to directly copy all
+                    data from one DataWindow to another with one statement,
+                    which is faster. </dd>
+                <dt>Copy Using RowsCopy() </dt>
+                <dd>This method uses the <code>RowsCopy()</code> function, which
+                    is the fastest way to copy data from one DataWindow to
+                    another.</dd>
+            </dl>
+        </div>
+</body>
+</html>

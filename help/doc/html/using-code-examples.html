@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Using the Code Examples</title>
+</head>
+<body>
+<div>
+   <h1><img src="../image/exhelp.png" alt="code examples icon" />Using the Code
+    Examples</h1>
+   <p>The PowerBuilder Code Examples front end is divided into two main parts:
+    The left side of the screen includes the list of all examples, while the
+    right side of the screen displays information about the currently selected
+    example.</p>
+   <div>
+    <h2>Examples List </h2>
+    <p>The Code Examples window lists available examples in a TreeView.
+     Examples are grouped into categories, like DataWindows and Functions.
+     Examples can appear in more than one category. In addition to the main
+     Examples page, the Tab control has a Search page.  </p>
+    <div>
+     <h3>Showing New and Changed Examples </h3>
+     <p>In the Examples page, you can view all examples, or use the
+      DropDownPictureListBox to filter examples by their status. Each example is
+      listed with one of these status symbols:   </p>
+     <dl>
+      <dt><img src="../image/exset.png" alt="code examples icon" /></dt>
+      <dd>Examples marked with this symbol are part of the original set of code
+       examples and have been changed only where necessary to replace obsolete
+       syntax. </dd>
+      <dt><img src="../image/exchanged.png" alt="code examples icon" /></dt>
+      <dd>Examples marked with this symbol have been changed significantly in
+       subsequent releases. </dd>
+      <dt><img src="../image/exnew.png" alt="code examples icon" /></dt>
+      <dd>Newer examples are marked with this symbol.</dd>
+     </dl>
+     <p>Choose <strong>Modern (2017+)</strong> in the list to show only the
+      examples of features added in PowerBuilder 2017 and later. These examples are
+      also grouped under the Modern PowerBuilder category, and none of them require
+      the demo database.</p>
+    </div>
+   </div>
+   <div>
+    <h2>Searching the Code Examples </h2>
+    <p>The second tab page is used to search for examples. You can search for
+     examples that:  </p>
+   </div>
+   <ul>
+    <li>Use one or more specified events </li>
+    <li>Use one or more specified PowerScript functions </li>
+    <li>Use one or more specified user-defined functions </li>
+    <li>Reference one or more specified objects</li>
+   </ul>
+   <div>
+    <h2>Data Explorer Display</h2>
+    <p>When you select an example in the TreeView, information about the example
+     is displayed in the Data Explorer on the right side of the window. Data
+     Explorer has two tab controls:</p>
+    <dl>
+     <dt>Description/Techniques</dt>
+     <dd>Describes the functionality and techniques used in the example. </dd>
+     <dt>Related Objects</dt>
+     <dd>Contains a TreeView with cross-reference and metaclass information all
+      the objects used in the example. You can navigate the tree to nested
+      objects and all scripts. In a script, double-click any event or function
+      to open a window and view its code.</dd>
+    </dl>
+   </div>
+   <div>
+    <h2>Menu Items</h2>
+    <p>You can access many of the menu commands by right-clicking items in the
+     Examples list. </p>
+    <div>
+     <h3>File</h3>
+     <dl>
+      <dt>Example Report</dt>
+      <dd>Shows a printable report of all the example information for the
+       currently selected example. </dd>
+      <dt>Go To Topic</dt>
+      <dd>Scrolls to the first example of the selected topic. </dd>
+      <dt>Change Database Connection</dt>
+      <dd>Opens a window where you can change the connection information for the
+       EAS Demo database. </dd>
+      <dt>Run! </dt>
+      <dd>Runs the selected example. You can also click <strong>Run!</strong> in
+       the menu, or double-click an example in the list to run it. </dd>
+     </dl>
+    </div>
+    <div>
+     <h3>Help</h3>
+     <dl>
+      <dt>Contents</dt>
+      <dd>Opens the topic, <i>PowerBuilder Code Examples</i>.</dd>
+      <dt>Using the Code Examples</dt>
+      <dd>Opens this help topic. </dd>
+      <dt>Current Example Help</dt>
+      <dd>Opens help for the currently selected example.  </dd>
+      <dt></dt>
+      <dd>About Displays information about the Code Examples. </dd>
+     </dl>
+    </div>
+    <div>
+     <h3>Note</h3>
+    </div>
+   </div>
+   <p>Configuration information for the Code Examples is stored in the registry
+    rather than the <code>example.ini</code> file. It is stored under
+      <code>HKEY_CURRENT_USER\Software\Sybase\PowerBuilder\<var>version</var>\Code
+     Examples</code>. You can view this information with the Registry Editor
+    example included.</p>
+  </div>
+</body>
+</html>

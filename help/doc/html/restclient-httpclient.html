@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>RESTClient and HTTPClient</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />RESTClient and HTTPClient</h1>
+            <p>This example calls a public REST API with the native RESTClient and HTTPClient objects. It uses the free test service at jsonplaceholder.typicode.com, so it requires internet access. You can type another URL to try a different service.</p>
+            <dl>
+                <dt>RESTClient.Retrieve</dt>
+                <dd>Sends a GET request and loads the JSON response straight into the DataWindow with <code>Retrieve(dw, url)</code>. The DataWindow columns (id, name, username, email, phone, website) have the same names as the JSON keys, which is how RESTClient maps the data.</dd>
+                <dt>HTTPClient GET</dt>
+                <dd>Sends the request with <code>SendRequest("GET", url)</code> and shows the status code (<code>GetResponseStatusCode</code>), the response headers (<code>GetResponseHeaders</code>) and the raw body (<code>GetResponseBody</code>).</dd>
+                <dt>HTTPClient POST JSON</dt>
+                <dd>Builds a JSON body with JSONGenerator, sets the <code>Content-Type</code> header and posts it with <code>SendRequest("POST", url, json)</code>. The id the server assigns to the new record is read from the response with JSONParser.</dd>
+                <dt>RESTClient.SendGetRequest</dt>
+                <dd>Shows the simplest way to get a response body as a string with RESTClient.</dd>
+            </dl>
+            <p>RESTClient and HTTPClient were introduced in PowerBuilder 2017 R2. Use RESTClient for simple RESTful APIs with flat JSON, and HTTPClient when you need full control of the request or the response is more complex.</p>
+            <p>This example is in PBEXAMNF.PBL, with the other Modern PowerBuilder examples.</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Evaluate / ItemError</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon"
+                 />Evaluate / ItemError</h1>
+            <dl>
+                <dt>Describe(Evaluate), ItemError event, SetActionCode( )</dt>
+                <dd>In the salary field, type a mathematical expression. The
+                    expression is evaluated when you leave the field. </dd>
+                <dt>Example 1</dt>
+                <dd>If the salary field currently shows 50,000.00, click the end
+                    key to move the cursor to the end of the field and type
+                        <code>*2</code>. Click <strong>Enter</strong>: the
+                    salary is doubled. </dd>
+                <dt>Example 2</dt>
+                <dd>Move to a new field. Begin typing an expression, such as
+                        <code>(20*(1575+5433))</code>. Click
+                        <strong>Enter</strong>. The expression is evaluated
+                    using the correct math precedence. <p>The item is evaluated
+                        in the <code>ItemError</code> event, because the math
+                        expression is a string and the field is a numeric data
+                        type. </p><p><strong>Note: </strong>The field also has a
+                        validation rule that the salary must be greater than
+                        zero. If it contains a math expression, the DataWindow
+                        field validation is still executed after the math
+                        expression is evaluated. This is accomplished by placing
+                        the evaluated expression result using
+                            <code>SetText()</code> in the post event of the
+                            <code>ItemError</code>.</p></dd>
+            </dl>
+        </div>
+</body>
+</html>

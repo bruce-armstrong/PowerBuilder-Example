@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Retrieve as Needed &amp; Aggregates</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon"
+                 />Retrieve as Needed &amp; Aggregates</h1>
+            <p>This example has two DataWindows - both issue the same SQL query.
+                The top DataWindow does not use Retrieve as Needed, while the
+                bottom DataWindow does. </p>
+            <p>Issue retrieves on both DataWindows by clicking their
+                    <strong>Retrieve</strong> buttons. Compare the retrieval
+                times. For accurate comparisons, retrieve both DataWindows
+                several times. </p>
+            <p>The time taken to retrieve the bottom DataWindow (which uses
+                Retrieve as Needed) includes the time that it takes to first
+                issue an embedded SQL call to count the number of rows that will
+                be retrieved. The top DataWindow (which does not use Retrieve as
+                Needed) does not need an embedded SQL call initially. The row
+                count is calculated in the DataWindow in a computed field.
+                However, notice that using Retrieve as Needed requires much less
+                time to begin displaying the result set to the user. </p>
+        </div>
+</body>
+</html>

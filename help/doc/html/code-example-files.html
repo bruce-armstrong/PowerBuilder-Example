@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>The Code Example Files</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />The
+                Code Example Files</h1>
+            <p>All files required for the Code Examples are in the Examples directory.</p>
+            <div>
+                <h2>PowerBuilder Solution and Libraries</h2>
+                <p>The Code Examples are a PowerBuilder 2025 solution: open
+                    <code>pbexamples.pbsln</code>. Its project, <code>PB Examples.pbproj</code>,
+                    lists these libraries. In a solution each library is a folder ending in
+                    <code>.pbl</code> that holds one source file per object.</p>
+                <ul>
+                    <li>PBEXAMFE.PBL - the application object (examples), the main window and the example list</li>
+                    <li>PBEXAMD1.PBL - DataWindow objects</li>
+                    <li>PBEXAMD2.PBL - DataWindow objects</li>
+                    <li>PBEXAMFN.PBL - global functions</li>
+                    <li>PBEXAMMN.PBL - menus</li>
+                    <li>PBEXAMSY.PBL - DataWindow objects that use database-specific SQL (stored procedures, catalog queries), originally written for SQL Anywhere</li>
+                    <li>PBEXAMUO.PBL - user objects</li>
+                    <li>PBEXAMW1.PBL - example windows</li>
+                    <li>PBEXAMW2.PBL - example windows</li>
+                    <li>PBEXAMW3.PBL - example windows</li>
+                    <li>PBEXAMNF.PBL - the Modern PowerBuilder examples of features added in PowerBuilder 2017 through 2025 (JSON, REST, encryption, compression, WebBrowser, RibbonBar, PDF Builder and SMTP)</li>
+                </ul>
+                <p>To build the Code Examples executable, deploy the <code>p_examples_exe</code>
+                    project in PBEXAMFE.PBL. It builds all the libraries into PBDs, which is
+                    required because many of the objects in the Code Examples are used
+                    dynamically. The <code>pbexamples_local</code> and <code>pbexamples_cloud</code>
+                    projects deploy the examples with PowerClient and PowerServer.</p>
+                <p>The SVG icons and images the examples use are in the <code>images</code> folder.
+                    Files the examples no longer use are kept in <code>_archive</code>.</p>
+            </div>
+            <div>
+                <h2>PowerBuilder Benchmarks Application</h2>
+                <p>The benchmark example runs a separate PowerBuilder Benchmarks application,
+                    built from PBEXBM.PBL as a machine-code executable (EXBM_M.EXE) and a
+                    Pcode executable (EXBM_P.EXE). Those files are not included in this
+                    repository.</p>
+            </div>
+            <div>
+                <h2>Related Topic</h2>
+                <p><a href="performance-benchmarks.html">Performance
+                        Benchmarks</a></p>
+            </div>
+        </div>
+</body>
+</html>

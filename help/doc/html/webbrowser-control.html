@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>WebBrowser Control</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />WebBrowser Control</h1>
+            <p>This example uses the WebBrowser control, which embeds a modern Chromium-based browser (Microsoft Edge WebView2), and shows how PowerScript and JavaScript in the page can call each other. The Microsoft Edge WebView2 runtime must be installed.</p>
+            <dl>
+                <dt>Go, Back, Fwd</dt>
+                <dd>Navigate with <code>Navigate</code>, <code>GoBack</code> and <code>GoForward</code>. The TitleTextChanged event writes each page title to the log.</dd>
+                <dt>Demo</dt>
+                <dd>Loads an HTML page from a string with <code>NavigateToString</code>. Its button calls <code>window.webBrowser.ue_from_js(message)</code> in JavaScript, which runs the ue_from_js user event of the control in PowerScript; the string the event returns is shown in the page. The event is registered with <code>RegisterEvent("ue_from_js")</code> in the NavigationStart event, after the browser has finished initializing.</dd>
+                <dt>EvaluateJavascriptSync</dt>
+                <dd>Runs the JavaScript in the text box in the current page and logs the result, which is returned as a JSON string containing the type and value. After clicking Demo, the script changes text in the page.</dd>
+            </dl>
+            <p>A user event called from JavaScript must not call Navigate or EvaluateJavascriptSync itself.</p>
+            <p>The WebBrowser control was introduced in PowerBuilder 2019 R2.</p>
+            <p>This example is in PBEXAMNF.PBL, with the other Modern PowerBuilder examples.</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>DataWindow to Structure Utility</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon"
+                 />DataWindow to Structure Utility</h1>
+            <p>The DataWindow direct object reference syntax allows you to move
+                all the data in the DataWindow with one statement. You can copy
+                data to or from an array of a structure that matches the
+                DataWindow's data structure. This is the fastest way to get data
+                from, or put data into, a DataWindow. See the <i>Copy
+                    DataWindow</i> example for an example of using this feature. </p>
+            <p>This utility automatically creates a global structure or an
+                autoinstantiate Custom Class NVO that matches the DataWindow.
+                You can then import the object into a PBL and use it. </p>
+            <p>Click <strong>Select PBL</strong> to choose the library. Both kinds of
+                library are supported:</p>
+            <ul>
+                <li>A workspace library: select the <code>.pbl</code> file. The
+                    DataWindows are listed with <code>LibraryDirectory</code> and
+                    read with <code>LibraryExport</code>.</li>
+                <li>A solution library (PowerBuilder 2025 and later), which is a
+                    folder ending in <code>.pbl</code> that holds one source file per
+                    object: select the <code>.pblmeta</code> file inside the folder.
+                    The DataWindows are listed from the folder's <code>.srd</code>
+                    files and read from their source.</li>
+            </ul>
+            <p>This is also useful for Distributed PowerBuilder. You cannot pass
+                a DataWindow using Distributed PowerBuilder, which allows you to
+                pass only simple data types to the distributed objects. However,
+                you can pass the data in the DataWindow in a structure array.
+            </p>
+        </div>
+</body>
+</html>

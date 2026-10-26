@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>RibbonBar Control</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />RibbonBar Control</h1>
+            <p>This example builds a ribbon with the RibbonBar control. A ribbon organizes commands into Categories (tabs), each containing Panels of large buttons, small buttons, check boxes and combo boxes. Each button is bound to a user event of the RibbonBar by name; the event receives the handle of the clicked item, and this example writes the button text to the log.</p>
+            <dl>
+                <dt>Build with Script</dt>
+                <dd>Removes all categories (<code>GetCategoryByIndex</code> and <code>DeleteCategory</code>) and builds the ribbon item by item with <code>InsertCategoryLast</code>, <code>InsertPanelLast</code>, <code>InsertLargeButtonLast</code> and <code>InsertSmallButtonLast</code>. The click handlers use <code>GetLargeButton</code> and <code>GetSmallButton</code> to get the clicked item.</dd>
+                <dt>Load from JSON</dt>
+                <dd>Replaces the ribbon with one described as JSON, using <code>ImportJSON</code>. Ribbons can also be loaded from XML or from files.</dd>
+                <dt>Show ExportJSON()</dt>
+                <dd>Shows the JSON description of the current ribbon, which can be saved and loaded again later.</dd>
+            </dl>
+            <p>Ribbons can also be designed visually with the RibbonBar Builder. In PowerBuilder 2025, an existing MDI menu can be displayed as a ribbon without code changes.</p>
+            <p>This example is in PBEXAMNF.PBL, with the other Modern PowerBuilder examples.</p>
+        </div>
+</body>
+</html>

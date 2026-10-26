@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Registry Editor</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon"
+                 />Registry Editor</h1>
+            <p>This example is a Windows Registry Editor. It uses a PowerBuilder
+                TreeView and ListView control and Registry functions
+                    (<code>RegistryGet</code>, <code>RegistrySet</code>,
+                    <code>RegistryDelete</code>, <code>RegistryKeys</code>, and
+                    <code>RegistryValues</code>) to display and update the
+                registry. </p>
+            <p>It also demonstrates the basics of using a TreeView control. The
+                first level of the tree is added in the window open event.
+                Afterward, each additional level is added when necessary. The
+                code is in the <code>ItemPopulate</code> event of the TreeView.
+                    <code>ItemPopulate</code> is fired once for each item in the
+                tree (the first time it is expanded). Recursion is used to
+                determine the full path to the current item. </p>
+            <p>This example also demonstrates linking a TreeView control with a
+                ListView control, as used in the Windows Explorer. </p>
+            <p>Configuration information for the code examples is stored in the
+                registry rather than the <code>example.ini</code> file. The
+                branches to this information are opened when the example is
+                started. </p>
+            <p><strong>Please note: </strong>because the registry contains
+                important system settings, exercise extreme caution when
+                updating your registry. It is highly recommended that you
+                confine changes made when running this example to these
+                branches.   </p>
+            <div>
+                <h2>Usage</h2>
+                <p>Click on a folder to view the Registry entries and values for
+                    that key. </p>
+                <p>Double-click a folder, or click the <code>+</code> symbol
+                    next to it, to view its sub-folders. </p>
+                <p>Click twice (do not double-click) on a key or entry to change
+                    its name, or click <strong>Registry > Rename</strong>. </p>
+                <p>Double-click an entry or click <strong>Registry > Modify
+                        Value</strong> to change the value for an entry. Click
+                        <strong>Registry > New > Key</strong>  to add a new
+                    sub-key under the currently selected key. Click
+                        <strong>Registry > New > Value</strong>  to add a new
+                    entry to the currently selected key. Press Delete (or click
+                        <strong>Registry > Delete</strong> ) to delete the
+                    currently selected key or entry.</p>
+            </div>
+        </div>
+</body>
+</html>

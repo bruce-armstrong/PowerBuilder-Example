@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Business Class</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon"
+                 />Business Class</h1>
+            <p>This example shows how to separate business rules from the GUI
+                using custom class user objects and inheritance. The business
+                class is created by choosing the Custom Class specification for
+                a new user object. This class (user object) knows how to
+                retrieve, update, insert and delete rows in a DataWindow through
+                its methods (user object functions). This example demonstrates a
+                simple employee object. </p>
+            <p>The business rules for the employee object are implemented by
+                inheriting from the business class. Any business rules specific
+                to the employee object are defined by overriding the ancestor
+                user object functions. An ancestor update window is used to send
+                retrieve, update, insert, and delete messages to a business
+                object. The employee window, inherited from the ancestor update
+                window, simply specifies that the employee object should receive
+                these messages. </p>
+        </div>
+</body>
+</html>

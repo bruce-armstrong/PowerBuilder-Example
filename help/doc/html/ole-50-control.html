@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>OLE 2.0 Control</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />OLE
+                2.0 Control</h1>
+            <p>This example shows how to:</p>
+            <ul>
+                <li>Load a file into an OLE control </li>
+                <li>Load a row from the EAS Demo DB OLE table into an OLE
+                    control </li>
+                <li>Create a new object in an OLE control </li>
+                <li>Activate the application associated with the data in an OLE
+                    control (both in-place and off-site activation) </li>
+                <li>Save the contents of an OLE control as a row in the EAS Demo
+                    DB OLE table </li>
+            </ul>
+            <p>To display an object in the OLE control:</p>
+            <ul>
+                <li>To load a file into the OLE control, click <strong>File >
+                        Open File</strong>. For example, selecting a BMP or WAV
+                    file loads a paintbrush or media player object into the OLE
+                    control. An icon in the OLE control indicates if the object
+                    has no visual attributes (WAV file). </li>
+                <li>To create a new object with no data,  click <strong>File >
+                        New Object</strong>. This displays a list of OLE-enabled
+                    PowerBuilder applications in your configuration. (To add an
+                    application to the list, see the PowerBuilder
+                    documentation.) Copy the contents of an application to the
+                    clipboard, then click <strong>Edit > Paste</strong> to
+                    create the object in the application.</li>
+                <li>To load an existing OLE object from the database,
+                    double-click in the upper right corner of the DataWindow.
+                    When the object is loaded, notice that an image of the
+                    object is shown. For objects that cannot be shown (such as
+                    WAV files), the application icon is shown instead. </li>
+            </ul>
+            <p>When an OLE object is in the OLE control, you can:</p>
+            <ul>
+                <li>Activate the object by double clicking it. If the object
+                    supports OLE 2 in-place activation, the object becomes
+                    usable within that control, and the menus become the menu of
+                    that application. If the object does not support OLE 2
+                    activation, the application associated with that document is
+                    loaded outside of PowerBuilder. If you accidentally load a
+                    file whose application is not OLE-enabled, a message is
+                    displayed when you try to activate. You might need to use
+                        <code>REGEDIT.EXE</code> to register your application
+                    with Windows. For more information, see the Windows and
+                    PowerBuilder documentation. </li>
+                <li>Activate the object by selecting <strong>File >
+                        Activate</strong> (In-place or Off-site). Again, if the
+                    object does not support in-place activation, it loads
+                    off-site instead. </li>
+                <li>Copy the OLE object to the clipboard by selecting
+                        <strong>Edit > Copy</strong>. </li>
+                <li>Save the OLE object in the EAS Demo DB OLE table by
+                    selecting <strong>File > Save to Database</strong>.</li>
+            </ul>
+        </div>
+</body>
+</html>

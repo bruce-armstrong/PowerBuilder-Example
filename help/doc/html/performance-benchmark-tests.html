@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Performance Benchmark Tests</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon"
+                 />Performance Benchmark Tests</h1>
+            <dl>
+                <dt>Script Looping</dt>
+                <dd>This test is an empty For/Next loop. <p>The
+                            <code>Iterations</code> value is the upper limit of
+                        the loop. This type of operation shows significant
+                        performance improvement with machine-code compilation.
+                        Expect around a 2000% increase. </p></dd>
+                <dt>TAK Benchmark</dt>
+                <dd>The TAK benchmark is a variant of a benchmark originated by
+                    researcher Ikuo Takeuchi, and is widely used to compare
+                    programming tools that make extensive use of function calls.
+                    The commonly used TAK benchmark algorithm is a variant
+                    originated when John McCarthy of Stanford University
+                    recalled the original Takeuchi function incorrectly at the
+                    start of a benchmarking effort. TAK uses a recursive
+                    function that when called with the initial values of 18, 12,
+                    and 6, puts the processor through 63,609 function calls and
+                    47,706 subtractions by 1. The <code>Iterations</code> value
+                    is the number of times to perform the call, passing 18, 12,
+                    and 6 each time. This type of operation shows significant
+                    performance improvement with machine-code compilation.
+                    Expect around a 2000% increase. </dd>
+                <dt>Array Sorting</dt>
+                <dd>This test uses a bubble-sort algorithm to sort an array of
+                    integers. The <code>Items</code> value is the size of the
+                    array. The items are initially sorted in reverse order to
+                    achieve a worst-case sort. This type of operation shows a
+                    measurable performance improvement with machine-code
+                    compilation. Expect around a 500% increase. </dd>
+                <dt>Global Function Overhead</dt>
+                <dd>This test calls an empty global function
+                        <code>Iterations</code> times, and measures the overhead
+                    penalty associated with global functions. Function overhead
+                    is one of the areas of greatest performance improvement with
+                    machine-code compilation. However, the improvement for
+                    global functions are not as great as for object functions.
+                    Expect around a 1000% increase. </dd>
+                <dt>Object Function Overhead</dt>
+                <dd>This test calls an empty window function
+                        <code>Iterations</code> times. This measures the
+                    overhead penalty associated with object functions. Function
+                    overhead is one of the areas of greatest performance
+                    improvement with machine-code compilation. Expect close to a
+                    3000% increase. </dd>
+                <dt>Event Overhead</dt>
+                <dd>This test calls an empty window event
+                        <code>Iterations</code> times. This measures the
+                    overhead penalty associated with events. There is no
+                    difference between object functions and events. Expect
+                    results similar to the Object Function Overhead test, close
+                    to a 3000% increase. </dd>
+                <dt>Window Instantiation</dt>
+                <dd>This test opens a window with no controls on it
+                        <code>Iterations</code> times. This measures the
+                    overhead associated with instantiating windows. This is one
+                    area where machine-code compilation has no effect. Opening
+                    windows and instantiating controls is the same for both
+                    types of executables. </dd>
+                <dt>String Parsing</dt>
+                <dd>This test performs a global change on a string. This
+                    includes using the <code>Pos()</code> function to find the
+                    old text, and the <code>Left()</code> and
+                        <code>Right()</code> functions, together with string
+                    concatenation, to make the change. The
+                        <code>Iterations</code> value is the number of times to
+                    perform the global change. This type of operation relies on
+                    built-in PowerBuilder functions which are already
+                    machine-code compiled. Therefore, you should expect little
+                    difference. </dd>
+                <dt>Global Variable</dt>
+                <dd>This test uses a global variable in a simple integer
+                    addition statement. This measures the overhead associated
+                    with global variables. The <code>Iterations</code> value is
+                    the number of times to execute the statement. Global
+                    variable overhead is reduced measurably with machine-code
+                    compilation. Expect around a 500% increase. </dd>
+                <dt>Global Constant</dt>
+                <dd>This test uses a global constant in a simple integer
+                    addition statement. This measures the overhead associated
+                    with constants. The <code>Iterations</code> value is the
+                    number of times to execute the statement. Global constant
+                    overhead is reduced significantly with machine-code
+                    compilation. Expect close to a 3000% increase. Also notice
+                    that using constants instead of variables results in much
+                    greater performance with a machine-code executables than
+                    with p-code. </dd>
+                <dt>Using DataStores</dt>
+                <dd>This test copies all rows from a DataStore into variables
+                    using the appropriate GetItem function then writes them to
+                    another DataStore using SetItem. The DataWindow used
+                    contains data from the sales_order table which has 6 columns
+                    and over 600 rows. The <code>Iterations</code> value is the
+                    number of times to perform the copy. This type of operation
+                    shows a small performance improvement with machine-code
+                    compilation. Expect around a 50% increase. </dd>
+            </dl>
+        </div>
+</body>
+</html>

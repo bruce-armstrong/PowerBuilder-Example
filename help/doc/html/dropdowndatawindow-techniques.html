@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>DropDownDataWindow Techniques</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon"
+                 />DropDownDataWindow Techniques</h1>
+            <p><strong>Retrieve</strong> and <strong>Insert Row</strong> operate
+                on the main DataWindow. </p>
+            <p>The DropDownDataWindow (DDDW) used in this example is for the
+                Manager ID column. The contents of the DDDW changes depending on
+                the current row: it lists employees only  in the current
+                department. </p>
+            <p>To change the dataobject of the DDDW, click the <strong>Employee
+                    Partial Detail</strong> and <strong>Employee Full
+                    Detail</strong> buttons. The Employee Partial Detail DDDW
+                shows only Employee ID, Name, and Department ID. The Full Detail
+                DDDW additionally shows the employee salary and social security
+                number. </p>
+            <p>Click <strong>Sort</strong> or <strong>Filter</strong> to specify
+                sort or filter criteria for the DDDW. </p>
+            <div>
+                <h2>Example</h2>
+                <p>Click <strong>Retrieve</strong>. Click the Manager ID column
+                    of <code>department 200</code> and observe that it lists
+                    only employees who work in department 200. Changing rows
+                    changes the contents of the DDDW. Click <strong>Employee
+                        Full Detail</strong> to change the dataobject of the
+                    DDDW. Click the Manager ID column again, and notice that the
+                    DataWindow changes, now showing the employee's salary and
+                    social security number. Click <strong>Sort</strong> and
+                    specify a different sort order for the DDDW (such as
+                    Employee ID or salary). Click <strong>Filter</strong> and
+                    specify filter criteria for the DDDW (such as <code>salary >
+                        30000</code>).</p>
+            </div>
+        </div>
+</body>
+</html>

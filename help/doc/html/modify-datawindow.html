@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Modify a DataWindow</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />Modify
+                a DataWindow</h1>
+            <p>This example shows the difference between using
+                    <code>Modify()</code> and the direct object reference syntax
+                to change the attributes of DataWindow objects. It also
+                highlights the reasons to use each method.</p>
+        </div>
+        <div>
+            <h2>Using Modify()/Describe()</h2>
+            <p><code>Describe()</code> is used to obtain the names of all of the
+                objects in the DataWindow. When an object is selected,
+                    <code>Describe()</code> is called to obtain the type of
+                object selected. The <code>Modify()</code> syntax is built as
+                objects and attributes are selected. Or you can edit it
+                manually. </p>
+            <p>To build the Modify() syntax: </p>
+            <ol>
+                <li>Click on a DataWindow object in the first ListBox, or click
+                    on an object in the DataWindow. A partial list of attributes
+                    for the object appears in the second ListBox. </li>
+                <li>Choose an attribute from this list to modify its value. </li>
+                <li>If the selected attribute has a set number of values to
+                    choose from, the choices appear in the third ListBox, and
+                    the current attribute value is selected. To choose a
+                    different value, double-click another item in the third
+                    ListBox. If the third ListBox does not contain any items,
+                    edit the value manually in the Modify syntax field.</li>
+                <li>Click <strong>Apply</strong> to apply the changes to the
+                    DataWindow. </li>
+            </ol>
+        </div>
+        <div>
+            <h2>Using Direct Object Reference Syntax</h2>
+            <p>The current values of the attributes for the two objects are
+                displayed when the tab page is selected. Direct object reference
+                syntax, not <code>Describe()</code>, determines these values.
+                Select new values and click <strong>Apply</strong> to apply the
+                changes to the DataWindow. </p>
+            <div>
+                <h3>Note</h3>
+                <p>Notice that the direct object reference tab page lists only
+                    two DataWindow objects and four attributes for each of them.
+                    Direct object reference syntax cannot be built dynamically,
+                    as <code>Modify()</code> and <code>Describe()</code> syntax
+                    can. You must know the names of the objects and the
+                    attributes being modified when you code the syntax. For this
+                    reason, <code>Modify()</code> and <code>Describe()</code>
+                    are not obsolete. You still use them to dynamically
+                    determine at runtime what attributes of a DataWindow to
+                    modify. </p>
+            </div>
+        </div>
+</body>
+</html>

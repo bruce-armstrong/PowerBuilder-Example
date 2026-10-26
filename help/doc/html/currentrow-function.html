@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>CurrentRow Function</title>
+</head>
+<body>
+<div><h1><img src="../image/exhelp.png" alt="code examples icon" />CurrentRow
+                Function</h1><p>The CurrentRow() DataWindow function returns the
+                currently selected row in the DataWindow. </p><p>For example,
+                this border expression uses the function in the border and
+                background color attributes of the columns to visibly highlight
+                the current
+                row:</p><pre>If (GetRow() = CurrentRow(), 5, 0)</pre><p>The
+                background color expression is similar:
+                </p><pre>If (GetRow() = CurrentRow(), windowcolor, buttonface) </pre><p>When
+                the window opens, the computed columns, windowcolor and
+                buttonface, are set to be the value of the current window
+                background color and buttonface color. </p></div>
+</body>
+</html>

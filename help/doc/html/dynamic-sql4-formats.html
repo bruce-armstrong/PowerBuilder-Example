@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Dynamic SQL: 4 Formats</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon"
+                 />Dynamic SQL: 4 Formats</h1>
+            <dl>
+                <dt>Format 1 Example </dt>
+                <dd>Use the DynamicSQL menu to create a new table named
+                    Locations in the database. After it is created, the table
+                    name appears in the list of tables. Choose
+                        <strong>Alter</strong> from the menu to add a fax column
+                    to the Locations table. Choose <strong>Drop</strong> from
+                    the menu to drop the Locations table (if not, the table will
+                    automatically be dropped when the window is closed). </dd>
+                <dt>Format 2 Example</dt>
+                <dd>This is a simple example of building a dynamic update
+                    statement. First, select a department. Then, choose a new
+                    manager name and whether to have benefits for the employees
+                    in the department. Click  <strong>DynamicSQL >
+                        Execute</strong> to issue the dynamic UPDATE statement. </dd>
+                <dt>Format 3 Example</dt>
+                <dd>Choose a department from the ListBox of departments. The
+                    employees that work in the current department are listed.  </dd>
+                <dt>Format 4 Example </dt>
+                <dd>
+                    <ol>
+                        <li>Enter a dynamic SELECT statement (or keep the
+                            default statement provided). </li>
+                        <li>Click  <strong>DynamicSQL > Describe</strong>  to
+                            prepare the dynamic staging area with the dynamic
+                            SQL statement specified and describe the dynamic
+                            staging area into the dynamic description area. </li>
+                        <li>Next, enter values for the input parameters. The
+                            order of the input parameters that you enter must
+                            match the order of the input parameters specified in
+                            the dynamic SQL statement. </li>
+                        <li>Click  <strong>DynamicSQL > Execute</strong> to open
+                            a dynamic cursor that is already associated with the
+                            dynamic staging area. Each row is fetched using the
+                            dynamic description area, and the output parameters
+                            of the dynamic description area are shown.</li>
+                    </ol>
+                </dd>
+            </dl>
+            <div>
+                <h3>Note</h3>
+                <p>All the formats use MicroHelp to display many of the dynamic
+                    SQL statements that are executed. </p>
+            </div>
+        </div>
+</body>
+</html>

@@ -42,6 +42,9 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
 - Help now works when the examples are run from the IDE.
   - `f_open_help` builds the full path from `gs_ExampleDir` instead of passing the bare file name.
   - Before, the bare name was looked up in the IDE's directory.
+- **Help sources:** the topic pages, images, stylesheet and HTML Help project (`exampl.hhp`, `.hhc`, `.hhk`) are in `help`, with `build_help.ps1` to build `exampl.chm` and `exampl.pdf` (see `helpREADME.md`).
+- **PDF help:** HTML Help is deprecated, so the help is also published as `exampl.pdf`. It is generated from the same topic sources, in the CHM's contents order, with a linked contents page and PDF bookmarks.
+- Topics brought up to date with the examples: PictureListBox Picture Browser (SVG images), PowerPuzzle (new picture), Graphs and Shared DataWindows (flat column graph), ShareData With DataStores (first DataStore shown), Query Mode (Retrieve accepts the current field; removed a garbled duplicate of its example table), DataWindow to Structure Utility (solution libraries) and The Code Example Files (the solution layout and libraries, the build projects, and the Benchmarks application not being included).
 - The 16-colour help images were replaced: every topic's Code Examples picture (`exhelp.png`) is the application tile icon, and the new/enhanced/settings markers use the app's Fluent icons. The unused Sybase logo was removed and the stylesheet renamed from `sybase.css` to `examples.css`.
 
 ## User interface
@@ -150,4 +153,5 @@ The examples were written for the SQL Anywhere demo database. They now also work
 | 2026-10-25 | `c32b2d9` | Redraw product pictures and toolbar icons, fix DataWindow colours in the dark theme, flatten the graphs, and rebrand the mail-merge letter |
 | 2026-10-25 | `e46d622` | Replace the Powersoft logo puzzle with new artwork |
 | 2026-10-25 | `11472af` | Fix the blank MDI frames, darker DataWindow buttons, and example fixes |
-| 2026-10-25 | (pending) | Fix Placeholders & OpenURL, Resizing Controls, Progress Bar, Registry Editor header, SVG in the picture browser |
+| 2026-10-25 | `274a976` | Fix Placeholders & OpenURL, Resizing Controls, Progress Bar, Registry Editor header, SVG in the picture browser |
+| 2026-10-25 | (pending) | Update the help, publish it as a PDF too, and add the help sources |

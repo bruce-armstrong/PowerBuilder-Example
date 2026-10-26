@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>DataWindow ExportJson and ImportJson</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />DataWindow ExportJson and ImportJson</h1>
+            <p>This example converts DataWindow data to JSON and back. The source DataWindow on the left contains embedded employee data, so no database connection is needed; the target DataWindow on the right starts empty.</p>
+            <dl>
+                <dt>Export Plain JSON</dt>
+                <dd>Calls <code>ExportJson()</code>, which produces plain JSON: an array with one object per row, keyed by column name.</dd>
+                <dt>Export DataWindow JSON</dt>
+                <dd>Calls <code>ExportJson(True)</code>, which produces DataWindow JSON. This format also carries the DataWindow identity, the row and column status flags and the original values, so updates can be reproduced elsewhere (for example by a PowerServer Web API).</dd>
+                <dt>Changed Rows Only</dt>
+                <dd>Calls <code>ExportJson(Primary!, True, False)</code> to export only rows that have been modified. Change a value in the source DataWindow first.</dd>
+                <dt>ImportJson</dt>
+                <dd>Resets the target DataWindow and calls <code>ImportJson(json, error)</code> with the JSON shown. Both JSON formats can be imported; JSON keys are matched to column names.</dd>
+            </dl>
+            <p>ExportJson and ImportJson were introduced in PowerBuilder 2017 R3.</p>
+            <p>This example is in PBEXAMNF.PBL, with the other Modern PowerBuilder examples.</p>
+        </div>
+</body>
+</html>

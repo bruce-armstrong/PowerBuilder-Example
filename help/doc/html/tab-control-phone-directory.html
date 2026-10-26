@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Tab Control Phone Directory</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />Tab
+                Control Phone Directory</h1>
+            <p>This example demonstrates two different ways to create a Customer
+                Phone Directory using the PowerBuilder Tab Control: </p>
+            <ul>
+                <li>Using a single DataWindow and tab pages on the Tab control
+                    to filter the DataWindow. </li>
+                <li>Using a User Object with a DataWindow as the tab pages on
+                    the Tab control and retrieving the data when that object is
+                    displayed. </li>
+            </ul>
+            <p>The directory displayed when the window is opened uses the
+                single, floating DataWindow. When you select each letter, the
+                DataWindow is filtered to display only the names starting with
+                that letter. </p>
+            <p>Click <strong>User Objects</strong> to show the other Tab
+                control. This one consists of tab page user objects
+                    (<code>u_tab_dir</code>) that each contain a DataWindow with
+                a retrieval argument. When a page is selected, that DataWindow
+                is retrieved. However, the retrieval is only done once. Notice
+                that the pages are displayed much faster when selected a second
+                time. </p>
+            <p>Click <strong>Change Tabs</strong> to position the tabs somewhere
+                else on the Tab control. </p>
+        </div>
+</body>
+</html>

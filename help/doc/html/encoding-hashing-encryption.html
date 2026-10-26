@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Encoding, Hashing and AES Encryption</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />Encoding, Hashing and AES Encryption</h1>
+            <p>This example uses the native CoderObject and CrypterObject to encode, hash and encrypt text, with no external DLLs or Windows API declarations. Both objects work with blobs, so the text is converted with an explicit encoding: <code>Blob(text, EncodingUTF8!)</code>.</p>
+            <dl>
+                <dt>Encode / Decode</dt>
+                <dd>Shows the text encoded with <code>Base64Encode</code>, <code>Base64UrlEncode</code>, <code>HexEncode</code> and <code>UrlEncode</code>, then decodes the Base64 value back to the original text.</dd>
+                <dt>Hash / HMAC</dt>
+                <dd>Computes <code>MD5</code>, <code>SHA</code> (SHA1!, SHA256!, SHA512! and SHA3_256!) and an <code>HMAC</code> (HMACSHA256!) keyed with the secret key, shown as hexadecimal.</dd>
+                <dt>AES-256 Encrypt + Decrypt</dt>
+                <dd>Derives a 32-byte key from the passphrase with SHA-256, encrypts the text with <code>SymmetricEncrypt(AES!, data, key, OperationModeCBC!, iv, PKCSPadding!)</code>, and decrypts it again with <code>SymmetricDecrypt</code>.</dd>
+            </dl>
+            <p>The initialization vector (IV) in this example is derived from the passphrase only so that the output is repeatable. In real applications use a random IV for each message and store it with the cipher text.</p>
+            <p>CoderObject and CrypterObject were introduced in PowerBuilder 2017 R3.</p>
+            <p>This example is in PBEXAMNF.PBL, with the other Modern PowerBuilder examples.</p>
+        </div>
+</body>
+</html>

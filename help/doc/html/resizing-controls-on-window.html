@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Resizing Controls on a Window</title>
+</head>
+<body>
+<div><h1><img src="../image/exhelp.png" alt="code examples icon" />Resizing
+                Controls on a Window</h1>Drag the lower right corner of the
+            window to resize it. </div>
+        <div>Notice that controls like radio buttons and check boxes do not
+            resize properly, because their size is fixed. However, you can
+            resize their text. To resize DataWindows, set the zoom attribute.
+            You can resize all controls by setting their x, y, width, height and
+            fontsize (if the control has a text attribute) attributes; by
+            calculating a new ratio (<var>new window size</var>/<var>old window
+                size</var>); and then applying that to the original attributes
+            of the controls. Look at the window function <code>wf_resize_it(
+                )</code> to see exactly what happens. </div>
+</body>
+</html>

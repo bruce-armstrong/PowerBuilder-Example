@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Zip and Unzip Files</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />Zip and Unzip Files</h1>
+            <p>This example creates and reads archives with the native CompressorObject and ExtractorObject. When the window opens, a few of the Code Examples files are added to the list and the archive name is set to a file in your TEMP folder (found with the Keyword context service).</p>
+            <dl>
+                <dt>Add Files / Clear List</dt>
+                <dd>Selects the files to compress.</dd>
+                <dt>Compress to ZIP</dt>
+                <dd>Calls <code>Compress(files[], archive, ArchiveFormatZIP!)</code>. If you enter a password, the <code>Password</code> property is set first and the archive is encrypted with AES-256.</dd>
+                <dt>List Contents</dt>
+                <dd>Lists the files in the archive with <code>ExtractorObject.GetFilesList</code>. Enter the same password for an encrypted archive.</dd>
+                <dt>Extract To Folder</dt>
+                <dd>Extracts the whole archive to a folder you select with <code>Extract(archive, folder)</code>.</dd>
+                <dt>Compress a Blob with GZIP and Back</dt>
+                <dd>Compresses a blob in memory with <code>Compress(blob, ref blob, ArchiveFormatGZip!)</code> and restores it with <code>Extract(blob, ref blob, ArchiveFormatGZip!)</code>, without touching the file system, and reports the sizes.</dd>
+            </dl>
+            <p>CompressorObject and ExtractorObject were introduced in PowerBuilder 2019. They also support 7Z, GZIP and TAR archives.</p>
+            <p>This example is in PBEXAMNF.PBL, with the other Modern PowerBuilder examples.</p>
+        </div>
+</body>
+</html>

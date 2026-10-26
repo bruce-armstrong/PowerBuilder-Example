@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<link rel="stylesheet" type="text/css" href="../../styles/examples.css" />
+<title>Sending Email with SMTPClient</title>
+</head>
+<body>
+<div>
+            <h1><img src="../image/exhelp.png" alt="code examples icon" />Sending Email with SMTPClient</h1>
+            <p>This example sends email directly to an SMTP server with the native SMTPClient and MimeMessage objects. No MAPI client or mail program is required.</p>
+            <dl>
+                <dt>Server settings</dt>
+                <dd>Set the <code>Host</code>, <code>Port</code> and <code>EnableTLS</code> properties for your server, and <code>UserName</code> and <code>Password</code> if it requires authentication.</dd>
+                <dt>Message</dt>
+                <dd>The message is built through the <code>Message</code> property (a MimeMessage): <code>SetSender</code>, <code>AddRecipient</code>, <code>Subject</code>, and either <code>HtmlBody</code> or <code>TextBody</code>, depending on the Send body as HTML option.</dd>
+                <dt>Send</dt>
+                <dd>Calls <code>Send()</code> and shows the result. A negative return value is an SMTPClient error code; see SMTPClient in the PowerBuilder help.</dd>
+            </dl>
+            <p>To try the example without a real mail account, run a local test mail server such as smtp4dev or Papercut (for example in a Docker container) and send to localhost.</p>
+            <p>SMTPClient was introduced in PowerBuilder 2022 R2. It also supports attachments, asynchronous sending (SendAsync) and OAuth 2.0 (XOAUTH2) authentication.</p>
+            <p>This example is in PBEXAMNF.PBL, with the other Modern PowerBuilder examples.</p>
+        </div>
+</body>
+</html>

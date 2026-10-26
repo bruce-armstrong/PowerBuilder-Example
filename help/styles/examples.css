@@ -1,0 +1,121 @@
+@import url("default.css");
+p.navbtns {
+    text-align: right;
+}
+p.navbtns span {
+    margin-right: 1em;
+    text-decoration: none;
+}
+p.navbtns span a {
+    text-decoration: none;
+}
+
+th {
+    text-align:left;
+    vertical-align:bottom;
+}
+
+
+dt {
+    font-weight:bold;
+}
+
+dd {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+} 
+
+h1 {
+    font-size:160%;
+    border-bottom: solid 1px #000080;
+}
+
+h1.subtitled {
+    font-size:140%;
+
+}
+h2 {
+    font-size:130%;
+
+}
+
+h2.subtitle {
+    font-size:125%;
+    padding-left: 1em;
+    border-bottom: solid 1px #000080;
+
+}
+
+h3 {
+    font-size:120%;
+    color:#000091;
+}
+
+h4 {
+    font-size:110%;
+    color:#000091;
+}
+
+.dbobject,.variable,.emphasis {
+    font-style:italic;
+}
+
+/*
+div.note span.title {
+    font-weight:bold;
+    margin-right: 1em;
+}
+*/
+
+/* error messages for doc authoring */
+ .puboops {
+    font-weight:bold;
+    font-color: red;
+    background-color:#E1E1E1;
+}
+
+div.bookinfotitle {
+    font-weight:bold;
+    font-size:130%;
+    color:#000091;
+    margin-bottom: 2em;
+}
+
+ 
+span.prodname, span.prodversion, span.uicontrol {
+    font-weight:bold;
+    font-size:100%;
+    color: #000;
+}
+
+ul.sl { list-style-type:none;} 
+
+/* just like the default.css rule, except no h3 class */
+div.note h3  {
+/*    margin-top:-4.0000px;
+    margin-bottom:-8.0000px;*/
+    font-size:85%;
+    color:#000091;
+}
+/* no formatting currently needed for these rules 
+.shortdesc
+.section
+.menucascade
+.simpletable
+.brhead 
+.fig
+.listfig
+div.formalpara 
+.notelistpara
+.userinput
+.ce
+.ds
+.firstsimple
+.firstbullet
+.procedure
+.label
+.labelproc
+.fi
+.example
+.booktitle
+*/

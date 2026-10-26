@@ -1,0 +1,467 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+   <OBJECT type="text/site properties">
+     <param name="Window Styles" value="0x800025">
+     <param name="FrameName" value="right">
+     <param name="comment" value="title:Online Help">
+     <param name="comment" value="base:index.htm">
+   </OBJECT>
+   <UL>
+      <LI><OBJECT type="text/sitemap">
+            <param name="Name" value="PowerBuilder Code Examples">
+            <param name="Local" value="doc/html/code-example-files.html">
+          </OBJECT>
+      <UL>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Adding an Other Category to a Graph">
+               <param name="Local" value="doc/html/adding-other-category-graph.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Attribute Expressions">
+               <param name="Local" value="doc/html/attribute-expressions.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Auto Increment - Call Track">
+               <param name="Local" value="doc/html/auto-increment-call-track.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Business Class">
+               <param name="Local" value="doc/html/business-class.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Cancel Retrieval &amp; Printing">
+               <param name="Local" value="doc/html/cancel-retrieval-printing.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Change Employee Salary">
+               <param name="Local" value="doc/html/change-employee-salary.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="PowerBuilder Code Examples">
+               <param name="Local" value="doc/html/code-examples.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Column Text Value vs. Item Value">
+               <param name="Local" value="doc/html/column-text-value-item-value.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Computed Fields in Attribute Expr.">
+               <param name="Local" value="doc/html/computed-fields-attribute-expr.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Context-Sensitive MicroHelp">
+               <param name="Local" value="doc/html/context-sensitive-microhelp.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Copy DataWindow">
+               <param name="Local" value="doc/html/copy-datawindow.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Copy, Move, Discard Rows">
+               <param name="Local" value="doc/html/copy-move-discard-rows.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Create From SQL or DWSyntax">
+               <param name="Local" value="doc/html/create-from-sql-dwsyntax.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="CurrentRow Function">
+               <param name="Local" value="doc/html/currentrow-function.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Custom MDI Frame">
+               <param name="Local" value="doc/html/custom-mdi-frame.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Database Connection">
+               <param name="Local" value="doc/html/database-connection.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Data Explorer">
+               <param name="Local" value="doc/html/data-explorer.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Data Manager">
+               <param name="Local" value="doc/html/data-manager.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Data Pipeline">
+               <param name="Local" value="doc/html/data-pipeline.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="DataWindow Buffers">
+               <param name="Local" value="doc/html/datawindow-buffers.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="DataWindow ExportJson and ImportJson">
+               <param name="Local" value="doc/html/datawindow-json.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="DataWindow Expressions">
+               <param name="Local" value="doc/html/datawindow-expressions.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="DataWindow Functions">
+               <param name="Local" value="doc/html/datawindow-functions.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="DataWindow to HTML Syntax">
+               <param name="Local" value="doc/html/datawindow-html-syntax.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="DataWindow Spin Controls">
+               <param name="Local" value="doc/html/datawindow-spin-controls.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="DataWindow to Structure Utility">
+               <param name="Local" value="doc/html/datawindow-structure-utility.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="DataWindow Validation Rules">
+               <param name="Local" value="doc/html/datawindow-validation-rules.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Date Functions">
+               <param name="Local" value="doc/html/date-functions.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="DBError Event">
+               <param name="Local" value="doc/html/dberror-event.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="DDE Client &amp; Server">
+               <param name="Local" value="doc/html/dde-client-server.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Department Reports">
+               <param name="Local" value="doc/html/department-reports.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Directory Tree">
+               <param name="Local" value="doc/html/directory-tree.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="DropDownDataWindow Techniques">
+               <param name="Local" value="doc/html/dropdowndatawindow-techniques.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Dynamically Adding a Series to a Graph">
+               <param name="Local" value="doc/html/dynamically-adding-series-graph.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Dynamic SQL: 4 Formats">
+               <param name="Local" value="doc/html/dynamic-sql4-formats.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Dynamic User Objects">
+               <param name="Local" value="doc/html/dynamic-user-objects.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Encoding, Hashing and AES Encryption">
+               <param name="Local" value="doc/html/encoding-hashing-encryption.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Enhanced Crosstab Reporting">
+               <param name="Local" value="doc/html/enhanced-crosstab-reporting.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Evaluate / ItemError">
+               <param name="Local" value="doc/html/evaluate-itemerror.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="File System Enhancements">
+               <param name="Local" value="doc/html/file-system-enhancements.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Function Overloading">
+               <param name="Local" value="doc/html/function-overloading.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Garbage Collection">
+               <param name="Local" value="doc/html/garbage-collection.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="GetFirstSheet &amp; GetNextSheet">
+               <param name="Local" value="doc/html/getfirstsheet-getnextsheet.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Graphs and Shared DataWindows">
+               <param name="Local" value="doc/html/graphs-shared-datawindows.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Hyperlink Controls">
+               <param name="Local" value="doc/html/hyperlink-controls.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="ImportString() &amp; RowsCopy()">
+               <param name="Local" value="doc/html/importstring-rowscopy.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Including Blob Columns in a Data Pipeline">
+               <param name="Local" value="doc/html/including-blob-columns-data-pipeline.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Item Status &amp; Updating">
+               <param name="Local" value="doc/html/item-status-updating.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="JSONParser and JSONGenerator">
+               <param name="Local" value="doc/html/json-parser-generator.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Mail Merge with RTE-Style DataWindow">
+               <param name="Local" value="doc/html/mail-merge-rte-datawindow.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="MAPI Mail - Receive Mail">
+               <param name="Local" value="doc/html/mapi-mail-receive-mail.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="MAPI Mail - Send Mail">
+               <param name="Local" value="doc/html/mapi-mail-send-mail.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="MenuItem Attributes">
+               <param name="Local" value="doc/html/menuitem-attributes.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Metaclass Functionality">
+               <param name="Local" value="doc/html/metaclass-functionality.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Modify a DataWindow">
+               <param name="Local" value="doc/html/modify-datawindow.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Multiple Toolbars">
+               <param name="Local" value="doc/html/multiple-toolbars.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Nested Reports">
+               <param name="Local" value="doc/html/nested-reports.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Newspaper and Sliding Columns">
+               <param name="Local" value="doc/html/newspaper-sliding-columns.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="OLE 2.0 Control">
+               <param name="Local" value="doc/html/ole-50-control.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="PDF Builder">
+               <param name="Local" value="doc/html/pdf-builder.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Performance Benchmarks">
+               <param name="Local" value="doc/html/performance-benchmarks.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Performance Benchmark Tests">
+               <param name="Local" value="doc/html/performance-benchmark-tests.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="PictureListBox Picture Browser">
+               <param name="Local" value="doc/html/picturelistbox-picture-browser.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Placeholders and OpenURL">
+               <param name="Local" value="doc/html/placeholders-openurl.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="PopulateError Function">
+               <param name="Local" value="doc/html/populateerror-function.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="PowerBuilt Notepad">
+               <param name="Local" value="doc/html/powerbuilt-notepad.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="PowerPuzzle">
+               <param name="Local" value="doc/html/powerpuzzle.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Presentation Styles">
+               <param name="Local" value="doc/html/presentation-styles.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Printer Enhancements">
+               <param name="Local" value="doc/html/printer-enhancements.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Print Object and Print Screen">
+               <param name="Local" value="doc/html/print-object-and-print-screen.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Progress Bar Controls">
+               <param name="Local" value="doc/html/progress-bar-controls.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="PSR (Report File) Viewer">
+               <param name="Local" value="doc/html/psr-viewer.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Query Mode">
+               <param name="Local" value="doc/html/query-mode.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Referencing Nested Reports">
+               <param name="Local" value="doc/html/referencing-nested-reports.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Registry Editor">
+               <param name="Local" value="doc/html/registry-editor.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Registry Functions">
+               <param name="Local" value="doc/html/registry-functions.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Reporting with DataWindow Buttons">
+               <param name="Local" value="doc/html/reporting-datawindow-buttons.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Resizing Controls on a Window">
+               <param name="Local" value="doc/html/resizing-controls-on-window.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="RESTClient and HTTPClient">
+               <param name="Local" value="doc/html/restclient-httpclient.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Retrieve as Needed &amp; Aggregates">
+               <param name="Local" value="doc/html/retrieve-as-needed-aggregates.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="RibbonBar Control">
+               <param name="Local" value="doc/html/ribbonbar-control.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="RichPad RTE Control">
+               <param name="Local" value="doc/html/richpad-rte-control.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="RowFocusChanging Event">
+               <param name="Local" value="doc/html/rowfocuschanging-event.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Row Selection Techniques">
+               <param name="Local" value="doc/html/row-selection-techniques.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Running the Performance Benchmarks">
+               <param name="Local" value="doc/html/running-performance-benchmarks.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Runtime DataWindow Painter">
+               <param name="Local" value="doc/html/runtime-datawindow-painter.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Sales Order ListView">
+               <param name="Local" value="doc/html/sales-order-listview.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Sending Email with SMTPClient">
+               <param name="Local" value="doc/html/smtpclient-email.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="ShareData With DataStores">
+               <param name="Local" value="doc/html/sharedata-datastores.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Share DataWindow buffers">
+               <param name="Local" value="doc/html/share-datawindow-buffers.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Sharing DropDownDataWindows">
+               <param name="Local" value="doc/html/sharing-dropdowndatawindows.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Sort and Filter">
+               <param name="Local" value="doc/html/sort-filter.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Stored Procedure Source Data Pipeline">
+               <param name="Local" value="doc/html/stored-procedure-source-data-pipeline.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Stored Procedure Source DWs">
+               <param name="Local" value="doc/html/stored-procedure-source-dws.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="System Enhancements">
+               <param name="Local" value="doc/html/system-enhancements.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Tab Control Phone Directory">
+               <param name="Local" value="doc/html/tab-control-phone-directory.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Table Maintenance with DataWindow Buttons">
+               <param name="Local" value="doc/html/table-maintenance-datawindow-buttons.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Text Style Changer">
+               <param name="Local" value="doc/html/text-style-changer.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Towers of Hanoi">
+               <param name="Local" value="doc/html/towers-of-hanoi.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Trackbar Controls">
+               <param name="Local" value="doc/html/trackbar-controls.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="TreeView / DataWindow Linking">
+               <param name="Local" value="doc/html/treeview-datawindow-linking.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="TreeView Drag/Drop">
+               <param name="Local" value="doc/html/treeview-dragdrop.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Undeleting a Row">
+               <param name="Local" value="doc/html/undeleting-row.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Update Trigger">
+               <param name="Local" value="doc/html/update-trigger.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="User Object Examples">
+               <param name="Local" value="doc/html/user-object-examples.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Using the Code Examples">
+               <param name="Local" value="doc/html/using-code-examples.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Various Graph Examples">
+               <param name="Local" value="doc/html/various-graph-examples.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="WebBrowser Control">
+               <param name="Local" value="doc/html/webbrowser-control.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Window Scrolling">
+               <param name="Local" value="doc/html/window-scrolling.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Year 2000 Example">
+               <param name="Local" value="doc/html/year2k-example.html">
+             </OBJECT>
+         <LI><OBJECT type="text/sitemap">
+               <param name="Name" value="Zip and Unzip Files">
+               <param name="Local" value="doc/html/zip-unzip-files.html">
+             </OBJECT>
+      </UL>
+   </UL>
+</BODY>
+</HTML>
