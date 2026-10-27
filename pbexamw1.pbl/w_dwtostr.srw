@@ -324,10 +324,15 @@ public function integer of_load_folder_library (string as_folder);// Lists the D
 // The comment is the "//objectcomments" first line of the source file.
 Integer	li_i, li_count, li_file
 Long		ll_row
-String	ls_name, ls_line
+String	ls_name, ls_line, ls_cwd
+Boolean	lb_listed
 
+// DirList also makes the folder the current directory: change it back, or the relative picture paths stop working
+ls_cwd = GetCurrentDirectory()
 ddlb_1.Reset()
-If ddlb_1.DirList(as_folder + "\*.srd", 0) <> True Then Return -1
+lb_listed = ddlb_1.DirList(as_folder + "\*.srd", 0)
+ChangeDirectory(ls_cwd)
+If Not lb_listed Then Return -1
 li_count = ddlb_1.TotalItems()
 For li_i = 1 To li_count
 	ls_name = ddlb_1.Text(li_i)
@@ -878,6 +883,8 @@ if Trim(This.Text) <> "" THEN
 	mle_comment.text = ""
 	
 	If IsNull(This.Text) Or Trim(This.Text) = "" THEN return
+	// A solution library's .pblmeta file stands for the library folder that holds it
+	If Lower(Right(This.Text, 8)) = ".pblmeta" Then This.Text = Left(This.Text, LastPos(This.Text, "\") - 1)
 	is_lib = This.Text
 	ib_folder_lib = DirectoryExists(is_lib)
 	If ib_folder_lib Then
@@ -900,7 +907,9 @@ if Trim(This.Text) <> "" THEN
 				ddlb_1.additem(ids_lib_string.object.name[li_i] )
 			next
 		end if
-			
+
+	else
+		MessageBox("Datawindow to Structure", "No DataWindows were found in " + is_lib + ".")
 	end if
 end if
 
@@ -948,8 +957,8 @@ event clicked;string ls_file, ls_path
 // per object and a .pblmeta file; selecting the .pblmeta file opens that folder.
 If GetFileOpenName ( "Select Library to Open", ls_path, ls_file, "PBL",&
 	"Libraries (*.pbl;*.pblmeta),*.pbl;*.pblmeta,Workspace libraries (*.pbl),*.pbl,Solution libraries (*.pblmeta),*.pblmeta") <> 1 Then Return
-
-If Lower(Right(ls_path, 9)) = ".pblmeta" Then ls_path = Left(ls_path, Len(ls_path) - Len(ls_file) - 1)
+// The dialog can change the current directory, which the relative picture paths depend on
+If Len(gs_CurrentDirectory) > 0 Then ChangeDirectory(gs_CurrentDirectory)
 
 sle_lib.text = ls_path
 sle_lib.post event modified()

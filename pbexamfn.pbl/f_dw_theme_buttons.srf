@@ -19,7 +19,7 @@ global function integer f_dw_theme_buttons (datawindow adw_target);/////////////
 //	Returns:  the number of buttons changed (0 with a light theme)
 //
 //////////////////////////////////////////////////////////////////////
-String	ls_Objects, ls_Object, ls_Modify
+String	ls_Objects, ls_Object, ls_Modify, ls_File
 Integer	li_Pos, li_Count
 
 If Pos(Lower(GetTheme()), "dark") = 0 Then Return 0
@@ -32,6 +32,11 @@ Do While ls_Objects <> ""
 	If ls_Object <> "" And adw_target.Describe(ls_Object + ".Type") = "button" Then
 		ls_Modify += ls_Object + ".Background.Mode='0' " + ls_Object + ".Background.Color='" + String(RGB(64, 64, 64)) + "' " + &
 			ls_Object + ".Color='" + String(RGB(230, 230, 230)) + "' "
+		// The button icons in images\dwbutton have lighter copies for the dark face in images\dwbutton\dark
+		ls_File = adw_target.Describe(ls_Object + ".Filename")
+		If Left(ls_File, 1) = "~"" Then ls_File = Mid(ls_File, 2, Len(ls_File) - 2)
+		If Lower(Left(ls_File, 16)) = "images\dwbutton\" And Pos(ls_File, "\", 17) = 0 Then &
+			ls_Modify += ls_Object + ".Filename='images\dwbutton\dark\" + Mid(ls_File, 17) + "' "
 		li_Count++
 	End If
 Loop

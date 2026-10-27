@@ -124,6 +124,8 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
   - OLE Example sample objects: `sql\ole_samples\appeon_logo.bmp` (an Appeon logo, replacing a 1990s company logo) and `sql\ole_samples\letter.docx` (the payment-reminder letter, dated 2026 instead of 1994). The `ole` table stores PowerBuilder's OLE `ObjectData`, so they are loaded with the example itself; `sql\ole_samples\README.md` has the steps. They are loaded in the SQL Server EASDEMO database used for testing; the SQL Anywhere demo database that Appeon supplies still needs the update.
   - Spellcheck with OLE and Excel: Excel's Spelling dialog didn't appear while Excel was hidden, so the application seemed to hang. Excel is shown during the check (`Visible = True`), and the window lets it bring its dialog to the front (`AllowSetForegroundWindow`).
   - PowerBuilder Aquarium: the example's title had two spaces.
+  - DataWindow button icons: PowerBuilder fits a picture button's SVG into the button and draws a white frame around it in every background mode, so the frame stays. The icons of Report With DataWindow Buttons and Contact Maintenance are copies in `imagesdwbutton` with the empty margin trimmed, so the symbol is larger; with a dark theme, `f_dw_theme_buttons` swaps in lighter blue copies from `imagesdwbuttondark`.
+  - DataWindow to Structure: picking a solution library's `.pblmeta` file listed no DataWindows, because the extension check compared 9 characters with the 8-character `.pblmeta`. The PBL box now turns a `.pblmeta` path into its folder (typed paths too), says so when a library has no DataWindows, and changes the current directory back after listing the folder.
 - **Sliding-picture puzzle:** the 25 tiles were slices of a 1990s company logo. The puzzle, its solution thumbnail and the Zip example now use a new landscape picture drawn for it, `images\puzzle\puzzle.png`, cut into `tile11.png` to `tile55.png` at 2x resolution. The old bitmaps are in `_archive\`.
 - **RTE DataWindow Mail Merge:** the letterhead has Appeon's logo and mailing address (Appeon Inc., 425 1st Street, Unit 1507, San Francisco, CA 94105) instead of the 1990s company's.
 
@@ -180,4 +182,5 @@ The examples were written for the SQL Anywhere demo database. They now also work
 | 2026-10-27 | `2f22c6f` | New OLE sample objects, hide the AVI sample, show Excel for the spellcheck |
 | 2026-10-27 | `1e43ce1` | Move the OLE sample objects to sql\ole_samples with a note for the SQL Anywhere database |
 | 2026-10-27 | `310458c` | Remove the former company names (only the help's old stylesheet deletion landed in this commit) |
-| 2026-10-27 | (pending) | Remove the former company names; keep the settings under Software\Appeon |
+| 2026-10-27 | `63309f2` | Remove the former company names; keep the settings under Software\Appeon |
+| 2026-10-27 | (pending) | Bigger, lighter DataWindow button icons; fix DataWindow to Structure for solution libraries |
