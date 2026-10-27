@@ -2,7 +2,7 @@
 
 > **For Appeon:** the SQL Anywhere demo database that ships with the Code Examples still needs these records updated. They have been updated in the SQL Server EASDEMO database used for this fork's testing.
 
-The OLE 2.0 Control example (`w_ole_example`) shows OLE objects stored in the demo database's `ole` table. Two of those objects date from the 1990s, a Powersoft logo and a letter dated 1994. This folder has their replacements:
+The OLE 2.0 Control example (`w_ole_example`) shows OLE objects stored in the demo database's `ole` table. Two of those objects date from the 1990s, an old company logo and a letter dated 1994. This folder has their replacements:
 
 | File | Record in the `ole` table | Description | OLE type |
 |---|---|---|---|

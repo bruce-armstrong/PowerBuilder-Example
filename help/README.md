@@ -11,7 +11,7 @@ The sources for the Code Examples help, which is built in two formats:
 |---|---|
 | `doc\html\*.html` | One topic per page |
 | `doc\image\*.png` | Images used by the topics |
-| `styles\examples.css` | Topic stylesheet (`default.css` is kept for reference) |
+| `styles\examples.css` | Topic stylesheet |
 | `exampl.hhp` | HTML Help project: options, window and the list of files to compile |
 | `exampl.hhc` | Contents: topic titles and order, also used for the PDF |
 | `exampl.hhk` | Index: keywords, including each example's window name for F1 |

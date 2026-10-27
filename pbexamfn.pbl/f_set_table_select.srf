@@ -51,7 +51,7 @@ choose case Upper(Left(sqlca.dbms,3) )
 				+ " from PBCATTBL where PBT_OWNR = '" & 
 				+ Upper(sqlca.userid) + "' order by 1 ASC"
 
-	case "SYB", "SYC"	// Sybase SQL Server
+	case "SYB", "SYC"	// SAP ASE
 	   ls_sql = "SELECT DISTINCT pbcattbl.pbt_tnam, pbcattbl.pbt_cmnt " &  
 	         + " FROM pbcattbl order by 1 ASC"
 

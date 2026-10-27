@@ -16,7 +16,7 @@ integer	li_ReturnCode
 
 choose case Upper(Left(sqlca.dbms,3) )
 
-	case "SYB", "SYC"	// Sybase SQL Server
+	case "SYB", "SYC"	// SAP ASE
 		ls_sql = 'Select pbc_cnam,' &
 				+ ' pbc_cmnt ' &
 				+ 'from pbcatcol ' &

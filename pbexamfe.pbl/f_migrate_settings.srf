@@ -1,0 +1,56 @@
+//objectcomments Copies the Code Examples settings from the registry key that older versions used
+global type f_migrate_settings from function_object
+end type
+
+forward prototypes
+global subroutine f_migrate_settings (string as_oldkey, string as_newkey)
+global subroutine f_migrate_settings (string as_from, string as_to, boolean ab_copy)
+end prototypes
+
+global subroutine f_migrate_settings (string as_oldkey, string as_newkey);//////////////////////////////////////////////////////////////////////
+//
+// Function: f_migrate_settings
+//
+// Purpose: older versions of the Code Examples kept their settings (database connection,
+//		toolbars, benchmark and example settings) under another PowerBuilder registry key.
+//		They are now under HKEY_CURRENT_USER\Software\Appeon\PowerBuilder\<version>.  The first time the new key
+//		is used, copy the "Code Examples" key and its subkeys from the old one, so saved
+//		settings are kept.  The old key is left as it is.
+//
+//	Arguments: as_oldkey	the old key, without "\Code Examples"
+//				  as_newkey	the new key, without "\Code Examples"
+//
+//////////////////////////////////////////////////////////////////////
+String	ls_Values[]
+
+// Already there (RegistryValues succeeds for an existing key), or nothing to copy
+If RegistryValues(as_newkey + "\Code Examples", ls_Values) = 1 Then Return
+If RegistryValues(as_oldkey + "\Code Examples", ls_Values) <> 1 Then Return
+
+f_migrate_settings(as_oldkey + "\Code Examples", as_newkey + "\Code Examples", True)
+end subroutine
+
+global subroutine f_migrate_settings (string as_from, string as_to, boolean ab_copy);// Copies the values of one registry key, then its subkeys (ab_copy only tells this form from the one above)
+String	ls_Values[], ls_Keys[], ls_Value
+ULong		lul_Value
+Blob		lblb_Value
+Integer	li_Pos
+
+RegistrySet(as_to, "", RegString!, "")	// creates the key, even if it has no values
+RegistryValues(as_from, ls_Values)
+For li_Pos = 1 To UpperBound(ls_Values)
+	// The type of a value isn't known: try a string, then a number, then binary data
+	If RegistryGet(as_from, ls_Values[li_Pos], RegString!, ls_Value) = 1 Then
+		RegistrySet(as_to, ls_Values[li_Pos], RegString!, ls_Value)
+	ElseIf RegistryGet(as_from, ls_Values[li_Pos], ReguLong!, lul_Value) = 1 Then
+		RegistrySet(as_to, ls_Values[li_Pos], ReguLong!, lul_Value)
+	ElseIf RegistryGet(as_from, ls_Values[li_Pos], RegBinary!, lblb_Value) = 1 Then
+		RegistrySet(as_to, ls_Values[li_Pos], RegBinary!, lblb_Value)
+	End If
+Next
+
+RegistryKeys(as_from, ls_Keys)
+For li_Pos = 1 To UpperBound(ls_Keys)
+	f_migrate_settings(as_from + "\" + ls_Keys[li_Pos], as_to + "\" + ls_Keys[li_Pos], True)
+Next
+end subroutine

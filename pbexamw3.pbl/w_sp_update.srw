@@ -39,7 +39,7 @@ end variables
 
 forward prototypes
 public function integer wf_update_oracle (long al_row, dwbuffer a_dwbuffer)
-public function integer wf_update_sybase (long al_row, dwbuffer a_dwbuffer)
+public function integer wf_update_ase (long al_row, dwbuffer a_dwbuffer)
 public function integer wf_update_watcom (long al_row, dwbuffer a_dwbuffer)
 end prototypes
 
@@ -183,7 +183,7 @@ Return 2
 
 end function
 
-public function integer wf_update_sybase (long al_row, dwbuffer a_dwbuffer);///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+public function integer wf_update_ase (long al_row, dwbuffer a_dwbuffer);///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
 // Update the DataWindow using a stored procedure
 //
@@ -217,7 +217,7 @@ if al_row <= 0 then
 end if
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Stored procedure declaration for sybase
+// Stored procedure declaration for SAP ASE
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  declare update_contacts procedure for sp_contacts
 		@action = :ls_action, 
@@ -689,7 +689,7 @@ l_dwbuffer = buffer
 if request = PreviewFunctionUpdate! then
 	CHOOSE CASE Lower( Left(sqlca.dbms,2))
 		CASE "sy"
-			li_rc = wf_update_sybase (row, l_dwbuffer)
+			li_rc = wf_update_ase (row, l_dwbuffer)
 		CASE "or" 
 			li_rc = wf_update_oracle (row, l_dwbuffer)
 		CASE ELSE

@@ -140,7 +140,10 @@ choose case ge_environment.Charset
 		sPBEXE = "pb" + ls_version + ".exe"
 end choose
 
-sREGKEY = "HKEY_CURRENT_USER\Software\Sybase\PowerBuilder\" + sVERSION
+// The settings key. Older versions of the examples used the PowerBuilder key of the product's
+// former owner: copy the settings saved there once.
+sREGKEY = "HKEY_CURRENT_USER\Software\Appeon\PowerBuilder\" + sVERSION
+f_migrate_settings("HKEY_CURRENT_USER\Software\Sybase\PowerBuilder\" + sVERSION, sREGKEY)
 sPBKEY  = "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\" + sPBEXE + "\"
 
 // Create the global user object gu_ext_func. 

@@ -2,9 +2,9 @@
 forward
 global type w_hyperlinks from w_center
 end type
-type shl_phl_linksybase from statichyperlink within w_hyperlinks
+type shl_link_appeon from statichyperlink within w_hyperlinks
 end type
-type phl_linksybase from picturehyperlink within w_hyperlinks
+type phl_link_appeon from picturehyperlink within w_hyperlinks
 end type
 type st_instruct from statictext within w_hyperlinks
 end type
@@ -16,8 +16,8 @@ global type w_hyperlinks from w_center
 integer width = 2587
 integer height = 1908
 string title = "HyperLink Controls"
-shl_phl_linksybase shl_phl_linksybase
-phl_linksybase phl_linksybase
+shl_link_appeon shl_link_appeon
+phl_link_appeon phl_link_appeon
 st_instruct st_instruct
 cb_close cb_close
 end type
@@ -26,21 +26,21 @@ global w_hyperlinks w_hyperlinks
 on w_hyperlinks.create
 int iCurrent
 call super::create
-this.shl_phl_linksybase=create shl_phl_linksybase
-this.phl_linksybase=create phl_linksybase
+this.shl_link_appeon=create shl_link_appeon
+this.phl_link_appeon=create phl_link_appeon
 this.st_instruct=create st_instruct
 this.cb_close=create cb_close
 iCurrent=UpperBound(this.Control)
-this.Control[iCurrent+1]=this.shl_phl_linksybase
-this.Control[iCurrent+2]=this.phl_linksybase
+this.Control[iCurrent+1]=this.shl_link_appeon
+this.Control[iCurrent+2]=this.phl_link_appeon
 this.Control[iCurrent+3]=this.st_instruct
 this.Control[iCurrent+4]=this.cb_close
 end on
 
 on w_hyperlinks.destroy
 call super::destroy
-destroy(this.shl_phl_linksybase)
-destroy(this.phl_linksybase)
+destroy(this.shl_link_appeon)
+destroy(this.phl_link_appeon)
 destroy(this.st_instruct)
 destroy(this.cb_close)
 end on
@@ -48,7 +48,7 @@ end on
 event close;call super::close;//Show ( w_main )
 end event
 
-type shl_phl_linksybase from statichyperlink within w_hyperlinks
+type shl_link_appeon from statichyperlink within w_hyperlinks
 integer x = 206
 integer y = 284
 integer width = 617
@@ -68,7 +68,7 @@ boolean focusrectangle = false
 string url = "www.appeon.com"
 end type
 
-type phl_linksybase from picturehyperlink within w_hyperlinks
+type phl_link_appeon from picturehyperlink within w_hyperlinks
 integer x = 206
 integer y = 388
 integer width = 2203

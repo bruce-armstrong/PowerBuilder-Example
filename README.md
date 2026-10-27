@@ -62,4 +62,4 @@ Using SQL Server instead of SQL Anywhere:
 
 •	The examples run against a SQL Server copy of the EASDEMO database (for example, in a Docker container) using the MSOLEDBSQL interface: DBMS "MSOLEDBSQL SQL Server", DBParm "Database='EASDEMO',Provider='MSOLEDBSQL19'". Enter these in File > Change Database Connection.
 •	A SQL Server copy of EASDEMO may not include the stored procedures some examples use. Run sql\sqlserver\easdemo_example_procedures.sql against EASDEMO once to add any that are missing; it never changes existing procedures.
-•	The OLE 2.0 Control example's sample objects were updated (an Appeon logo instead of the Powersoft logo, and the 1994 letter redated). The new objects and the steps to load them into a database, including the SQL Anywhere demo database, are in sql\ole_samples (see sql\ole_samples\README.md).
+•	The OLE 2.0 Control example's sample objects were updated (an Appeon logo instead of a 1990s company logo, and the 1994 letter redated). The new objects and the steps to load them into a database, including the SQL Anywhere demo database, are in sql\ole_samples (see sql\ole_samples\README.md).

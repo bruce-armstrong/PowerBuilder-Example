@@ -1,4 +1,4 @@
 ﻿{
     "version": "250",
-    "comment": "Library containing Sybase-specific objects  for PowerBuilder Code Examples."
+    "comment": "Library containing SQL Anywhere-specific objects for PowerBuilder Code Examples."
 }
