@@ -366,6 +366,9 @@ string ls_path, ls_file
 li_rc = GetFileOpenName("Select Saved Report File", &
 	ls_path,ls_file,"psr","Report File (*.PSR),*.PSR")
 
+// The dialog can change the current directory, and a report finds its pictures through it
+If Len(gs_CurrentDirectory) > 0 Then ChangeDirectory(gs_CurrentDirectory)
+
 If li_rc = 0 Then
 	Return
 End If
