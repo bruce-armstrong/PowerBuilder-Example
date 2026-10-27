@@ -65,7 +65,9 @@ public subroutine of_add_theme ();Int i
 String ls_theme_name
 String ls_current_path
 
-//ls_current_path = GetCurrentDirectory( )
+// DirList changes the current directory to the Theme folder: put it back afterwards, or the
+// examples' pictures (images\...) are no longer found
+ls_current_path = GetCurrentDirectory( )
 is_theme_path = gs_CurrentDirectory + "\Theme\"
 
 ddlb_1.DirList(is_theme_path+'*.*', 32768+16) 

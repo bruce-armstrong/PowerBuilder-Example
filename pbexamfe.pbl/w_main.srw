@@ -433,6 +433,10 @@ End If
 
 if li_return < 0  then return -1
 
+// The examples load their pictures by relative path (images\...). File dialogs, DirList and some
+// examples change the current directory, so go back to the application's directory first.
+If Len(gs_CurrentDirectory) > 0 Then ChangeDirectory(gs_CurrentDirectory)
+
 //
 If Lower(as_Window) = "w_data_manager_frame" Or Lower(as_Window) = "w_dynamic_uo_open_uo_frame" Or Lower(as_Window) = "w_mdi_quick_select" &
 	Or Lower(as_Window) = "w_dwbuffers_frame" Or Lower(as_Window) = "w_datawindow_style_frame"	Or Lower(as_Window) = "w_nested_frame"	 &
