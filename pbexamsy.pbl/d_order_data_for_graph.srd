@@ -19,7 +19,7 @@ max(dateformat(sales_order.order_date,'Mmmm yy')) as order_month
 FROM sales_order, sales_order_items, product 
 WHERE ( sales_order.id = sales_order_items.id ) and 
 ( product.id =sales_order_items.prod_id ) 	 and 
-year(order_date) = '1995' 
+year(sales_order.order_date) = (select year(min(order_date)) from sales_order) 
 group by dateformat(sales_order.order_date,'Mmmm yy')	 order by max(sales_order.order_date)" )
 text(band=header alignment="2" text="Customer #" border="6" color="0" x="50" y="20" height="52" width="311" html.valueishtml="0"  name=t_1 visible="1"  font.face="Segoe UI" font.height="-9" font.weight="700"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="12632256" )
 text(band=header alignment="2" text="Avg Item Cost" border="6" color="0" x="375" y="20" height="52" width="389" html.valueishtml="0"  name=t_2 visible="1"  font.face="Segoe UI" font.height="-9" font.weight="700"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="12632256" )

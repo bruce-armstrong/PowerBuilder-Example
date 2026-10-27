@@ -12,6 +12,26 @@ string Title="Stats by Cust # - Using Graph Object"
 end type
 global w_orders_graph_list_sheet w_orders_graph_list_sheet
 
+event open;// The DataWindow's SQL names each month with SQL Anywhere's dateformat() function. SQL Server
+// doesn't have it, so use FORMAT there. Then the ancestor's open retrieves the data.
+dw_1.SetTransObject(sqlca)
+Choose Case Upper(Left(sqlca.DBMS, 3))
+	Case "MSO", "SNC", "OLE", "ADO"
+		dw_1.SetSQLSelect("SELECT avg(sales_order_items.quantity*product.unit_price) as avg_order, " + &
+			"count(sales_order_items.quantity) as count_order, " + &
+			"sum(sales_order_items.quantity*product.unit_price) as total_order, " + &
+			"min(sales_order_items.quantity*product.unit_price) as min_order, " + &
+			"max(sales_order_items.quantity*product.unit_price) as max_order, " + &
+			"max(FORMAT(sales_order.order_date, 'MMMM yy')) as order_month " + &
+			"FROM sales_order, sales_order_items, product " + &
+			"WHERE (sales_order.id = sales_order_items.id) and (product.id = sales_order_items.prod_id) " + &
+			"and year(sales_order.order_date) = (select year(min(order_date)) from sales_order) " + &
+			"GROUP BY FORMAT(sales_order.order_date, 'MMMM yy') ORDER BY max(sales_order.order_date)")
+End Choose
+
+call super::open
+end event
+
 on w_orders_graph_list_sheet.create
 call w_graph_sheet_with_list::create
 end on

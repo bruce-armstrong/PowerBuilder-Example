@@ -22,7 +22,16 @@ type train2 from picture within w_train
 end type
 type train1 from picture within w_train
 end type
+type s_rect from structure within w_train
+end type
 end forward
+
+type s_rect from structure
+	long		l_left
+	long		l_top
+	long		l_right
+	long		l_bottom
+end type
 
 shared variables
 end variables
@@ -46,11 +55,17 @@ train4 train4
 train3 train3
 train2 train2
 train1 train1
+event ue_paint pbm_paint
 end type
 global w_train w_train
 
 type prototypes
-
+Function longptr GetDC(longptr hWnd) Library "user32.dll"
+Function long ReleaseDC(longptr hWnd, longptr hDC) Library "user32.dll"
+Function boolean GetClientRect(longptr hWnd, ref s_rect lpRect) Library "user32.dll"
+Function long FillRect(longptr hDC, ref s_rect lprc, longptr hbr) Library "user32.dll"
+Function longptr CreateSolidBrush(ulong crColor) Library "gdi32.dll"
+Function boolean DeleteObject(longptr hObject) Library "gdi32.dll"
 end prototypes
 
 type variables
@@ -60,6 +75,30 @@ type variables
  integer ii_index
 
 end variables
+
+forward prototypes
+public subroutine of_paint_background ()
+end prototypes
+
+public subroutine of_paint_background ();// Paints the track, the band where the train runs, in BackColor (white). A theme paints windows in
+// its own colour, and Draw() only paints the area of each bitmap.
+s_rect	lstr_Rect
+Longptr	llp_DC, llp_Brush
+
+llp_DC = GetDC(Handle(This))
+If llp_DC = 0 Then Return
+GetClientRect(Handle(This), lstr_Rect)
+// The band: from the top to below the train, which is drawn at y = 10
+lstr_Rect.l_bottom = UnitsToPixels(10 + train1.Height + 10, YUnitsToPixels!)
+llp_Brush = CreateSolidBrush(This.BackColor)
+FillRect(llp_DC, lstr_Rect, llp_Brush)
+DeleteObject(llp_Brush)
+ReleaseDC(Handle(This), llp_DC)
+end subroutine
+
+event ue_paint;// The window has been painted in the theme's colour (pbm_paint): paint our background afterwards
+This.Post of_paint_background()
+end event
 
 event close;call super::close;//Close script for w_train
 //w_main.Show( )

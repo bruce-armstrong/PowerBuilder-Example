@@ -42,7 +42,9 @@ end prototypes
 event ue_addroots;// Add Root keys to the TreeView control
 
 String				ls_Keys[]
-Long					ll_Handle
+Long					ll_Handle, ll_Software, ll_Found
+Integer				li_Try
+String				ls_Key
 TreeViewItem		ltvi_Item
 Longptr				ll_Header
 String				ls_Null
@@ -99,16 +101,27 @@ If (ge_Environment.OSType = Windowsnt!) Or &
 		End if
 	Loop Until Lower(ltvi_Item.Label) = "software"
 	
+	// Open at the Appeon key (PowerBuilder's registry entries), or at Sybase for older versions,
+	// or stay at Software when neither is there
 	tv_reg.ExpandItem(ll_Handle)
-	ll_Handle = tv_reg.FindItem(ChildTreeItem!, ll_Handle)
-	Do
-		tv_reg.GetItem(ll_Handle, ltvi_Item)
-		If Lower(ltvi_Item.Label) <> "sybase" Then
+	ll_Software = ll_Handle
+	ll_Found = 0
+	For li_Try = 1 To 2
+		If li_Try = 1 Then ls_Key = "appeon" Else ls_Key = "sybase"
+		ll_Handle = tv_reg.FindItem(ChildTreeItem!, ll_Software)
+		Do While ll_Handle > 0
+			tv_reg.GetItem(ll_Handle, ltvi_Item)
+			If Lower(ltvi_Item.Label) = ls_Key Then
+				ll_Found = ll_Handle
+				Exit
+			End If
 			ll_Handle = tv_reg.FindItem(NextTreeItem!, ll_Handle)
-		End if
-	Loop Until Lower(ltvi_Item.Label) = "sybase"
-	tv_reg.SelectItem(ll_Handle)
-	tv_reg.ExpandItem(ll_Handle)
+		Loop
+		If ll_Found > 0 Then Exit
+	Next
+	If ll_Found = 0 Then ll_Found = ll_Software
+	tv_reg.SelectItem(ll_Found)
+	tv_reg.ExpandItem(ll_Found)
 		
 End if
 

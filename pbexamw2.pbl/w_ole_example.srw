@@ -556,8 +556,20 @@ if SQLCA.SQLCode <> 0 then
 	MessageBox("SQL error",SQLCA.SQLErrText,Information!)
 end if
 
-//assigning the blob data to the actual data control
-ole_1.objectdata = ole_blob
+//assigning the blob data to the actual data control.  An object whose OLE server isn't installed
+//can't be loaded: the AVI file needs the Video Clip (Media Player) server of old Windows versions.
+Try
+	ole_1.objectdata = ole_blob
+Catch (RuntimeError lre_OLE)
+	MessageBox("OLE object", "~"" + sle_title.text + "~" can't be shown: the program that displays this " + &
+		"kind of OLE object isn't installed on this computer.~r~n~r~n" + lre_OLE.GetMessage(), Information!)
+	ole_1.Clear()
+	st_type.text = ""
+	sle_title.displayonly = True
+	mle_desc.displayonly = True
+	ib_notsaved = False
+	Return
+End Try
 
 //change the name to reflect the new ole object
 parent.title = sle_title.text

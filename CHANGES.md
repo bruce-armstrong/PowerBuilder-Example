@@ -111,6 +111,13 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
   - Row Focus Indicators: the bitmap list is always enabled; picking a bitmap switches to the Picture indicator.
   - Query Mode: Retrieve accepts the criteria still being typed (`AcceptText`) before it retrieves.
   - DataWindow to Structure: Select PBL also accepts a solution library (the `.pblmeta` file in a library folder); the DataWindows are listed from the folder's `.srd` files and read from their source.
+  - Report With DataWindow Buttons and Contact Maintenance: the DataWindows' picture buttons were 20 x 20 pixels, too small to tell apart. They are 30 x 28 pixels now, and what was below them moved down.
+  - Snake and Sliding Columns: in the dark theme, print preview drew the second and third newspaper columns in the theme's colours (light text in dark boxes) on the white page. The report's objects now have transparent backgrounds and their text colour is an expression (`RGB(0,0,0)`), which the theme leaves alone, so every column is black on white.
+  - Draw() Aquarium Fish and Draw() Train: `Draw()` paints each bitmap straight onto the window, and the examples relied on the window's BackColor (navy, and white for the track), which a theme replaces. The fish swam in a growing navy trail and the train drew a white strip. Each window now paints its background (the aquarium, the track) after the window paints (`pbm_paint`).
+  - Print Examples: the sample picture was Powersoft's grey column bitmap; it is a new SVG, `images\print_sample.svg`.
+  - Registry Editor: opens at `HKEY_CURRENT_USER\Software\Appeon` instead of Sybase (Sybase if there is no Appeon key, Software if neither). Before, it looped forever when the key wasn't there.
+  - OLE Example: an OLE object whose server isn't installed (the PB Logo AVI file needs the Video Clip server of old Windows versions) gave a System Error; it now shows a message.
+  - Spellcheck with OLE and Excel: Excel's Spelling dialog opened behind the application, which then seemed to hang. The window lets Excel bring its dialog to the front (`AllowSetForegroundWindow`).
 - **Sliding-picture puzzle:** the 25 tiles were slices of the Powersoft logo. The puzzle, its solution thumbnail and the Zip example now use a new landscape picture drawn for it, `images\puzzle\puzzle.png`, cut into `tile11.png` to `tile55.png` at 2x resolution. The old bitmaps are in `_archive\`.
 - **RTE DataWindow Mail Merge:** the letterhead has Appeon's logo and mailing address (Appeon Inc., 425 1st Street, Unit 1507, San Francisco, CA 94105) instead of Powersoft's.
 
@@ -122,6 +129,7 @@ The examples were written for the SQL Anywhere demo database. They now also work
 - **SQL syntax:**
   - `w_mode_median` uses `DATEFROMPARTS`.
   - `w_select_from_list` joins strings with `+`.
+  - `w_orders_graph_list_sheet` (Stats by Cust # - Using Graph Object) names the months with `FORMAT` instead of SQL Anywhere's `dateformat`, which gave a "not a recognized built-in function name" error. On both databases it shows the first year with orders instead of 1995, which the demo data doesn't have.
 - **Stored procedures:** run `sql\sqlserver\easdemo_example_procedures.sql` to create the stored procedures the examples use, if the database doesn't have them.
 - **Scratch tables:**
   - The new `f_table_not_found` function recognises "table not found" errors from SQL Anywhere, SQL Server, Oracle and PostgreSQL.
@@ -134,7 +142,7 @@ The examples were written for the SQL Anywhere demo database. They now also work
 ## MAPI mail (deprecated)
 
 - MAPI needs a MAPI mail client such as classic Outlook for Windows, which Microsoft supports until at least 2029 ([Microsoft's announcement](https://techcommunity.microsoft.com/blog/outlook/new-outlook-for-windows-a-guide-to-product-availability/4078895)). The new Outlook for Windows doesn't provide MAPI.
-- The following are marked deprecated in the example list, the source, the help and the README:
+- The following are marked deprecated in the example list (their titles end in "(deprecated)"), the source, the help and the README:
   - "MAPI Mail - Send Mail" (`w_mail_send`)
   - "MAPI Mail - Receive Mail" (`w_mail_receive`)
   - RichPad's Send command (`w_rte.of_send`)
@@ -161,4 +169,5 @@ The examples were written for the SQL Anywhere demo database. They now also work
 | 2026-10-25 | `2d1ceac` | Update the help, publish it as a PDF too, and add the help sources |
 | 2026-10-27 | `cdb5f70` | Switch the fonts to Segoe UI and fix the layouts it affected |
 | 2026-10-27 | `f0556d6` | Open the PDF help at the example's topic |
-| 2026-10-27 | (pending) | Fix pictures missing after Settings or a file dialog |
+| 2026-10-27 | `5580ba7` | Fix pictures missing after Settings or a file dialog |
+| 2026-10-27 | (pending) | Bigger DataWindow buttons, Draw() backgrounds, and more example fixes |

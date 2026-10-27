@@ -14,7 +14,16 @@ type p_1 from picture within w_fish
 end type
 type s_fish from structure within w_fish
 end type
+type s_rect from structure within w_fish
+end type
 end forward
+
+type s_rect from structure
+	long		l_left
+	long		l_top
+	long		l_right
+	long		l_bottom
+end type
 
 type s_fish from structure
 	picture		p_pict
@@ -41,8 +50,18 @@ p_5 p_5
 p_3 p_3
 p_2 p_2
 p_1 p_1
+event ue_paint pbm_paint
 end type
 global w_fish w_fish
+
+type prototypes
+Function longptr GetDC(longptr hWnd) Library "user32.dll"
+Function long ReleaseDC(longptr hWnd, longptr hDC) Library "user32.dll"
+Function boolean GetClientRect(longptr hWnd, ref s_rect lpRect) Library "user32.dll"
+Function long FillRect(longptr hDC, ref s_rect lprc, longptr hbr) Library "user32.dll"
+Function longptr CreateSolidBrush(ulong crColor) Library "gdi32.dll"
+Function boolean DeleteObject(longptr hObject) Library "gdi32.dll"
+end prototypes
 
 type variables
 Public:
@@ -56,6 +75,7 @@ s_fish	istr_Fish[5]
 end variables
 
 forward prototypes
+public subroutine of_paint_background ()
 public function integer of_addremovefish (readonly integer ai_index, readonly boolean ab_visible)
 public function integer of_getfishvisible (readonly integer ai_index)
 end prototypes
@@ -72,6 +92,24 @@ Else
 	return 1
 End If
 end function
+
+public subroutine of_paint_background ();// Paints the aquarium in BackColor (navy). A theme paints windows in its own colour, and Draw()
+// only paints the area of each bitmap, so the fish would swim on the theme colour.
+s_rect	lstr_Rect
+Longptr	llp_DC, llp_Brush
+
+llp_DC = GetDC(Handle(This))
+If llp_DC = 0 Then Return
+GetClientRect(Handle(This), lstr_Rect)
+llp_Brush = CreateSolidBrush(This.BackColor)
+FillRect(llp_DC, lstr_Rect, llp_Brush)
+DeleteObject(llp_Brush)
+ReleaseDC(Handle(This), llp_DC)
+end subroutine
+
+event ue_paint;// The window has been painted in the theme's colour (pbm_paint): paint our background afterwards
+This.Post of_paint_background()
+end event
 
 event timer;//Timer script for w_fish
 

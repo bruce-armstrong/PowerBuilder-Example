@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 184" width="184" height="184">
+  <!-- Sample picture for the Print Examples window (w_print_examples): a lighthouse on a rocky coast -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E6BB8"/>
+      <stop offset="1" stop-color="#9FD3F5"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2D8FD5"/>
+      <stop offset="1" stop-color="#14507F"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF59D" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#FFF59D" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="184" height="184" fill="url(#sky)"/>
+  <circle cx="34" cy="34" r="14" fill="#FFE082"/>
+  <g fill="#FFFFFF" opacity="0.9">
+    <ellipse cx="70" cy="30" rx="18" ry="7"/><ellipse cx="82" cy="26" rx="12" ry="7"/>
+    <ellipse cx="150" cy="52" rx="16" ry="6"/><ellipse cx="160" cy="48" rx="10" ry="6"/>
+  </g>
+  <path d="M110 58 L184 30 L184 78 Z" fill="url(#beam)"/>
+  <rect y="118" width="184" height="66" fill="url(#sea)"/>
+  <g stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity="0.55" fill="none">
+    <path d="M8 134 q6 -4 12 0 t12 0"/><path d="M60 150 q6 -4 12 0 t12 0"/><path d="M128 140 q6 -4 12 0 t12 0"/>
+    <path d="M24 168 q6 -4 12 0 t12 0"/><path d="M140 166 q6 -4 12 0 t12 0"/>
+  </g>
+  <path d="M60 184 L66 132 Q80 118 104 120 Q126 116 140 130 L150 184 Z" fill="#6D5D4B"/>
+  <path d="M66 132 Q80 118 104 120 Q126 116 140 130 L134 138 Q112 128 92 132 Q76 132 70 140 Z" fill="#8A7A64"/>
+  <!-- the tower -->
+  <path d="M92 122 L96 66 L112 66 L116 122 Z" fill="#FAFAFA"/>
+  <path d="M93.6 102 L114.4 102 L115.2 112 L92.8 112 Z M95.2 80 L112.8 80 L113.6 90 L94.4 90 Z" fill="#D32F2F"/>
+  <path d="M104 66 L112 66 L116 122 L104 122 Z" fill="#000000" opacity="0.08"/>
+  <rect x="93" y="62" width="22" height="5" rx="1" fill="#37474F"/>
+  <rect x="96" y="50" width="16" height="12" fill="#FFF59D" stroke="#37474F" stroke-width="1.6"/>
+  <path d="M94 50 L104 40 L114 50 Z" fill="#D32F2F"/>
+  <rect x="101" y="108" width="6" height="14" rx="3" fill="#5D4037"/>
+  <!-- a sailboat -->
+  <path d="M22 150 L50 150 L46 156 L26 156 Z" fill="#ECEFF1"/>
+  <path d="M36 148 L36 118 L50 146 Z" fill="#FFFFFF"/>
+  <path d="M34 148 L34 124 L24 146 Z" fill="#FFCC80"/>
+  <g stroke="#37474F" stroke-width="1.6" stroke-linecap="round" fill="none">
+    <path d="M140 72 q3 -3 6 0 q3 -3 6 0"/><path d="M152 88 q2.4 -2.4 4.8 0 q2.4 -2.4 4.8 0"/>
+  </g>
+</svg>

@@ -10,7 +10,7 @@ global type w_contact_maintenance from w_center
 int X=832
 int Y=360
 int Width=2249
-int Height=1344
+int Height=1400
 boolean TitleBar=true
 string Title="Contact Maintenance Using DataWindow Buttons"
 long BackColor=79741120
@@ -44,7 +44,7 @@ type dw_contact from datawindow within w_contact_maintenance
 int X=14
 int Y=44
 int Width=2094
-int Height=1160
+int Height=1212
 int TabOrder=1
 string DataObject="d_contact_maintenance"
 boolean Border=false

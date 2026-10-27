@@ -30,6 +30,11 @@ mle_1 mle_1
 end type
 global w_spellcheck w_spellcheck
 
+type prototypes
+// Lets another process (Excel) bring its window to the front
+Function boolean AllowSetForegroundWindow(long dwProcessId) Library "user32.dll"
+end prototypes
+
 on activate;setredraw(true)
 end on
 
@@ -155,7 +160,10 @@ ole_object.workbooks.add()
 //set the first cell to the contents of the mle
 ole_object.activesheet.cells(1,1).value = mle_1.text
 
-//invoke the spellchecker
+//invoke the spellchecker.  Excel shows its Spelling dialog from its own (hidden) process, and Windows
+//only lets it come to the front when this application allows it (ASFW_ANY = -1); otherwise the
+//dialog opens behind this window and the application seems to hang until it is closed.
+AllowSetForegroundWindow(-1)
 ole_object.activesheet.checkspelling()
 
 //get the results of the spellchecker back
