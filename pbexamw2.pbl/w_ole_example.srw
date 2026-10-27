@@ -333,6 +333,8 @@ event open;call super::open;SetPointer(HourGlass!)
 
 //set up transaction control for the datawindow listing the control objects
 dw_ole.settransobject(sqlca)
+//the AVI sample needs the Video Clip OLE server of old Windows versions, which no longer exists
+dw_ole.SetFilter("id <> 'PB Logo AVI file'")
 dw_ole.retrieve()
 
 end event

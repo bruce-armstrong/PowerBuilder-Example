@@ -163,8 +163,11 @@ ole_object.activesheet.cells(1,1).value = mle_1.text
 //invoke the spellchecker.  Excel shows its Spelling dialog from its own (hidden) process, and Windows
 //only lets it come to the front when this application allows it (ASFW_ANY = -1); otherwise the
 //dialog opens behind this window and the application seems to hang until it is closed.
+//Hidden, Excel doesn't show the dialog at all until the automation client ends, so show Excel for the check.
 AllowSetForegroundWindow(-1)
+ole_object.Visible = True
 ole_object.activesheet.checkspelling()
+ole_object.Visible = False
 
 //get the results of the spellchecker back
 anyval = ole_object.activesheet.cells(1,1).value

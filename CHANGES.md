@@ -116,8 +116,10 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
   - Draw() Aquarium Fish and Draw() Train: `Draw()` paints each bitmap straight onto the window, and the examples relied on the window's BackColor (navy, and white for the track), which a theme replaces. The fish swam in a growing navy trail and the train drew a white strip. Each window now paints its background (the aquarium, the track) after the window paints (`pbm_paint`).
   - Print Examples: the sample picture was Powersoft's grey column bitmap; it is a new SVG, `images\print_sample.svg`.
   - Registry Editor: opens at `HKEY_CURRENT_USER\Software\Appeon` instead of Sybase (Sybase if there is no Appeon key, Software if neither). Before, it looped forever when the key wasn't there.
-  - OLE Example: an OLE object whose server isn't installed (the PB Logo AVI file needs the Video Clip server of old Windows versions) gave a System Error; it now shows a message.
-  - Spellcheck with OLE and Excel: Excel's Spelling dialog opened behind the application, which then seemed to hang. The window lets Excel bring its dialog to the front (`AllowSetForegroundWindow`).
+  - OLE Example: an OLE object whose server isn't installed gave a System Error; it now shows a message. The PB Logo AVI file row, which needs the Video Clip server of old Windows versions, is filtered out of the list.
+  - OLE Example sample objects: `ole\appeon_logo.bmp` (an Appeon logo, replacing the Powersoft logo) and `ole\letter.docx` (the payment-reminder letter, dated 2026 instead of 1994). The `ole` table stores PowerBuilder's OLE `ObjectData`, so they are loaded with the example itself; `ole\README.md` has the steps.
+  - Spellcheck with OLE and Excel: Excel's Spelling dialog didn't appear while Excel was hidden, so the application seemed to hang. Excel is shown during the check (`Visible = True`), and the window lets it bring its dialog to the front (`AllowSetForegroundWindow`).
+  - PowerBuilder Aquarium: the example's title had two spaces.
 - **Sliding-picture puzzle:** the 25 tiles were slices of the Powersoft logo. The puzzle, its solution thumbnail and the Zip example now use a new landscape picture drawn for it, `images\puzzle\puzzle.png`, cut into `tile11.png` to `tile55.png` at 2x resolution. The old bitmaps are in `_archive\`.
 - **RTE DataWindow Mail Merge:** the letterhead has Appeon's logo and mailing address (Appeon Inc., 425 1st Street, Unit 1507, San Francisco, CA 94105) instead of Powersoft's.
 
@@ -170,4 +172,5 @@ The examples were written for the SQL Anywhere demo database. They now also work
 | 2026-10-27 | `cdb5f70` | Switch the fonts to Segoe UI and fix the layouts it affected |
 | 2026-10-27 | `f0556d6` | Open the PDF help at the example's topic |
 | 2026-10-27 | `5580ba7` | Fix pictures missing after Settings or a file dialog |
-| 2026-10-27 | (pending) | Bigger DataWindow buttons, Draw() backgrounds, and more example fixes |
+| 2026-10-27 | `468798c` | Bigger DataWindow buttons, Draw() backgrounds, and more example fixes |
+| 2026-10-27 | (pending) | New OLE sample objects, hide the AVI sample, show Excel for the spellcheck |
