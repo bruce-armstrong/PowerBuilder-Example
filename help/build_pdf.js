@@ -1,7 +1,8 @@
 // Builds a PDF edition of the Code Examples help (HTML Help is deprecated). Reads the CHM's table of contents
 // (exampl.hhc) for the topic order, joins the topics into one HTML book (each topic on its own page, links
 // between topics turned into links within the book), and prints it with headless Edge. Headings become PDF
-// bookmarks (--generate-pdf-document-outline). Run by build_help.ps1.
+// bookmarks (--generate-pdf-document-outline), and pdfnames.js gives each topic named destinations: its
+// topic-<file> id and the window names of the index, which f_open_help opens. Run by build_help.ps1.
 // Usage: node build_pdf.js <help source dir> <output pdf> <work dir>
 const fs = require('fs'), path = require('path'), { execFileSync } = require('child_process');
 const [src, outPdf, work] = process.argv.slice(2).map(p => path.resolve(p));
@@ -56,13 +57,28 @@ ${sections.join('\n')}
 fs.mkdirSync(work, { recursive: true });
 const htmlFile = path.join(work, 'help_book.html');
 fs.writeFileSync(htmlFile, book, 'latin1');
-if (fs.existsSync(outPdf)) fs.unlinkSync(outPdf);
+const edgePdf = path.join(work, 'help_book.pdf');
+if (fs.existsSync(edgePdf)) fs.unlinkSync(edgePdf);
 execFileSync(EDGE, ['--headless=new', '--disable-gpu', '--no-pdf-header-footer', '--generate-pdf-document-outline',
-  `--user-data-dir=${path.join(work, 'edge-profile')}`, `--print-to-pdf=${outPdf}`, fileUrl(htmlFile)], { stdio: 'ignore', timeout: 120000 });
+  `--user-data-dir=${path.join(work, 'edge-profile')}`, `--print-to-pdf=${edgePdf}`, fileUrl(htmlFile)], { stdio: 'ignore', timeout: 120000 });
 for (let t = 0, last = -1; ; t++) {
-  const size = fs.existsSync(outPdf) ? fs.statSync(outPdf).size : -1;
+  const size = fs.existsSync(edgePdf) ? fs.statSync(edgePdf).size : -1;
   if (size > 0 && size === last) break;
   if (t > 60) throw new Error('no PDF from Edge');
   last = size; execFileSync('cmd', ['/c', 'ping -n 2 127.0.0.1 >nul']);
 }
-console.log(`${outPdf}: ${topics.length} topics, ${fs.statSync(outPdf).size} bytes`);
+
+// Named destinations: Edge writes one for each topic (topic-<file>, the targets of the contents' links), and
+// each keyword of the index (exampl.hhk: the window names that f_open_help passes, in lower case) becomes
+// another name for its topic, so that the application opens exampl.pdf#nameddest=<window>
+const hhk = fs.readFileSync(path.join(src, 'exampl.hhk'), 'latin1');
+const aliases = {};
+for (const m of hhk.matchAll(/<param name="Name" value="([^"]*)">\s*<param name="Local" value="([^"]*)">/g)) {
+  const name = m[1].toLowerCase().replace(/[^a-z0-9_.-]/g, '');
+  if (name && !(name in aliases) && known.has(path.basename(m[2]))) aliases[name] = idOf(m[2]);
+}
+const aliasFile = path.join(work, 'aliases.json');
+fs.writeFileSync(aliasFile, JSON.stringify(aliases, null, 2));
+if (fs.existsSync(outPdf)) fs.unlinkSync(outPdf);
+execFileSync(process.execPath, [path.join(__dirname, 'pdfnames.js'), edgePdf, outPdf, '-', aliasFile], { stdio: 'inherit' });
+console.log(`${outPdf}: ${topics.length} topics, ${Object.keys(aliases).length} window names, ${fs.statSync(outPdf).size} bytes`);

@@ -23,7 +23,7 @@ With the PowerServer projects:
 
 Help:
 
-The examples' help is in exampl.chm (opened by the Help menu and F1) and, because HTML Help is deprecated, also in exampl.pdf, generated from the same topics with a linked contents page and bookmarks. The sources and the build script (helpuild_help.ps1) are in the help folder; see helpREADME.md.
+The examples' help is exampl.pdf, opened by the Help menu and F1 at the topic of the example (a named destination), in the application's help window or, if you choose in Settings, in your PDF viewer. Because HTML Help is deprecated, exampl.chm, built from the same topics, is only used when the PDF is missing. The sources and the build script (help/build_help.ps1) are in the help folder; see help/README.md.
 
 Changes in this fork:
 

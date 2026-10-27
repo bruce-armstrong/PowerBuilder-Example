@@ -15,6 +15,8 @@ type cbx_enable_autoresize from checkbox within w_settings
 end type
 type cbx_ribbonbar from checkbox within w_settings
 end type
+type cbx_helpviewer from checkbox within w_settings
+end type
 type cb_close from commandbutton within w_settings
 end type
 type cb_save from commandbutton within w_settings
@@ -25,7 +27,7 @@ end forward
 
 global type w_settings from w_center
 integer width = 2034
-integer height = 1780
+integer height = 1880
 string title = "Settings"
 boolean minbox = false
 boolean maxbox = false
@@ -38,6 +40,7 @@ ddlb_theme ddlb_theme
 st_theme st_theme
 cbx_enable_autoresize cbx_enable_autoresize
 cbx_ribbonbar cbx_ribbonbar
+cbx_helpviewer cbx_helpviewer
 cb_close cb_close
 cb_save cb_save
 gb_settings gb_settings
@@ -50,6 +53,7 @@ String 		is_theme
 String 		is_theme_path
 Boolean	ib_enableautoresize
 Boolean	ib_ribbonbar
+Boolean	ib_helpviewer
 
 end variables
 
@@ -93,6 +97,7 @@ this.cb_close=create cb_close
 this.cb_save=create cb_save
 this.gb_settings=create gb_settings
 this.cbx_ribbonbar=create cbx_ribbonbar
+this.cbx_helpviewer=create cbx_helpviewer
 iCurrent=UpperBound(this.Control)
 this.Control[iCurrent+1]=this.st_autosize1
 this.Control[iCurrent+2]=this.st_autosize
@@ -104,6 +109,7 @@ this.Control[iCurrent+7]=this.cb_close
 this.Control[iCurrent+8]=this.cb_save
 this.Control[iCurrent+9]=this.gb_settings
 this.Control[iCurrent+10]=this.cbx_ribbonbar
+this.Control[iCurrent+11]=this.cbx_helpviewer
 end on
 
 on w_settings.destroy
@@ -118,6 +124,7 @@ destroy(this.cb_close)
 destroy(this.cb_save)
 destroy(this.gb_settings)
 destroy(this.cbx_ribbonbar)
+destroy(this.cbx_helpviewer)
 end on
 
 event open;call super::open;String ls_theme, ls_enableautoresize
@@ -141,6 +148,9 @@ ib_enableautoresize = gb_resize
 ib_ribbonbar = (ProfileString(gs_CurrentDirectory + "\" + is_inifile, "Application", "RibbonBar", "1") = "1")
 cbx_ribbonbar.checked = ib_ribbonbar
 
+ib_helpviewer = (ProfileString(gs_CurrentDirectory + "\" + is_inifile, "Application", "HelpViewer", "App") = "PDFViewer")
+cbx_helpviewer.checked = ib_helpviewer
+
 This.SetRedraw(True)
 
 
@@ -148,7 +158,7 @@ end event
 
 type st_autosize1 from statictext within w_settings
 integer x = 293
-integer y = 1152
+integer y = 1252
 integer width = 1618
 integer height = 212
 integer textsize = -12
@@ -165,7 +175,7 @@ end type
 
 type st_autosize from statictext within w_settings
 integer x = 293
-integer y = 704
+integer y = 804
 integer width = 1618
 integer height = 448
 integer textsize = -12
@@ -235,7 +245,7 @@ end type
 type cbx_enable_autoresize from checkbox within w_settings
 string tag = "Enable automatic resizing for all windows"
 integer x = 293
-integer y = 576
+integer y = 676
 integer width = 1426
 integer height = 96
 integer textsize = -12
@@ -268,9 +278,27 @@ long backcolor = 67108864
 string text = "Display the menu as a ribbon bar"
 end type
 
+type cbx_helpviewer from checkbox within w_settings
+string tag = "Show the help in my PDF viewer"
+integer x = 562
+integer y = 400
+integer width = 1426
+integer height = 96
+integer taborder = 40
+integer textsize = -12
+integer weight = 400
+fontcharset fontcharset = ansi!
+fontpitch fontpitch = variable!
+fontfamily fontfamily = swiss!
+string facename = "Segoe UI"
+long textcolor = 33554432
+long backcolor = 67108864
+string text = "Show the help in my PDF viewer"
+end type
+
 type cb_close from commandbutton within w_settings
 integer x = 1102
-integer y = 1496
+integer y = 1596
 integer width = 421
 integer height = 120
 integer taborder = 20
@@ -288,7 +316,7 @@ end event
 
 type cb_save from commandbutton within w_settings
 integer x = 480
-integer y = 1496
+integer y = 1596
 integer width = 421
 integer height = 120
 integer taborder = 20
@@ -314,6 +342,16 @@ If cbx_ribbonbar.checked <> ib_ribbonbar Then
 	End If
 	ib_ribbonbar = cbx_ribbonbar.checked
 	If IsValid(w_main) Then w_main.Dynamic of_set_ribbonbar(ib_ribbonbar)
+End If
+
+// Where the help is shown takes effect at once
+If cbx_helpviewer.checked <> ib_helpviewer Then
+	If cbx_helpviewer.checked Then
+		SetProfileString(gs_CurrentDirectory + "\" + is_inifile, "Application", "HelpViewer", "PDFViewer")
+	Else
+		SetProfileString(gs_CurrentDirectory + "\" + is_inifile, "Application", "HelpViewer", "App")
+	End If
+	ib_helpviewer = cbx_helpviewer.checked
 End If
 
 If cbx_enable_autoresize.checked <> ib_enableautoresize Then
@@ -366,7 +404,7 @@ end event
 
 type gb_settings from groupbox within w_settings
 integer x = 256
-integer y = 448
+integer y = 548
 integer width = 1719
 integer height = 960
 integer taborder = 10

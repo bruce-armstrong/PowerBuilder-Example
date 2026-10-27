@@ -42,8 +42,9 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
 - Help now works when the examples are run from the IDE.
   - `f_open_help` builds the full path from `gs_ExampleDir` instead of passing the bare file name.
   - Before, the bare name was looked up in the IDE's directory.
-- **Help sources:** the topic pages, images, stylesheet and HTML Help project (`exampl.hhp`, `.hhc`, `.hhk`) are in `help`, with `build_help.ps1` to build `exampl.chm` and `exampl.pdf` (see `helpREADME.md`).
+- **Help sources:** the topic pages, images, stylesheet and HTML Help project (`exampl.hhp`, `.hhc`, `.hhk`) are in `help`, with `build_help.ps1` to build `exampl.chm` and `exampl.pdf` (see `help/README.md`).
 - **PDF help:** HTML Help is deprecated, so the help is also published as `exampl.pdf`. It is generated from the same topic sources, in the CHM's contents order, with a linked contents page and PDF bookmarks.
+- **Help opens the PDF at the topic:** the Help menu and F1 (`f_open_help`) now open `exampl.pdf` instead of the CHM, at the topic of the example: the PDF has a named destination for each window name in the help index (`exampl.pdf#nameddest=w_dwtostr`), added by `help/pdfnames.js` as a `/Names` tree, the form Edge's and WebView2's viewer read. `n_cst_help` shows it in a new help window, `w_help_viewer` (a WebBrowser control), or, with the new *Show the help in my PDF viewer* setting (`HelpViewer` in `exampleapp.ini`), in the user's PDF viewer: Edge, Chrome, Firefox, Brave, Acrobat, Acrobat Reader and SumatraPDF open it at the topic, others at its start. Without `exampl.pdf`, the CHM is shown as before. It works the same way as the PDF help in PFC 2025.
 - Topics brought up to date with the examples: PictureListBox Picture Browser (SVG images), PowerPuzzle (new picture), Graphs and Shared DataWindows (flat column graph), ShareData With DataStores (first DataStore shown), Query Mode (Retrieve accepts the current field; removed a garbled duplicate of its example table), DataWindow to Structure Utility (solution libraries) and The Code Example Files (the solution layout and libraries, the build projects, and the Benchmarks application not being included).
 - The 16-colour help images were replaced: every topic's Code Examples picture (`exhelp.png`) is the application tile icon, and the new/enhanced/settings markers use the app's Fluent icons. The unused Sybase logo was removed and the stylesheet renamed from `sybase.css` to `examples.css`.
 
@@ -157,4 +158,5 @@ The examples were written for the SQL Anywhere demo database. They now also work
 | 2026-10-25 | `11472af` | Fix the blank MDI frames, darker DataWindow buttons, and example fixes |
 | 2026-10-25 | `274a976` | Fix Placeholders & OpenURL, Resizing Controls, Progress Bar, Registry Editor header, SVG in the picture browser |
 | 2026-10-25 | `2d1ceac` | Update the help, publish it as a PDF too, and add the help sources |
-| 2026-10-27 | (pending) | Switch the fonts to Segoe UI and fix the layouts it affected |
+| 2026-10-27 | `cdb5f70` | Switch the fonts to Segoe UI and fix the layouts it affected |
+| 2026-10-27 | (pending) | Open the PDF help at the example's topic |

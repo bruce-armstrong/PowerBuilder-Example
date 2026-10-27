@@ -1,4 +1,4 @@
-﻿//objectcomments Opens the w_help window
+﻿//objectcomments Opens the help at the topic of a window
 global type f_open_help from function_object
 end type
 
@@ -18,26 +18,14 @@ global function integer f_open_help (string as_key);////////////////////////////
 //								help will be displayed
 //		
 //	Returns:  1		indicates success
-//				-1		error (problem reading from database)
+//				-1		error (the help couldn't be shown)
 //
 //////////////////////////////////////////////////////////////////////
-int li_major, li_minor
-string ls_helpfile
-ContextInformation lcx_key
+n_cst_help lnv_Help
 
-/*  Get PB Version.    */
-ge_environment.GetContextService ( "ContextInformation", lcx_key)
-lcx_key.GetMajorVersion ( li_major )
-lcx_key.GetMinorVersion ( li_minor )
-
-// Use the full path to the help file in the examples directory. A bare file name is
-// resolved against the current directory, which is the PowerBuilder IDE directory
-// when the examples are run from the IDE.
-ls_helpfile = gs_ExampleDir + "\exampl.chm"
-If Len(gs_ExampleDir) = 0 Or Not FileExists(ls_helpfile) Then ls_helpfile = "exampl.chm"
-
-//ShowHelp("exampl" + String ( li_major ) + String ( li_minor ) + ".chm", KeyWord!, as_Key)
-ShowHelp(ls_helpfile, KeyWord!, as_Key)		//2017.10.10 modified by wukaichen, reason: change file name to exampl.chm
+// The PDF help (exampl.pdf) at the topic of the window, or the HTML Help (exampl.chm) when the
+// PDF isn't there: see n_cst_help
+If lnv_Help.of_ShowHelp(as_key) <> 1 Then Return -1
 Return 1
 end function
 
