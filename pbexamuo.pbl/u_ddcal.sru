@@ -347,7 +347,7 @@ string PictureName="images\chevron_down.svg"
 Alignment HTextAlign=Left!
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -395,7 +395,7 @@ string PictureName="images\chevron_left.svg"
 Alignment HTextAlign=Left!
 int TextSize=-8
 int Weight=700
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -430,7 +430,7 @@ string PictureName="images\chevron_right.svg"
 Alignment HTextAlign=Left!
 int TextSize=-8
 int Weight=700
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -466,7 +466,7 @@ boolean DisplayOnly=true
 long TextColor=33554432
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

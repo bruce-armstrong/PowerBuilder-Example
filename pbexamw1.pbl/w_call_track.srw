@@ -91,7 +91,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Help"
 end type
 
@@ -109,7 +109,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Cancel"
 boolean cancel = true
 end type
@@ -128,7 +128,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Save Updates"
 end type
 
@@ -162,7 +162,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Delete Record"
 end type
 
@@ -188,7 +188,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Add Record"
 end type
 

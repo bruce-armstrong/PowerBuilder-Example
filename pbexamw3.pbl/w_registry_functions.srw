@@ -178,6 +178,7 @@ end subroutine
 
 event open;call super::open;lv_values.AddColumn("Name", Left!, 1000)
 lv_Values.AddColumn("Data", Left!, 1500)
+f_listview_dark_header(lv_Values)
 
 Post Event ue_GetValues()
 
@@ -229,7 +230,7 @@ int TabOrder=90
 string Text="Close"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -247,7 +248,7 @@ int TabOrder=80
 string Text="Help"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -268,7 +269,7 @@ int TabOrder=70
 string Text="Delete"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -299,7 +300,7 @@ int TabOrder=60
 string Text="Add a Binary Value"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -317,7 +318,7 @@ int TabOrder=50
 string Text="Add an Unsigned Long Value"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -335,7 +336,7 @@ int TabOrder=40
 string Text="Add a Multi String Value"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -353,7 +354,7 @@ int TabOrder=30
 string Text="Add an Expanded String Value"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -371,7 +372,7 @@ int TabOrder=20
 string Text="Add a String Value"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -401,7 +402,7 @@ long StatePictureMaskColor=553648127
 long TextColor=33554432
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

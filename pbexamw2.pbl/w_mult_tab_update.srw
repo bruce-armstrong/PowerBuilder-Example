@@ -72,7 +72,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Retrieve"
 end type
 
@@ -91,7 +91,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Close"
 end type
 
@@ -109,7 +109,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Update"
 end type
 

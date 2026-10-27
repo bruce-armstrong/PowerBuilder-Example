@@ -171,7 +171,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 string Item[]={"All Pages in Range",&
@@ -192,7 +192,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -206,7 +206,7 @@ int TabOrder=110
 string Text="Prin&ter..."
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -225,7 +225,7 @@ string Text="Cancel"
 boolean Cancel=true
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -246,7 +246,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -263,7 +263,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -272,7 +272,7 @@ type st_3 from statictext within w_dw_print_options
 int X=106
 int Y=549
 int Width=1185
-int Height=113
+int Height=124
 boolean Enabled=false
 string Text="Enter page numbers and/or page ranges separated by commas. For example, 2,5,8-10"
 boolean FocusRectangle=false
@@ -280,7 +280,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -297,7 +297,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -314,7 +314,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -334,7 +334,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -355,7 +355,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -375,7 +375,7 @@ string Text="1"
 long TextColor=33554432
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -392,7 +392,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -409,7 +409,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -426,7 +426,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -441,7 +441,7 @@ string Text="OK"
 boolean Default=true
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -509,7 +509,7 @@ long TextColor=33554432
 long BackColor=78748035
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

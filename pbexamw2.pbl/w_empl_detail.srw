@@ -228,7 +228,7 @@ int TabOrder=30
 string Text="&Close"
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -245,7 +245,7 @@ int TabOrder=40
 string Text="&Delete Employee"
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -281,7 +281,7 @@ boolean Enabled=false
 string Text="&Apply Changes"
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

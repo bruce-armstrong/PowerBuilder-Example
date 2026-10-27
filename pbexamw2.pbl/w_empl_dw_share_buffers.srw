@@ -147,7 +147,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long backcolor = 74481808
 boolean raggedright = true
 boolean showpicture = false
@@ -247,7 +247,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Close"
 end type
 
@@ -267,7 +267,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Update"
 end type
 
@@ -296,7 +296,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Retrieve"
 end type
 
@@ -317,7 +317,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Next"
 end type
 
@@ -345,7 +345,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Prior"
 end type
 

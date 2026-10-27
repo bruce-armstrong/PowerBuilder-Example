@@ -186,7 +186,7 @@ type st_intro from statictext within w_json_parser_generator
 integer x = 37
 integer y = 24
 integer width = 3145
-integer height = 128
+integer height = 196
 integer textsize = -9
 integer weight = 400
 fontcharset fontcharset = ansi!
@@ -202,7 +202,7 @@ end type
 
 type st_input from statictext within w_json_parser_generator
 integer x = 37
-integer y = 168
+integer y = 236
 integer width = 1550
 integer height = 64
 integer textsize = -9
@@ -219,7 +219,7 @@ end type
 
 type mle_json from multilineedit within w_json_parser_generator
 integer x = 37
-integer y = 236
+integer y = 304
 integer width = 1550
 integer height = 820
 integer taborder = 10
@@ -238,7 +238,7 @@ end type
 
 type cb_parse from commandbutton within w_json_parser_generator
 integer x = 37
-integer y = 1076
+integer y = 1144
 integer width = 549
 integer height = 100
 integer taborder = 20
@@ -270,7 +270,7 @@ end event
 
 type st_tree from statictext within w_json_parser_generator
 integer x = 1632
-integer y = 168
+integer y = 236
 integer width = 1550
 integer height = 64
 integer textsize = -9
@@ -287,7 +287,7 @@ end type
 
 type tv_json from treeview within w_json_parser_generator
 integer x = 1632
-integer y = 236
+integer y = 304
 integer width = 1550
 integer height = 820
 integer taborder = 30
@@ -308,7 +308,7 @@ end type
 
 type st_path from statictext within w_json_parser_generator
 integer x = 1632
-integer y = 1092
+integer y = 1160
 integer width = 297
 integer height = 64
 integer textsize = -9
@@ -325,7 +325,7 @@ end type
 
 type sle_path from singlelineedit within w_json_parser_generator
 integer x = 1934
-integer y = 1076
+integer y = 1144
 integer width = 677
 integer height = 92
 integer taborder = 40
@@ -342,7 +342,7 @@ end type
 
 type cb_path from commandbutton within w_json_parser_generator
 integer x = 2629
-integer y = 1076
+integer y = 1144
 integer width = 553
 integer height = 100
 integer taborder = 50
@@ -367,7 +367,7 @@ end event
 
 type sle_result from singlelineedit within w_json_parser_generator
 integer x = 1632
-integer y = 1192
+integer y = 1260
 integer width = 1550
 integer height = 92
 integer taborder = 0
@@ -385,7 +385,7 @@ end type
 
 type cb_generate from commandbutton within w_json_parser_generator
 integer x = 37
-integer y = 1192
+integer y = 1260
 integer width = 549
 integer height = 100
 integer taborder = 60
@@ -429,7 +429,7 @@ end event
 
 type cb_use from commandbutton within w_json_parser_generator
 integer x = 603
-integer y = 1192
+integer y = 1260
 integer width = 549
 integer height = 100
 integer taborder = 70
@@ -449,7 +449,7 @@ end event
 
 type mle_generated from multilineedit within w_json_parser_generator
 integer x = 37
-integer y = 1312
+integer y = 1380
 integer width = 3145
 integer height = 480
 integer taborder = 80
@@ -469,7 +469,7 @@ end type
 
 type cb_close from commandbutton within w_json_parser_generator
 integer x = 2780
-integer y = 1824
+integer y = 1892
 integer width = 402
 integer height = 100
 integer taborder = 900

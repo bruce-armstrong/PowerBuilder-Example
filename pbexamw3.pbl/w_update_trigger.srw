@@ -166,7 +166,7 @@ long TextColor=8421504
 long BackColor=74481808
 int TextSize=-9
 int Weight=700
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -184,7 +184,7 @@ long TextColor=8421504
 long BackColor=74481808
 int TextSize=-9
 int Weight=700
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -198,7 +198,7 @@ int TabOrder=50
 string Text="&Help"
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -219,7 +219,7 @@ int TabOrder=40
 string Text="&Close"
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -241,7 +241,7 @@ boolean Enabled=false
 string Text="&Update"
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -315,7 +315,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -332,7 +332,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

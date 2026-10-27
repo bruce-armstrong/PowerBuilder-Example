@@ -165,7 +165,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 16777215
 boolean enabled = false
@@ -182,7 +182,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Close"
 end type
 
@@ -201,7 +201,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Slower"
 end type
 
@@ -233,7 +233,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Faster"
 end type
 
@@ -265,7 +265,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Sto&p"
 end type
 
@@ -289,7 +289,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "S&tart"
 end type
 

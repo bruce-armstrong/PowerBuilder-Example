@@ -63,7 +63,7 @@ string Text="Close"
 boolean Cancel=true
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -81,7 +81,7 @@ int TabOrder=10
 string Text="Help"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

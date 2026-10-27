@@ -100,7 +100,7 @@ string MinMax="0~~100"
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -123,7 +123,7 @@ string Text="&Cancel"
 boolean Cancel=true
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -147,7 +147,7 @@ string Text="&OK"
 boolean Default=true
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

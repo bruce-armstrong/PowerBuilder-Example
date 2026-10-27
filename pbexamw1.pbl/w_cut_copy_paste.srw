@@ -242,7 +242,7 @@ long StatePictureMaskColor=536870912
 long TextColor=33554432
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -263,7 +263,7 @@ long StatePictureMaskColor=536870912
 long TextColor=33554432
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -280,7 +280,7 @@ long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -297,7 +297,7 @@ long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -314,7 +314,7 @@ long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -331,7 +331,7 @@ boolean VScrollBar=true
 long TextColor=33554432
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 string Item[]={"Item One",&
@@ -356,7 +356,7 @@ string Text="This is a MultiLineEditControl."
 long TextColor=33554432
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -374,7 +374,7 @@ long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -392,7 +392,7 @@ long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -408,7 +408,7 @@ string Text="This is a SingleLineEdit control."
 long TextColor=33554432
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -424,7 +424,7 @@ long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -440,7 +440,7 @@ long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -457,7 +457,7 @@ long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -474,7 +474,7 @@ long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

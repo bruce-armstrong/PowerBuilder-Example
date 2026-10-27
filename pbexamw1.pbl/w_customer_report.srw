@@ -354,7 +354,7 @@ boolean VScrollBar=true
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -388,7 +388,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

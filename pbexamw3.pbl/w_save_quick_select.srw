@@ -87,7 +87,7 @@ int TabOrder=20
 string Text="&Browse"
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontCharSet FontCharSet=Ansi!
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
@@ -114,7 +114,7 @@ boolean AutoHScroll=false
 long TextColor=33554432
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontCharSet FontCharSet=Ansi!
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
@@ -130,7 +130,7 @@ string Text="Cancel"
 boolean Cancel=true
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -151,7 +151,7 @@ int TabOrder=40
 string Text="&Save"
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -228,7 +228,7 @@ BorderStyle BorderStyle=StyleLowered!
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -246,15 +246,15 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
 
 type st_2 from statictext within w_save_quick_select
-int X=96
+int X=0
 int Y=176
-int Width=297
+int Width=440
 int Height=108
 boolean Enabled=false
 string Text="Datawindow Name:"
@@ -264,7 +264,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -281,15 +281,15 @@ int Limit=40
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
 
 type st_1 from statictext within w_save_quick_select
-int X=32
+int X=0
 int Y=56
-int Width=379
+int Width=416
 int Height=92
 boolean Enabled=false
 string Text="Choose Library:"
@@ -299,7 +299,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

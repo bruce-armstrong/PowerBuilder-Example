@@ -84,7 +84,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 borderstyle borderstyle = stylelowered!
 string mask = "#####"
@@ -120,7 +120,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Cancel"
 boolean cancel = true
 end type
@@ -149,7 +149,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&OK"
 boolean default = true
 end type

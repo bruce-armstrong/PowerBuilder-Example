@@ -118,7 +118,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Help"
 end type
 
@@ -140,7 +140,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Close"
 end type
 
@@ -162,7 +162,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Fi&lter DDDW"
 end type
 
@@ -191,7 +191,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Sort DDDW"
 end type
 
@@ -220,7 +220,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Insert Row"
 end type
 
@@ -253,7 +253,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Retrieve"
 boolean default = true
 end type
@@ -286,7 +286,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 string text = "Employee &Full Detail"
@@ -318,7 +318,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 string text = "Employee &Partial Detail"
@@ -381,7 +381,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 string text = "DDDW DataObject"

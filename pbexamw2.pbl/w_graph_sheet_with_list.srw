@@ -153,7 +153,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -176,7 +176,7 @@ boolean MultiSelect=true
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -216,7 +216,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -233,7 +233,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -242,7 +242,7 @@ type st_3 from statictext within w_graph_sheet_with_list
 int X=1494
 int Y=45
 int Width=1081
-int Height=183
+int Height=196
 boolean Enabled=false
 boolean BringToTop=true
 string Text="The valid values are pulled from a hidden DataWindow and loaded into a graph object."
@@ -251,7 +251,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

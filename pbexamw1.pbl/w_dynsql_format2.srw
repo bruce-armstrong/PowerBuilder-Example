@@ -198,7 +198,7 @@ end on
 type st_1 from statictext within w_dynsql_format2
 int X=47
 int Y=49
-int Width=289
+int Width=323
 int Height=65
 boolean Enabled=false
 string Text="Department:"
@@ -208,7 +208,7 @@ long BackColor=74481808
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -216,7 +216,7 @@ end type
 type cbx_life from checkbox within w_dynsql_format2
 int X=1110
 int Y=961
-int Width=452
+int Width=492
 int Height=71
 int TabOrder=60
 string Text="Life Insurance"
@@ -225,7 +225,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -233,7 +233,7 @@ end type
 type cbx_health from checkbox within w_dynsql_format2
 int X=1110
 int Y=865
-int Width=520
+int Width=549
 int Height=71
 int TabOrder=50
 string Text="Health Insurance"
@@ -242,7 +242,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -315,7 +315,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

@@ -58,7 +58,7 @@ integer weight = 700
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 boolean underline = true
 string pointer = "HyperLink!"
 long textcolor = 16711680
@@ -89,7 +89,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 67108864
 string text = "Click on the text or picture to link"
@@ -107,7 +107,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Close"
 end type
 

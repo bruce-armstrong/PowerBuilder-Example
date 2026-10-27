@@ -115,7 +115,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Click Here For The Meaning Of Life"
 vtextalign vtextalign = multiline!
 end type
@@ -139,7 +139,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Quit"
 boolean cancel = true
 boolean default = true

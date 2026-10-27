@@ -154,7 +154,7 @@ int TabOrder=60
 string Text="Help"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -175,7 +175,7 @@ int TabOrder=50
 string Text="Close"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -197,7 +197,7 @@ long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -208,14 +208,14 @@ int Y=252
 int Width=914
 int Height=76
 boolean Enabled=false
-string Text="Enter a number between 100 and 1000:"
+string Text="Enter a number from 100 to 1000:"
 Alignment Alignment=Right!
 boolean FocusRectangle=false
 long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -233,7 +233,7 @@ long TextColor=33554432
 long BackColor=67108864
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -249,7 +249,7 @@ boolean AutoHScroll=false
 long TextColor=33554432
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -265,7 +265,7 @@ boolean AutoHScroll=false
 long TextColor=33554432
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -281,7 +281,7 @@ boolean AutoHScroll=false
 long TextColor=33554432
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -296,7 +296,7 @@ string Text="Validate"
 boolean Default=true
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

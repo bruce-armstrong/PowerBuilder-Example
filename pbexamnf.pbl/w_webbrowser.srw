@@ -111,7 +111,7 @@ type st_intro from statictext within w_webbrowser
 integer x = 37
 integer y = 24
 integer width = 3145
-integer height = 128
+integer height = 196
 integer textsize = -9
 integer weight = 400
 fontcharset fontcharset = ansi!
@@ -127,7 +127,7 @@ end type
 
 type sle_url from singlelineedit within w_webbrowser
 integer x = 37
-integer y = 168
+integer y = 236
 integer width = 1975
 integer height = 92
 integer taborder = 10
@@ -144,7 +144,7 @@ end type
 
 type cb_go from commandbutton within w_webbrowser
 integer x = 2030
-integer y = 164
+integer y = 232
 integer width = 270
 integer height = 100
 integer taborder = 20
@@ -162,7 +162,7 @@ end event
 
 type cb_back from commandbutton within w_webbrowser
 integer x = 2318
-integer y = 164
+integer y = 232
 integer width = 270
 integer height = 100
 integer taborder = 30
@@ -180,7 +180,7 @@ end event
 
 type cb_forward from commandbutton within w_webbrowser
 integer x = 2606
-integer y = 164
+integer y = 232
 integer width = 270
 integer height = 100
 integer taborder = 40
@@ -198,7 +198,7 @@ end event
 
 type cb_html from commandbutton within w_webbrowser
 integer x = 2894
-integer y = 164
+integer y = 232
 integer width = 288
 integer height = 100
 integer taborder = 50
@@ -232,7 +232,7 @@ end event
 type wb_1 from webbrowser within w_webbrowser
 event type string ue_from_js ( string as_message )
 integer x = 37
-integer y = 284
+integer y = 352
 integer width = 3145
 integer height = 1020
 end type
@@ -257,7 +257,7 @@ end event
 
 type st_js from statictext within w_webbrowser
 integer x = 37
-integer y = 1340
+integer y = 1408
 integer width = 400
 integer height = 64
 integer textsize = -9
@@ -274,7 +274,7 @@ end type
 
 type sle_js from singlelineedit within w_webbrowser
 integer x = 439
-integer y = 1324
+integer y = 1392
 integer width = 2111
 integer height = 92
 integer taborder = 60
@@ -291,7 +291,7 @@ end type
 
 type cb_eval from commandbutton within w_webbrowser
 integer x = 2568
-integer y = 1320
+integer y = 1388
 integer width = 614
 integer height = 100
 integer taborder = 70
@@ -317,7 +317,7 @@ end event
 
 type mle_log from multilineedit within w_webbrowser
 integer x = 37
-integer y = 1440
+integer y = 1508
 integer width = 3145
 integer height = 360
 integer taborder = 80
@@ -337,7 +337,7 @@ end type
 
 type cb_close from commandbutton within w_webbrowser
 integer x = 2780
-integer y = 1824
+integer y = 1892
 integer width = 402
 integer height = 100
 integer taborder = 900

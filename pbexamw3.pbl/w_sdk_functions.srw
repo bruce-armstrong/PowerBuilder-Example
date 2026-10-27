@@ -207,7 +207,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Current Directory"
 end type
 
@@ -230,7 +230,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean enabled = false
@@ -240,15 +240,15 @@ boolean focusrectangle = false
 end type
 
 type st_6 from statictext within w_sdk_functions
-integer x = 27
+integer x = 0
 integer y = 412
-integer width = 594
+integer width = 659
 integer height = 68
 integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean enabled = false
@@ -267,7 +267,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean vscrollbar = true
@@ -287,7 +287,7 @@ integer textsize = -9
 integer weight = 700
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 boolean enabled = false
 boolean vscrollbar = true
@@ -305,7 +305,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Drives"
 end type
 
@@ -377,13 +377,13 @@ end event
 type st_5 from statictext within w_sdk_functions
 integer x = 987
 integer y = 528
-integer width = 183
+integer width = 195
 integer height = 68
 integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean enabled = false
@@ -401,7 +401,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&System Directory"
 end type
 
@@ -433,7 +433,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Windows Directory"
 end type
 
@@ -464,7 +464,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean enabled = false
@@ -482,7 +482,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean enabled = false
@@ -492,15 +492,15 @@ boolean focusrectangle = false
 end type
 
 type st_4 from statictext within w_sdk_functions
-integer x = 27
+integer x = 0
 integer y = 296
-integer width = 594
+integer width = 659
 integer height = 68
 integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean enabled = false
@@ -518,7 +518,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean enabled = false
@@ -537,7 +537,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Tasks"
 end type
 
@@ -585,7 +585,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean enabled = false
@@ -603,7 +603,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean vscrollbar = true
@@ -620,7 +620,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean enabled = false
@@ -639,7 +639,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean enabled = false
@@ -658,7 +658,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Flash Window"
 end type
 
@@ -691,7 +691,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Available &Memory"
 end type
 
@@ -719,7 +719,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Close"
 end type
 

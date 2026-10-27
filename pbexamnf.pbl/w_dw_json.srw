@@ -101,7 +101,7 @@ type st_intro from statictext within w_dw_json
 integer x = 37
 integer y = 24
 integer width = 3145
-integer height = 128
+integer height = 196
 integer textsize = -9
 integer weight = 400
 fontcharset fontcharset = ansi!
@@ -117,7 +117,7 @@ end type
 
 type st_source from statictext within w_dw_json
 integer x = 37
-integer y = 168
+integer y = 236
 integer width = 1550
 integer height = 64
 integer textsize = -9
@@ -134,7 +134,7 @@ end type
 
 type dw_source from datawindow within w_dw_json
 integer x = 37
-integer y = 236
+integer y = 304
 integer width = 1550
 integer height = 700
 integer taborder = 10
@@ -148,7 +148,7 @@ end type
 
 type st_target from statictext within w_dw_json
 integer x = 1632
-integer y = 168
+integer y = 236
 integer width = 1550
 integer height = 64
 integer textsize = -9
@@ -165,7 +165,7 @@ end type
 
 type dw_target from datawindow within w_dw_json
 integer x = 1632
-integer y = 236
+integer y = 304
 integer width = 1550
 integer height = 700
 integer taborder = 20
@@ -179,7 +179,7 @@ end type
 
 type cb_plain from commandbutton within w_dw_json
 integer x = 37
-integer y = 960
+integer y = 1028
 integer width = 640
 integer height = 100
 integer taborder = 30
@@ -198,7 +198,7 @@ end event
 
 type cb_dwjson from commandbutton within w_dw_json
 integer x = 695
-integer y = 960
+integer y = 1028
 integer width = 640
 integer height = 100
 integer taborder = 40
@@ -217,7 +217,7 @@ end event
 
 type cb_changed from commandbutton within w_dw_json
 integer x = 1353
-integer y = 960
+integer y = 1028
 integer width = 640
 integer height = 100
 integer taborder = 50
@@ -241,7 +241,7 @@ end event
 
 type cb_import from commandbutton within w_dw_json
 integer x = 2542
-integer y = 960
+integer y = 1028
 integer width = 640
 integer height = 100
 integer taborder = 60
@@ -269,7 +269,7 @@ end event
 
 type mle_json from multilineedit within w_dw_json
 integer x = 37
-integer y = 1084
+integer y = 1152
 integer width = 3145
 integer height = 620
 integer taborder = 70
@@ -288,7 +288,7 @@ end type
 
 type st_info from statictext within w_dw_json
 integer x = 37
-integer y = 1724
+integer y = 1792
 integer width = 2700
 integer height = 64
 integer textsize = -9
@@ -305,7 +305,7 @@ end type
 
 type cb_close from commandbutton within w_dw_json
 integer x = 2780
-integer y = 1824
+integer y = 1892
 integer width = 402
 integer height = 100
 integer taborder = 900

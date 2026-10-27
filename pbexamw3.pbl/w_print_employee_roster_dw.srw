@@ -94,7 +94,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Save As..."
 end type
 
@@ -111,7 +111,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Close"
 end type
 
@@ -125,12 +125,12 @@ boolean visible = false
 integer x = 2377
 integer y = 1652
 integer width = 361
-integer height = 112
+integer height = 124
 integer textsize = -8
 integer weight = 700
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "Helv"
+string facename = "Segoe UI"
 long backcolor = 12632256
 string text = "Printing, please wait..."
 alignment alignment = center!
@@ -146,7 +146,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Printer &Setup..."
 end type
 
@@ -167,7 +167,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Print Report"
 end type
 
@@ -193,7 +193,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Retrieve"
 end type
 

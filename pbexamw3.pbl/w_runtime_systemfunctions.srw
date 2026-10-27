@@ -67,6 +67,7 @@ event open;call super::open;listviewitem lvi_item
 
 lv_functions.AddColumn ("Description", Left!, 800 )
 lv_functions.AddColumn ("Function", Left!, 3000 )
+f_listview_dark_header(lv_functions)
 lv_functions.AddItem ( "Display popup help for the specified control~tinteger ShowPopupHelp(string helpfile,dragobject control, long contextid)", 1 )
 lv_functions.AddItem ( "Returns string with the first letter of each word set to uppercase and the remaining letters lowercase~tstring WordCap(string str)", 1 )
 lv_functions.AddItem ( "Works just like Pos except returns the last position~tlong LastPos(string source, string target {, start})", 1 )
@@ -85,7 +86,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 67108864
 boolean focusrectangle = false
@@ -102,7 +103,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Run"
 end type
 
@@ -162,7 +163,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 borderstyle borderstyle = stylelowered!
 listviewview view = listviewreport!
@@ -184,7 +185,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "E&xit"
 end type
 

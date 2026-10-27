@@ -161,7 +161,7 @@ long TextColor=16777215
 long BackColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="Arial"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -176,7 +176,7 @@ string Text="OK"
 boolean Default=true
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -196,7 +196,7 @@ string Text="Cancel"
 boolean Cancel=true
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -216,7 +216,7 @@ BorderStyle BorderStyle=StyleLowered!
 long BackColor=16777215
 int TextSize=-8
 int Weight=700
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

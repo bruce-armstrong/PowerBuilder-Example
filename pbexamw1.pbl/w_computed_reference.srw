@@ -87,7 +87,7 @@ integer textsize = -9
 integer weight = 700
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 boolean enabled = false
@@ -104,7 +104,7 @@ integer textsize = -9
 integer weight = 700
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 16711680
 long backcolor = 74481808
 boolean enabled = false
@@ -121,7 +121,7 @@ integer textsize = -9
 integer weight = 700
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
 string text = "Computed fields that reference other computed fields are indicated with a"
@@ -139,7 +139,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Printer &Setup"
 end type
 
@@ -158,7 +158,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Close"
 end type
 
@@ -175,7 +175,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Print"
 end type
 

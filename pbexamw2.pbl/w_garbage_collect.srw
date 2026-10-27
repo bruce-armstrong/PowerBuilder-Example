@@ -127,7 +127,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Help"
 end type
 
@@ -147,7 +147,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Close"
 end type
 
@@ -164,7 +164,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 67108864
 boolean enabled = false
@@ -182,7 +182,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 67108864
 string text = "Garbage Collection On"
@@ -197,7 +197,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 67108864
 boolean enabled = false
@@ -217,7 +217,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "OK"
 boolean default = true
 end type

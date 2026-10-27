@@ -151,7 +151,7 @@ type st_intro from statictext within w_smtp_client
 integer x = 37
 integer y = 24
 integer width = 3145
-integer height = 128
+integer height = 196
 integer textsize = -9
 integer weight = 400
 fontcharset fontcharset = ansi!
@@ -167,7 +167,7 @@ end type
 
 type st_host from statictext within w_smtp_client
 integer x = 37
-integer y = 188
+integer y = 256
 integer width = 330
 integer height = 64
 integer textsize = -9
@@ -184,7 +184,7 @@ end type
 
 type sle_host from singlelineedit within w_smtp_client
 integer x = 370
-integer y = 172
+integer y = 240
 integer width = 1100
 integer height = 92
 integer taborder = 10
@@ -202,7 +202,7 @@ end type
 
 type st_port from statictext within w_smtp_client
 integer x = 1550
-integer y = 188
+integer y = 256
 integer width = 160
 integer height = 64
 integer textsize = -9
@@ -219,7 +219,7 @@ end type
 
 type em_port from editmask within w_smtp_client
 integer x = 1720
-integer y = 172
+integer y = 240
 integer width = 260
 integer height = 92
 integer taborder = 20
@@ -237,7 +237,7 @@ end type
 
 type cbx_tls from checkbox within w_smtp_client
 integer x = 2030
-integer y = 180
+integer y = 248
 integer width = 800
 integer height = 80
 integer taborder = 30
@@ -254,7 +254,7 @@ end type
 
 type st_user from statictext within w_smtp_client
 integer x = 37
-integer y = 300
+integer y = 368
 integer width = 330
 integer height = 64
 integer textsize = -9
@@ -271,7 +271,7 @@ end type
 
 type sle_user from singlelineedit within w_smtp_client
 integer x = 370
-integer y = 284
+integer y = 352
 integer width = 1100
 integer height = 92
 integer taborder = 40
@@ -289,7 +289,7 @@ end type
 
 type st_pwd from statictext within w_smtp_client
 integer x = 1550
-integer y = 300
+integer y = 368
 integer width = 300
 integer height = 64
 integer textsize = -9
@@ -306,7 +306,7 @@ end type
 
 type sle_pwd from singlelineedit within w_smtp_client
 integer x = 1720
-integer y = 284
+integer y = 352
 integer width = 1100
 integer height = 92
 integer taborder = 50
@@ -324,7 +324,7 @@ end type
 
 type st_from from statictext within w_smtp_client
 integer x = 37
-integer y = 412
+integer y = 480
 integer width = 330
 integer height = 64
 integer textsize = -9
@@ -341,7 +341,7 @@ end type
 
 type sle_from from singlelineedit within w_smtp_client
 integer x = 370
-integer y = 396
+integer y = 464
 integer width = 1100
 integer height = 92
 integer taborder = 60
@@ -358,7 +358,7 @@ end type
 
 type st_to from statictext within w_smtp_client
 integer x = 1550
-integer y = 412
+integer y = 480
 integer width = 160
 integer height = 64
 integer textsize = -9
@@ -375,7 +375,7 @@ end type
 
 type sle_to from singlelineedit within w_smtp_client
 integer x = 1720
-integer y = 396
+integer y = 464
 integer width = 1462
 integer height = 92
 integer taborder = 70
@@ -393,7 +393,7 @@ end type
 
 type st_subject from statictext within w_smtp_client
 integer x = 37
-integer y = 524
+integer y = 592
 integer width = 330
 integer height = 64
 integer textsize = -9
@@ -410,7 +410,7 @@ end type
 
 type sle_subject from singlelineedit within w_smtp_client
 integer x = 370
-integer y = 508
+integer y = 576
 integer width = 2812
 integer height = 92
 integer taborder = 80
@@ -427,7 +427,7 @@ end type
 
 type cbx_html from checkbox within w_smtp_client
 integer x = 370
-integer y = 620
+integer y = 688
 integer width = 1000
 integer height = 80
 integer taborder = 90
@@ -445,7 +445,7 @@ end type
 
 type mle_body from multilineedit within w_smtp_client
 integer x = 370
-integer y = 712
+integer y = 780
 integer width = 2812
 integer height = 900
 integer taborder = 100
@@ -464,7 +464,7 @@ end type
 
 type cb_send from commandbutton within w_smtp_client
 integer x = 370
-integer y = 1640
+integer y = 1708
 integer width = 600
 integer height = 100
 integer taborder = 110
@@ -516,7 +516,7 @@ end event
 
 type st_status from statictext within w_smtp_client
 integer x = 1000
-integer y = 1660
+integer y = 1728
 integer width = 1700
 integer height = 64
 integer textsize = -9
@@ -533,7 +533,7 @@ end type
 
 type cb_close from commandbutton within w_smtp_client
 integer x = 2780
-integer y = 1824
+integer y = 1892
 integer width = 402
 integer height = 100
 integer taborder = 900

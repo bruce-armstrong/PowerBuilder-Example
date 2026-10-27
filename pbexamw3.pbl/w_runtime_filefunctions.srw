@@ -61,6 +61,7 @@ event open;call super::open;listviewitem lvi_item
 
 lv_functions.AddColumn ("Description", Left!, 800 )
 lv_functions.AddColumn ("Function", Left!, 3000 )
+f_listview_dark_header(lv_functions)
 lv_functions.AddItem ( "Get the Current Directory~tstring GetCurrentDirectory ( )", 1 )
 lv_functions.AddItem ( "Does Directory Exist~tboolean DirectoryExists ( string directoryname )", 1 )
 lv_functions.AddItem ( "Change the Current Directory~tinteger ChangeDirectory ( string directoryname )", 1 )
@@ -80,7 +81,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 67108864
 boolean focusrectangle = false
@@ -97,7 +98,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Run"
 end type
 
@@ -207,7 +208,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 borderstyle borderstyle = stylelowered!
 listviewview view = listviewreport!
@@ -229,7 +230,7 @@ integer weight = 400
 fontcharset fontcharset = ansi!
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "E&xit"
 end type
 

@@ -106,7 +106,7 @@ integer textsize = -8
 integer weight = 700
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long backcolor = 12632256
 boolean enabled = false
 string text = "none"
@@ -124,7 +124,7 @@ integer textsize = -8
 integer weight = 700
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long backcolor = 12632256
 boolean vscrollbar = true
 end type

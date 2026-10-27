@@ -168,7 +168,7 @@ type st_intro from statictext within w_compressor
 integer x = 37
 integer y = 24
 integer width = 3145
-integer height = 128
+integer height = 196
 integer textsize = -9
 integer weight = 400
 fontcharset fontcharset = ansi!
@@ -184,7 +184,7 @@ end type
 
 type st_files from statictext within w_compressor
 integer x = 37
-integer y = 172
+integer y = 240
 integer width = 1500
 integer height = 64
 integer textsize = -9
@@ -201,7 +201,7 @@ end type
 
 type lb_files from listbox within w_compressor
 integer x = 37
-integer y = 240
+integer y = 308
 integer width = 1550
 integer height = 680
 integer taborder = 10
@@ -220,7 +220,7 @@ end type
 
 type cb_add from commandbutton within w_compressor
 integer x = 37
-integer y = 940
+integer y = 1008
 integer width = 500
 integer height = 100
 integer taborder = 20
@@ -249,7 +249,7 @@ end event
 
 type cb_clear from commandbutton within w_compressor
 integer x = 555
-integer y = 940
+integer y = 1008
 integer width = 500
 integer height = 100
 integer taborder = 30
@@ -267,8 +267,8 @@ end event
 
 type st_password from statictext within w_compressor
 integer x = 37
-integer y = 1084
-integer width = 500
+integer y = 1152
+integer width = 504
 integer height = 64
 integer textsize = -9
 integer weight = 400
@@ -284,7 +284,7 @@ end type
 
 type sle_password from singlelineedit within w_compressor
 integer x = 549
-integer y = 1068
+integer y = 1136
 integer width = 1038
 integer height = 92
 integer taborder = 40
@@ -302,7 +302,7 @@ end type
 
 type st_zip from statictext within w_compressor
 integer x = 37
-integer y = 1196
+integer y = 1264
 integer width = 500
 integer height = 64
 integer textsize = -9
@@ -319,7 +319,7 @@ end type
 
 type sle_zip from singlelineedit within w_compressor
 integer x = 549
-integer y = 1180
+integer y = 1248
 integer width = 1038
 integer height = 92
 integer taborder = 50
@@ -336,7 +336,7 @@ end type
 
 type cb_zip from commandbutton within w_compressor
 integer x = 37
-integer y = 1300
+integer y = 1368
 integer width = 1550
 integer height = 100
 integer taborder = 60
@@ -379,7 +379,7 @@ end event
 
 type st_contents from statictext within w_compressor
 integer x = 1632
-integer y = 172
+integer y = 240
 integer width = 1500
 integer height = 64
 integer textsize = -9
@@ -396,7 +396,7 @@ end type
 
 type lb_contents from listbox within w_compressor
 integer x = 1632
-integer y = 240
+integer y = 308
 integer width = 1550
 integer height = 680
 integer taborder = 70
@@ -415,7 +415,7 @@ end type
 
 type cb_list from commandbutton within w_compressor
 integer x = 1632
-integer y = 940
+integer y = 1008
 integer width = 500
 integer height = 100
 integer taborder = 80
@@ -450,7 +450,7 @@ end event
 
 type cb_extract from commandbutton within w_compressor
 integer x = 2150
-integer y = 940
+integer y = 1008
 integer width = 640
 integer height = 100
 integer taborder = 90
@@ -485,7 +485,7 @@ end event
 
 type gb_blob from groupbox within w_compressor
 integer x = 1632
-integer y = 1068
+integer y = 1136
 integer width = 1550
 integer height = 340
 integer textsize = -9
@@ -501,7 +501,7 @@ end type
 
 type cb_blob from commandbutton within w_compressor
 integer x = 1673
-integer y = 1160
+integer y = 1228
 integer width = 1468
 integer height = 100
 integer taborder = 100
@@ -539,7 +539,7 @@ end event
 
 type st_status from statictext within w_compressor
 integer x = 37
-integer y = 1440
+integer y = 1508
 integer width = 3145
 integer height = 128
 integer textsize = -9
@@ -556,7 +556,7 @@ end type
 
 type cb_close from commandbutton within w_compressor
 integer x = 2780
-integer y = 1824
+integer y = 1892
 integer width = 402
 integer height = 100
 integer taborder = 900

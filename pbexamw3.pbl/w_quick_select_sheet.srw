@@ -99,10 +99,10 @@ else
 	End if
 	ls_style = 'style(type=' + ls_report_type + ')' + &
 				'Text(background.mode=0 background.color=1073741824 color=0 ' +&
-				'font.face = "MS Sans Serif"  font.height = -10  font.weight = 400 font.family = 2 ' + &
+				'font.face = "Segoe UI"  font.height = -10  font.weight = 400 font.family = 2 ' + &
 						'font.pitch=2  ) ' + &
 				'Column(background.mode=0 background.color=1073741824 color=0 ' +&
-				'font.face = "MS Sans Serif"  font.height = -8  font.weight = 400 font.family = 2 ' + &
+				'font.face = "Segoe UI"  font.height = -8  font.weight = 400 font.family = 2 ' + &
 						'font.pitch = 2 ) ' 
 	this.title = "Datawindow for table - " + string(ls_tablename)
 

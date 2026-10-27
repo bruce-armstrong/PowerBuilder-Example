@@ -201,7 +201,7 @@ type st_intro from statictext within w_pdf_builder
 integer x = 37
 integer y = 24
 integer width = 3145
-integer height = 128
+integer height = 196
 integer textsize = -9
 integer weight = 400
 fontcharset fontcharset = ansi!
@@ -217,7 +217,7 @@ end type
 
 type dw_1 from datawindow within w_pdf_builder
 integer x = 37
-integer y = 172
+integer y = 240
 integer width = 3145
 integer height = 860
 integer taborder = 10
@@ -231,7 +231,7 @@ end type
 
 type st_title from statictext within w_pdf_builder
 integer x = 37
-integer y = 1068
+integer y = 1136
 integer width = 400
 integer height = 64
 integer textsize = -9
@@ -248,7 +248,7 @@ end type
 
 type sle_title from singlelineedit within w_pdf_builder
 integer x = 457
-integer y = 1052
+integer y = 1120
 integer width = 1100
 integer height = 92
 integer taborder = 20
@@ -265,7 +265,7 @@ end type
 
 type st_author from statictext within w_pdf_builder
 integer x = 1632
-integer y = 1068
+integer y = 1136
 integer width = 300
 integer height = 64
 integer textsize = -9
@@ -282,7 +282,7 @@ end type
 
 type sle_author from singlelineedit within w_pdf_builder
 integer x = 1952
-integer y = 1052
+integer y = 1120
 integer width = 1230
 integer height = 92
 integer taborder = 30
@@ -299,7 +299,7 @@ end type
 
 type cbx_protect from checkbox within w_pdf_builder
 integer x = 37
-integer y = 1172
+integer y = 1240
 integer width = 1100
 integer height = 80
 integer taborder = 40
@@ -316,7 +316,7 @@ end type
 
 type sle_password from singlelineedit within w_pdf_builder
 integer x = 1150
-integer y = 1164
+integer y = 1232
 integer width = 407
 integer height = 92
 integer taborder = 50
@@ -334,7 +334,7 @@ end type
 
 type cbx_noprint from checkbox within w_pdf_builder
 integer x = 1632
-integer y = 1172
+integer y = 1240
 integer width = 1100
 integer height = 80
 integer taborder = 60
@@ -351,7 +351,7 @@ end type
 
 type cb_builder from commandbutton within w_pdf_builder
 integer x = 37
-integer y = 1296
+integer y = 1364
 integer width = 1100
 integer height = 100
 integer taborder = 70
@@ -378,7 +378,7 @@ end event
 
 type cb_native from commandbutton within w_pdf_builder
 integer x = 1155
-integer y = 1296
+integer y = 1364
 integer width = 1100
 integer height = 100
 integer taborder = 80
@@ -403,7 +403,7 @@ end event
 
 type st_status from statictext within w_pdf_builder
 integer x = 37
-integer y = 1440
+integer y = 1508
 integer width = 3145
 integer height = 64
 integer textsize = -9
@@ -420,7 +420,7 @@ end type
 
 type cb_close from commandbutton within w_pdf_builder
 integer x = 2780
-integer y = 1824
+integer y = 1892
 integer width = 402
 integer height = 100
 integer taborder = 900

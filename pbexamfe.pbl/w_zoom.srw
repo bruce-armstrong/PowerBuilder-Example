@@ -113,7 +113,7 @@ string Text="Cancel"
 boolean Cancel=true
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -131,7 +131,7 @@ string Text="OK"
 boolean Default=true
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -172,7 +172,7 @@ long BackColor=74481808
 long BorderColor=8388608
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -188,7 +188,7 @@ string Text="100"
 long TextColor=41943040
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
@@ -197,14 +197,14 @@ end type
 type rb_custom from radiobutton within w_zoom
 int X=89
 int Y=487
-int Width=235
+int Width=245
 int Height=65
 string Text="Custom"
 long TextColor=41943040
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -219,7 +219,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -234,7 +234,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -242,14 +242,14 @@ end type
 type rb_100 from radiobutton within w_zoom
 int X=89
 int Y=199
-int Width=193
+int Width=229
 int Height=65
 string Text="100%"
 long TextColor=41943040
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -257,14 +257,14 @@ end type
 type rb_200 from radiobutton within w_zoom
 int X=89
 int Y=103
-int Width=193
+int Width=229
 int Height=65
 string Text="200%"
 long TextColor=41943040
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -281,7 +281,7 @@ long TextColor=41943040
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

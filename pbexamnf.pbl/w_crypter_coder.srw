@@ -92,7 +92,7 @@ type st_intro from statictext within w_crypter_coder
 integer x = 37
 integer y = 24
 integer width = 3145
-integer height = 128
+integer height = 196
 integer textsize = -9
 integer weight = 400
 fontcharset fontcharset = ansi!
@@ -108,7 +108,7 @@ end type
 
 type st_text from statictext within w_crypter_coder
 integer x = 37
-integer y = 188
+integer y = 256
 integer width = 500
 integer height = 64
 integer textsize = -9
@@ -125,7 +125,7 @@ end type
 
 type sle_text from singlelineedit within w_crypter_coder
 integer x = 549
-integer y = 172
+integer y = 240
 integer width = 2633
 integer height = 92
 integer taborder = 10
@@ -142,8 +142,8 @@ end type
 
 type st_key from statictext within w_crypter_coder
 integer x = 37
-integer y = 300
-integer width = 500
+integer y = 368
+integer width = 504
 integer height = 64
 integer textsize = -9
 integer weight = 400
@@ -159,7 +159,7 @@ end type
 
 type sle_key from singlelineedit within w_crypter_coder
 integer x = 549
-integer y = 284
+integer y = 352
 integer width = 2633
 integer height = 92
 integer taborder = 20
@@ -176,7 +176,7 @@ end type
 
 type cb_encode from commandbutton within w_crypter_coder
 integer x = 37
-integer y = 412
+integer y = 480
 integer width = 700
 integer height = 100
 integer taborder = 30
@@ -209,7 +209,7 @@ end event
 
 type cb_hash from commandbutton within w_crypter_coder
 integer x = 755
-integer y = 412
+integer y = 480
 integer width = 700
 integer height = 100
 integer taborder = 40
@@ -245,7 +245,7 @@ end event
 
 type cb_aes from commandbutton within w_crypter_coder
 integer x = 1473
-integer y = 412
+integer y = 480
 integer width = 900
 integer height = 100
 integer taborder = 50
@@ -287,7 +287,7 @@ end event
 
 type mle_output from multilineedit within w_crypter_coder
 integer x = 37
-integer y = 540
+integer y = 608
 integer width = 3145
 integer height = 1240
 integer taborder = 60
@@ -309,7 +309,7 @@ end type
 
 type cb_close from commandbutton within w_crypter_coder
 integer x = 2780
-integer y = 1824
+integer y = 1892
 integer width = 402
 integer height = 100
 integer taborder = 900

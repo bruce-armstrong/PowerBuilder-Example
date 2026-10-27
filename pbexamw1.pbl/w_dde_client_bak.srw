@@ -186,7 +186,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Exit"
 end type
 
@@ -203,7 +203,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Help"
 end type
 
@@ -213,13 +213,13 @@ end on
 type rb_gr_data3 from radiobutton within w_dde_client_bak
 integer x = 73
 integer y = 972
-integer width = 242
+integer width = 261
 integer height = 68
 integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 78748035
 string text = "Data3"
@@ -231,13 +231,13 @@ end on
 type rb_gr_data2 from radiobutton within w_dde_client_bak
 integer x = 73
 integer y = 900
-integer width = 242
+integer width = 261
 integer height = 68
 integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 78748035
 string text = "Data2"
@@ -249,13 +249,13 @@ end on
 type rb_gr_data1 from radiobutton within w_dde_client_bak
 integer x = 73
 integer y = 832
-integer width = 242
+integer width = 261
 integer height = 68
 integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 78748035
 string text = "Data1"
@@ -268,13 +268,13 @@ end on
 type rb_data3 from radiobutton within w_dde_client_bak
 integer x = 709
 integer y = 640
-integer width = 242
+integer width = 261
 integer height = 68
 integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 78748035
 string text = "Data3"
@@ -286,13 +286,13 @@ end on
 type rb_data2 from radiobutton within w_dde_client_bak
 integer x = 709
 integer y = 564
-integer width = 242
+integer width = 261
 integer height = 68
 integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 78748035
 string text = "Data2"
@@ -304,13 +304,13 @@ end on
 type rb_data1 from radiobutton within w_dde_client_bak
 integer x = 709
 integer y = 496
-integer width = 242
+integer width = 261
 integer height = 68
 integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 78748035
 string text = "Data1"
@@ -330,7 +330,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Stop"
 end type
 
@@ -359,7 +359,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Start "
 end type
 
@@ -381,13 +381,13 @@ end on
 type st_1 from statictext within w_dde_client_bak
 integer x = 41
 integer y = 404
-integer width = 521
+integer width = 634
 integer height = 112
 integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 78748035
 boolean enabled = false
@@ -404,7 +404,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 boolean autohscroll = false
 borderstyle borderstyle = stylelowered!
@@ -420,7 +420,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 74481808
 boolean displayonly = true
@@ -437,7 +437,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Getremote "
 end type
 
@@ -462,7 +462,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Execute Command"
 end type
 
@@ -483,7 +483,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 78748035
 boolean enabled = false
@@ -500,7 +500,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 78748035
 string text = "GetRemote"
@@ -516,7 +516,7 @@ integer textsize = -9
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 33554432
 long backcolor = 78748035
 string text = "Hot Links"

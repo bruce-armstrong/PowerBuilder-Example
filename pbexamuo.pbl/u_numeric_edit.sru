@@ -39,7 +39,7 @@ string Pointer="arrow!"
 long TextColor=33554432
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

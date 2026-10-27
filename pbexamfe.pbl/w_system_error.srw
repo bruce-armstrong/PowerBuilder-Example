@@ -99,7 +99,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Print"
 end type
 
@@ -161,7 +161,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "Exit The Program"
 boolean default = true
 end type
@@ -194,7 +194,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 string text = "&Continue"
 end type
 

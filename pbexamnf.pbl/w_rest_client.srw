@@ -91,7 +91,7 @@ type st_intro from statictext within w_rest_client
 integer x = 37
 integer y = 24
 integer width = 3145
-integer height = 128
+integer height = 196
 integer textsize = -9
 integer weight = 400
 fontcharset fontcharset = ansi!
@@ -107,7 +107,7 @@ end type
 
 type st_url from statictext within w_rest_client
 integer x = 37
-integer y = 184
+integer y = 252
 integer width = 160
 integer height = 64
 integer textsize = -9
@@ -124,7 +124,7 @@ end type
 
 type sle_url from singlelineedit within w_rest_client
 integer x = 201
-integer y = 168
+integer y = 236
 integer width = 2153
 integer height = 92
 integer taborder = 10
@@ -141,7 +141,7 @@ end type
 
 type cb_retrieve from commandbutton within w_rest_client
 integer x = 2372
-integer y = 164
+integer y = 232
 integer width = 809
 integer height = 100
 integer taborder = 20
@@ -173,7 +173,7 @@ end event
 
 type dw_users from datawindow within w_rest_client
 integer x = 37
-integer y = 284
+integer y = 352
 integer width = 3145
 integer height = 700
 integer taborder = 30
@@ -187,7 +187,7 @@ end type
 
 type cb_get from commandbutton within w_rest_client
 integer x = 37
-integer y = 1008
+integer y = 1076
 integer width = 700
 integer height = 100
 integer taborder = 40
@@ -222,7 +222,7 @@ end event
 
 type cb_post from commandbutton within w_rest_client
 integer x = 755
-integer y = 1008
+integer y = 1076
 integer width = 700
 integer height = 100
 integer taborder = 50
@@ -274,7 +274,7 @@ end event
 
 type cb_send_get from commandbutton within w_rest_client
 integer x = 1473
-integer y = 1008
+integer y = 1076
 integer width = 700
 integer height = 100
 integer taborder = 60
@@ -301,7 +301,7 @@ end event
 
 type mle_response from multilineedit within w_rest_client
 integer x = 37
-integer y = 1132
+integer y = 1200
 integer width = 3145
 integer height = 580
 integer taborder = 70
@@ -323,7 +323,7 @@ end type
 
 type st_status from statictext within w_rest_client
 integer x = 37
-integer y = 1736
+integer y = 1804
 integer width = 2700
 integer height = 64
 integer textsize = -9
@@ -340,7 +340,7 @@ end type
 
 type cb_close from commandbutton within w_rest_client
 integer x = 2780
-integer y = 1824
+integer y = 1892
 integer width = 402
 integer height = 100
 integer taborder = 900

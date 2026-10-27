@@ -206,7 +206,7 @@ int TabOrder=50
 string Text="Copy Using RowsCopy()"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -241,7 +241,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -258,7 +258,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -273,7 +273,7 @@ int TabOrder=30
 string Text="Copy Using Structure Array"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -313,7 +313,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -330,7 +330,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -347,7 +347,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=700
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 boolean Underline=true
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
@@ -365,7 +365,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=700
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 boolean Underline=true
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
@@ -383,7 +383,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -402,7 +402,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -421,7 +421,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -438,7 +438,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -455,7 +455,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -474,7 +474,7 @@ long TextColor=33554432
 long BackColor=74481808
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -489,7 +489,7 @@ int TabOrder=20
 string Text="Copy Using Clipboard"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -523,7 +523,7 @@ int TabOrder=10
 string Text="Copy Using GetItem/SetItem"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -580,7 +580,7 @@ int TabOrder=70
 string Text="Close"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -598,7 +598,7 @@ int TabOrder=60
 string Text="Help"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -616,7 +616,7 @@ int TabOrder=40
 string Text="Copy Using Direct Reference"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

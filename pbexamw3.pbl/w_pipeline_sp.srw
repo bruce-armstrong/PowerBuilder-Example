@@ -292,9 +292,9 @@ boolean focusrectangle = false
 end type
 
 type st_4 from statictext within w_pipeline_sp
-integer x = 1445
+integer x = 1416
 integer y = 660
-integer width = 201
+integer width = 230
 integer height = 96
 integer textsize = -10
 integer weight = 400

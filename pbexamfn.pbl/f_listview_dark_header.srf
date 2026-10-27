@@ -1,0 +1,12 @@
+﻿//objectcomments Gives a report-view ListView a dark column header when a dark theme is active (see n_cst_listview_theme)
+global type f_listview_dark_header from function_object
+end type
+
+forward prototypes
+global subroutine f_listview_dark_header (listview alv_target)
+end prototypes
+
+global subroutine f_listview_dark_header (listview alv_target);n_cst_listview_theme	lnv_Theme
+
+lnv_Theme.of_header(alv_target)
+end subroutine

@@ -938,7 +938,7 @@ end on
 
 type st_3 from statictext within tabpage_desc
 integer y = 16
-integer width = 311
+integer width = 342
 integer height = 64
 integer textsize = -10
 fontcharset fontcharset = ansi!

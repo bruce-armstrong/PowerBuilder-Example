@@ -323,35 +323,39 @@ Next
 // Add the columns to the ListView
 Choose Case ai_Level
 	Case 2
-		lv_1.AddColumn("Name", Left!, 500)
-		lv_1.AddColumn("ID", Left!, 150)
-		lv_1.AddColumn("Dept", Left!, 160)
-		lv_1.AddColumn("Manager", Left!, 250)
-		lv_1.AddColumn("Status", Center!, 195)
-		lv_1.AddColumn("Phone #", Left!, 350)
-		lv_1.AddColumn("Salary", Right!, 280)
+		lv_1.AddColumn("Name", Left!, 625)
+		lv_1.AddColumn("ID", Left!, 190)
+		lv_1.AddColumn("Dept", Left!, 200)
+		lv_1.AddColumn("Manager", Left!, 315)
+		lv_1.AddColumn("Status", Center!, 245)
+		lv_1.AddColumn("Phone #", Left!, 440)
+		lv_1.AddColumn("Salary", Right!, 350)
+		f_listview_dark_header(lv_1)
 		ii_Columns = 7
 	Case 3
-		lv_1.AddColumn("Company Name", Left!, 700)
-		lv_1.AddColumn("ID", Left!, 150)
-		lv_1.AddColumn("Contact Name", Left!, 500)
-		lv_1.AddColumn("Address", Left!, 1150)
-		lv_1.AddColumn("Phone #", Left!, 350)
+		lv_1.AddColumn("Company Name", Left!, 875)
+		lv_1.AddColumn("ID", Left!, 190)
+		lv_1.AddColumn("Contact Name", Left!, 625)
+		lv_1.AddColumn("Address", Left!, 1440)
+		lv_1.AddColumn("Phone #", Left!, 440)
+		f_listview_dark_header(lv_1)
 		ii_Columns = 5
 	Case 4
-		lv_1.AddColumn("Order ID", Left!, 250)
-		lv_1.AddColumn("Date", Left!, 250)
-		lv_1.AddColumn("Financial Code", Center!, 375)
-		lv_1.AddColumn("Region", Left!, 250)
+		lv_1.AddColumn("Order ID", Left!, 315)
+		lv_1.AddColumn("Date", Left!, 315)
+		lv_1.AddColumn("Financial Code", Center!, 470)
+		lv_1.AddColumn("Region", Left!, 315)
+		f_listview_dark_header(lv_1)
 		ii_Columns = 4
 	Case 5
-		lv_1.AddColumn("Product Description", Left!, 500)
-		lv_1.AddColumn("Line #", Right!, 195)
-		lv_1.AddColumn("ID", Left!, 150)
-		lv_1.AddColumn("Ship Date", Left!, 275)
-		lv_1.AddColumn("Qty", Right!, 150)
-		lv_1.AddColumn("Unit Price", Right!, 270)
-		lv_1.AddColumn("Total", Right!, 250)
+		lv_1.AddColumn("Product Description", Left!, 625)
+		lv_1.AddColumn("Line #", Right!, 245)
+		lv_1.AddColumn("ID", Left!, 190)
+		lv_1.AddColumn("Ship Date", Left!, 345)
+		lv_1.AddColumn("Qty", Right!, 190)
+		lv_1.AddColumn("Unit Price", Right!, 340)
+		lv_1.AddColumn("Total", Right!, 315)
+		f_listview_dark_header(lv_1)
 		ii_Columns = 7
 End Choose
 

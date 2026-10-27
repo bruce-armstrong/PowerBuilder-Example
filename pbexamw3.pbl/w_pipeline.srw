@@ -449,8 +449,8 @@ end type
 type st_4 from statictext within w_pipeline
 integer x = 14
 integer y = 1184
-integer width = 370
-integer height = 68
+integer width = 380
+integer height = 140
 integer textsize = -10
 integer weight = 400
 fontcharset fontcharset = ansi!
@@ -551,9 +551,9 @@ f_open_help(parent.classname())
 end event
 
 type st_2 from statictext within w_pipeline
-integer x = 14
+integer x = 0
 integer y = 20
-integer width = 503
+integer width = 509
 integer height = 68
 integer textsize = -10
 integer weight = 400
@@ -570,9 +570,9 @@ boolean focusrectangle = false
 end type
 
 type st_1 from statictext within w_pipeline
-integer x = 1490
+integer x = 1474
 integer y = 20
-integer width = 366
+integer width = 397
 integer height = 68
 integer textsize = -10
 integer weight = 400
@@ -908,7 +908,7 @@ fontfamily fontfamily = swiss!
 string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
-string text = "Records Written:"
+string text = "Rows Written:"
 end type
 
 type gb_1 from groupbox within w_pipeline
@@ -925,6 +925,6 @@ fontfamily fontfamily = swiss!
 string facename = "Segoe UI"
 long textcolor = 41943040
 long backcolor = 74481808
-string text = "Records Read:"
+string text = "Rows Read:"
 end type
 

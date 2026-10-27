@@ -110,7 +110,7 @@ long BackColor=16777215
 long BorderColor=16711680
 int TextSize=-9
 int Weight=700
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

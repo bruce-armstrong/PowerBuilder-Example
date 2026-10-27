@@ -322,7 +322,7 @@ int SelectedTab=1
 long BackColor=73955432
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 tabpage_mod tabpage_mod
@@ -415,9 +415,9 @@ destroy(this.lb_attrib_val)
 end on
 
 type st_14 from statictext within tabpage_mod
-int X=5
+int X=0
 int Y=36
-int Width=206
+int Width=224
 int Height=64
 boolean Enabled=false
 string Text="Modify ("
@@ -428,7 +428,7 @@ long BackColor=74481808
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -446,7 +446,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -462,7 +462,7 @@ boolean AutoHScroll=false
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -480,7 +480,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 boolean Underline=true
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
@@ -499,7 +499,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 boolean Underline=true
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
@@ -518,7 +518,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 boolean Underline=true
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
@@ -536,7 +536,7 @@ long TextColor=41943040
 long BackColor=73955432
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -619,7 +619,7 @@ long TextColor=41943040
 long BackColor=73955432
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -693,7 +693,7 @@ long TextColor=41943040
 long BackColor=73955432
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -834,7 +834,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 boolean Underline=true
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
@@ -843,7 +843,7 @@ end type
 type st_20 from statictext within tabpage_object
 int X=1029
 int Y=4
-int Width=357
+int Width=416
 int Height=64
 boolean Enabled=false
 string Text="Attribute Value"
@@ -853,7 +853,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 boolean Underline=true
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
@@ -862,7 +862,7 @@ end type
 type st_19 from statictext within tabpage_object
 int X=576
 int Y=4
-int Width=370
+int Width=445
 int Height=64
 boolean Enabled=false
 string Text="Object Attribute"
@@ -872,7 +872,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 boolean Underline=true
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
@@ -891,7 +891,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -909,7 +909,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -927,7 +927,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -935,7 +935,7 @@ end type
 type st_24 from statictext within tabpage_object
 int X=576
 int Y=164
-int Width=233
+int Width=247
 int Height=64
 boolean Enabled=false
 string Text="alignment"
@@ -945,7 +945,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -953,7 +953,7 @@ end type
 type st_25 from statictext within tabpage_object
 int X=576
 int Y=244
-int Width=206
+int Width=260
 int Height=64
 boolean Enabled=false
 string Text="font.face"
@@ -963,7 +963,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -971,7 +971,7 @@ end type
 type st_26 from statictext within tabpage_object
 int X=576
 int Y=344
-int Width=256
+int Width=304
 int Height=64
 boolean Enabled=false
 string Text="font.weight"
@@ -981,7 +981,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -997,7 +997,7 @@ boolean VScrollBar=true
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 string Item[]={"0 - None",&
@@ -1020,7 +1020,7 @@ boolean VScrollBar=true
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 string Item[]={"0 - Left",&
@@ -1039,7 +1039,7 @@ boolean VScrollBar=true
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 string Item[]={"400 - Normal",&
@@ -1057,7 +1057,7 @@ boolean AutoHScroll=false
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -1073,7 +1073,7 @@ boolean VScrollBar=true
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 string Item[]={"400 - Normal",&
@@ -1091,7 +1091,7 @@ boolean AutoHScroll=false
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -1107,7 +1107,7 @@ boolean VScrollBar=true
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 string Item[]={"0 - Left",&
@@ -1126,7 +1126,7 @@ boolean VScrollBar=true
 long TextColor=41943040
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 string Item[]={"0 - None",&
@@ -1151,7 +1151,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -1159,7 +1159,7 @@ end type
 type st_2 from statictext within tabpage_object
 int X=576
 int Y=516
-int Width=233
+int Width=247
 int Height=64
 boolean Enabled=false
 string Text="alignment"
@@ -1169,7 +1169,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -1177,7 +1177,7 @@ end type
 type st_3 from statictext within tabpage_object
 int X=576
 int Y=612
-int Width=206
+int Width=260
 int Height=64
 boolean Enabled=false
 string Text="font.face"
@@ -1187,7 +1187,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -1195,7 +1195,7 @@ end type
 type st_4 from statictext within tabpage_object
 int X=576
 int Y=696
-int Width=256
+int Width=304
 int Height=64
 boolean Enabled=false
 string Text="font.weight"
@@ -1205,7 +1205,7 @@ long BackColor=73955432
 long BorderColor=8388608
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -1220,7 +1220,7 @@ string Text="Apply"
 boolean Default=true
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -1257,7 +1257,7 @@ int TabOrder=130
 string Text="&Help"
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -1274,7 +1274,7 @@ int TabOrder=60
 string Text="&Close"
 int TextSize=-9
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

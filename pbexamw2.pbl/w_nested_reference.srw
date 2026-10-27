@@ -112,7 +112,7 @@ int TabOrder=32
 string Text="Print"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -138,7 +138,7 @@ string Text="5"
 long TextColor=41943040
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -160,7 +160,7 @@ string Text="10"
 long TextColor=41943040
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -174,7 +174,7 @@ int TabOrder=50
 string Text="Help"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -193,7 +193,7 @@ string Text="Close"
 boolean Cancel=true
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -207,7 +207,7 @@ int Y=116
 int Width=1185
 int Height=65
 boolean Enabled=false
-string Text="Percentage Raise for Employees Above the Average:"
+string Text="Raise for Employees Above the Average:"
 Alignment Alignment=Right!
 boolean FocusRectangle=false
 long TextColor=41943040
@@ -215,7 +215,7 @@ long BackColor=74481808
 long BorderColor=8388608
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -225,7 +225,7 @@ int Y=20
 int Width=1185
 int Height=65
 boolean Enabled=false
-string Text="Percentage Raise for Employees Below the Average:"
+string Text="Raise for Employees Below the Average:"
 Alignment Alignment=Right!
 boolean FocusRectangle=false
 long TextColor=41943040
@@ -233,7 +233,7 @@ long BackColor=74481808
 long BorderColor=8388608
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -247,7 +247,7 @@ int TabOrder=60
 string Text="<<"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -265,7 +265,7 @@ int TabOrder=70
 string Text=">>"
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type
@@ -284,7 +284,7 @@ string Text="OK"
 boolean Default=true
 int TextSize=-8
 int Weight=400
-string FaceName="MS Sans Serif"
+string FaceName="Segoe UI"
 FontFamily FontFamily=Swiss!
 FontPitch FontPitch=Variable!
 end type

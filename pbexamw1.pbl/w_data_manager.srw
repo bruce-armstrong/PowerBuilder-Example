@@ -165,35 +165,39 @@ lv_1.DeleteColumns()
 // Add the columns to the ListView
 Choose Case ai_Level
 	Case 1
-		lv_1.AddColumn("Name", Left!, 500)
-		lv_1.AddColumn("ID", Left!, 150)
-		lv_1.AddColumn("Dept", Left!, 150)
-		lv_1.AddColumn("Manager", Left!, 235)
-		lv_1.AddColumn("Status", Center!, 175)
-		lv_1.AddColumn("Phone #", Left!, 350)
-		lv_1.AddColumn("Salary", Right!, 280)
+		lv_1.AddColumn("Name", Left!, 625)
+		lv_1.AddColumn("ID", Left!, 190)
+		lv_1.AddColumn("Dept", Left!, 190)
+		lv_1.AddColumn("Manager", Left!, 295)
+		lv_1.AddColumn("Status", Center!, 220)
+		lv_1.AddColumn("Phone #", Left!, 440)
+		lv_1.AddColumn("Salary", Right!, 350)
+		f_listview_dark_header(lv_1)
 		ii_Columns = 7
 	Case 2
-		lv_1.AddColumn("Company Name", Left!, 700)
-		lv_1.AddColumn("ID", Left!, 150)
-		lv_1.AddColumn("Contact Name", Left!, 500)
-		lv_1.AddColumn("Address", Left!, 1150)
-		lv_1.AddColumn("Phone #", Left!, 350)
+		lv_1.AddColumn("Company Name", Left!, 875)
+		lv_1.AddColumn("ID", Left!, 190)
+		lv_1.AddColumn("Contact Name", Left!, 625)
+		lv_1.AddColumn("Address", Left!, 1440)
+		lv_1.AddColumn("Phone #", Left!, 440)
+		f_listview_dark_header(lv_1)
 		ii_Columns = 5
 	Case 3
-		lv_1.AddColumn("Order ID", Left!, 225)
-		lv_1.AddColumn("Date", Left!, 250)
-		lv_1.AddColumn("Financial Code", Center!, 375)
-		lv_1.AddColumn("Region", Left!, 250)
+		lv_1.AddColumn("Order ID", Left!, 280)
+		lv_1.AddColumn("Date", Left!, 315)
+		lv_1.AddColumn("Financial Code", Center!, 470)
+		lv_1.AddColumn("Region", Left!, 315)
+		f_listview_dark_header(lv_1)
 		ii_Columns = 4
 	Case 4
-		lv_1.AddColumn("Product Description", Left!, 500)
-		lv_1.AddColumn("Line #", Right!, 175)
-		lv_1.AddColumn("ID", Left!, 150)
-		lv_1.AddColumn("Ship Date", Left!, 275)
-		lv_1.AddColumn("Qty", Right!, 150)
-		lv_1.AddColumn("Unit Price", Right!, 250)
-		lv_1.AddColumn("Total", Right!, 250)
+		lv_1.AddColumn("Product Description", Left!, 625)
+		lv_1.AddColumn("Line #", Right!, 220)
+		lv_1.AddColumn("ID", Left!, 190)
+		lv_1.AddColumn("Ship Date", Left!, 345)
+		lv_1.AddColumn("Qty", Right!, 190)
+		lv_1.AddColumn("Unit Price", Right!, 315)
+		lv_1.AddColumn("Total", Right!, 315)
+		f_listview_dark_header(lv_1)
 		ii_Columns = 7
 End Choose
 
@@ -391,7 +395,7 @@ integer textsize = -8
 integer weight = 400
 fontpitch fontpitch = variable!
 fontfamily fontfamily = swiss!
-string facename = "MS Sans Serif"
+string facename = "Segoe UI"
 long textcolor = 41943040
 borderstyle borderstyle = stylelowered!
 boolean hideselection = false

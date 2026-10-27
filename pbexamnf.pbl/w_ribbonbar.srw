@@ -142,7 +142,7 @@ type st_intro from statictext within w_ribbonbar
 integer x = 37
 integer y = 540
 integer width = 3145
-integer height = 128
+integer height = 196
 integer textsize = -9
 integer weight = 400
 fontcharset fontcharset = ansi!
@@ -158,7 +158,7 @@ end type
 
 type cb_script from commandbutton within w_ribbonbar
 integer x = 37
-integer y = 696
+integer y = 764
 integer width = 700
 integer height = 100
 integer taborder = 10
@@ -176,7 +176,7 @@ end event
 
 type cb_json from commandbutton within w_ribbonbar
 integer x = 755
-integer y = 696
+integer y = 764
 integer width = 700
 integer height = 100
 integer taborder = 20
@@ -208,7 +208,7 @@ end event
 
 type cb_export from commandbutton within w_ribbonbar
 integer x = 1473
-integer y = 696
+integer y = 764
 integer width = 700
 integer height = 100
 integer taborder = 30
@@ -226,7 +226,7 @@ end event
 
 type mle_log from multilineedit within w_ribbonbar
 integer x = 37
-integer y = 820
+integer y = 888
 integer width = 3145
 integer height = 980
 integer taborder = 40
@@ -246,7 +246,7 @@ end type
 
 type cb_close from commandbutton within w_ribbonbar
 integer x = 2780
-integer y = 1824
+integer y = 1892
 integer width = 402
 integer height = 100
 integer taborder = 900
