@@ -4,6 +4,16 @@ This fork ([bruce-armstrong/PowerBuilder-Example](https://github.com/bruce-armst
 
 Update this file with every change that is committed to the fork. Add each change to the topic sections and to the commit log at the end. A commit cannot contain its own hash, so a new log row says "(pending)" until the next commit fills it in.
 
+## Before and after
+
+The Enhanced Pie Graph example (Graphs > Enhanced Pie Graph w/ Explode) after these changes, in PowerBuilder 2025 R2 (25.1) with the Flat Design Dark theme, the SVG icons and Segoe UI:
+
+![Enhanced Pie Graph after the changes](docs/screenshots/enhanced_pie_graph_after.png)
+
+The same example before the changes, in PowerBuilder 2022 R3 (22.2):
+
+![Enhanced Pie Graph before the changes](docs/screenshots/enhanced_pie_graph_before.png)
+
 ## PowerBuilder 2025 solution
 
 - The PowerBuilder 2022 workspace and target were migrated to the PowerBuilder 2025 R2 solution format:
@@ -188,4 +198,5 @@ The examples were written for the SQL Anywhere demo database. They now also work
 | 2026-10-27 | `310458c` | Remove the former company names (only the help's old stylesheet deletion landed in this commit) |
 | 2026-10-27 | `63309f2` | Remove the former company names; keep the settings under Software\Appeon |
 | 2026-10-27 | `689c96d` | Bigger, lighter DataWindow button icons; fix DataWindow to Structure for solution libraries |
-| 2026-10-27 | (pending) | Rebuild bitmap.psr from the current pictures; new pictures for the saved reports |
+| 2026-10-27 | `5156e05` | Rebuild bitmap.psr from the current pictures; new pictures for the saved reports |
+| 2026-10-27 | (pending) | Add before and after screenshots to CHANGES.md |
