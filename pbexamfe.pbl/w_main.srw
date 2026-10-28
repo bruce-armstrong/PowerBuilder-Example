@@ -349,9 +349,20 @@ public subroutine of_refresh_info ();String				ls_Tmp, ls_Win
 Integer				li_CurrRow
 Long					ll_Handle
 TreeViewItem	ltvi_Window, ltvi_Item, ltvi_Current
+m_main			lm_Main
 
 // Determine the current window and Datastore row
 of_getcurrent(ls_Win, li_CurrRow)
+
+// Enable Example Report and Current Example Help for the selected example. The menus used to do this when
+// they dropped down, which a menu shown as a ribbon bar never does.
+If IsValid(MenuID) Then
+	If MenuID.ClassName() = "m_main" Then
+		lm_Main = MenuID
+		lm_Main.m_file.m_printreport.Enabled = of_exampleselected()
+		lm_Main.m_help.m_currentexample.Enabled = of_has_help()
+	End If
+End If
 
 If ls_Win = is_last_win Then Return  //  eliminate redundent redraws
 is_last_win = ls_Win

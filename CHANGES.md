@@ -64,6 +64,8 @@ Ten examples of native PowerScript features from PowerBuilder 2017 to 2025, with
   - The menu can be shown as a ribbon (RibbonView). `w_main` lays out the panels, tabbed bar and MDI client below the ribbon so they aren't hidden.
   - Settings has a new option, "Display the menu as a ribbon bar". It applies immediately and is saved as `RibbonBar` in `exampleapp.ini`.
   - The Run and Settings menus have sub-items, so they show ribbon buttons.
+  - Example Report and Current Example Help follow the selected example. The menus enabled them in their own Clicked event, when they dropped down, which a ribbon never does, so on the ribbon Current Example Help stayed disabled; `w_main.of_refresh_info` now sets both when the selection changes.
+  - The examples' help flags (`exhelp` in `d_examples`) match the help index: Printer, System and File System Enhancements, Progress Bar Controls, Track Bar Controls and Hyperlink Controls have topics and now enable Current Example Help; Working with Executables has none.
 - **Themes:**
   - Added the PowerBuilder 2025 R2 HighDPI themes in `theme\`.
   - The default theme is Flat Design Dark (`exampleapp.ini`).
@@ -199,4 +201,5 @@ The examples were written for the SQL Anywhere demo database. They now also work
 | 2026-10-27 | `63309f2` | Remove the former company names; keep the settings under Software\Appeon |
 | 2026-10-27 | `689c96d` | Bigger, lighter DataWindow button icons; fix DataWindow to Structure for solution libraries |
 | 2026-10-27 | `5156e05` | Rebuild bitmap.psr from the current pictures; new pictures for the saved reports |
-| 2026-10-27 | (pending) | Add before and after screenshots to CHANGES.md |
+| 2026-10-27 | `b7d3f60` | Add before and after screenshots to CHANGES.md |
+| 2026-10-27 | (pending) | Enable Current Example Help and Example Report for the selected example on the ribbon; fix the help flags |
